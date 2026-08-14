@@ -1,551 +1,620 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Servicios - Daniela Romero</title>
-  </head>
 
-  <body>
-    <header>
-      <a href="../index.html"
-        ><img
-          src="../img/logo.png"
-          alt="Logo de Daniela Romero, desarrolladora web y de app"
-          width="100"
-      /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios - Daniela Romero</title>
+  <!-- Vinculación de la hoja de estilos externa -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&display=swap"
+    rel="stylesheet" />
+</head>
 
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="sobre_mi.html">Sobre mí</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header class="header_principal">
+    <a href="../index.html"><img src="../img/logo.png" alt="Logo de Daniela Romero, desarrolladora web y de app"
+        width="100" /></a>
 
-    <main>
-      <section>
-        <h1>Daniela Romero</h1>
-        <p>Desarrolladora Web y de Aplicaciones</p>
-      </section>
-      <!-- Sección servicios -->
-      <section>
-        <h2>Servicios</h2>
-        <!-- Lista sin viñetas (puntos) -->
-        <ul style="list-style: none; padding: 0">
-          <!-- Servicio de Desarrollo Frontend -->
-          <li>
-            <article>
-              <img
-                src="../img/Servicios/Frontend.png"
-                alt="servicio de desarrollo frontend"
-                width="300"
-                height="300"
-              />
-              <p>
-                <strong>Desarrollo Frontend y Experiencia de Usuario:</strong>
-                Diseño e implementación de interfaces web responsivas,
-                accesibles y dinámicas, enfocadas en ofrecer experiencias de
-                usuario fluidas y una alta precisión estética.
-              </p>
-            </article>
-          </li>
+    <nav class="navegacion">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="sobre_mi.html">Sobre mí</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+      </ul>
+    </nav>
+  </header>
 
-          <!-- Servicio de Arquitectura Backend -->
-          <li>
-            <article>
-              <img
-                src="../img/Servicios/Backend.png"
-                alt="servicio de desarrollo backend"
-                width="300"
-                height="300"
-              />
-              <p>
-                <strong>Arquitectura Backend y Lógica de Negocio:</strong>
-                Desarrollo de APIs y servicios robustos, optimización de
-                consultas y gestión de bases de datos para asegurar sistemas
-                escalables, seguros y de alto rendimiento.
-              </p>
-            </article>
-          </li>
+  <main>
+    <section class="contenido_principal">
+      <article>
+        <figure>
+          <img src="../img/hero_section.png" alt="Imagen representativa de Daniela Romero" height="500" />
+        </figure>
+        <h1>Servicios</h1>
+        <p>
+          Transformo ideas en experiencias digitales funcionales y
+          sofisticadas. Como desarrolladora web y de apps, diseño soluciones a
+          la medida que combinan estética, rendimiento y una experiencia de
+          usuario impecable.
+        </p>
+      </article>
+    </section>
 
-          <!-- Servicio de Desarrollo de Aplicaciones -->
-          <li>
-            <article>
-              <img
-                src="../img/Servicios/Aplicaciones.png"
-                alt="servicio de desarrollo de app"
-                width="300"
-                height="300"
-              />
-              <p>
-                <strong>Desarrollo Integrado de Aplicaciones:</strong>
-                Creación de soluciones digitales de extremo a extremo,
-                integrando el flujo de datos con el diseño interactivo para
-                maximizar el rendimiento.
-              </p>
-            </article>
-          </li>
-        </ul>
-      </section>
+    <!-- Sección servicios -->
+    <section class="servicios">
+      <h2>Servicios</h2>
+      <!-- Lista sin viñetas (puntos) -->
+      <ul>
+        <!-- Servicio de Desarrollo Frontend -->
+        <li>
+          <article class="caja_servicios">
+            <figure>
+              <img src="../img/Servicios/Frontend.png" alt="servicio de desarrollo frontend" width="300" height="300" />
+              <figcaption>Servicio de Desarrollo Frontend</figcaption>
+            </figure>
+            <p>
+              <strong>Desarrollo Frontend y Experiencia de Usuario:</strong>
+              Diseño e implementación de interfaces web responsivas,
+              accesibles y dinámicas, enfocadas en ofrecer experiencias de
+              usuario fluidas y una alta precisión estética.
+            </p>
+          </article>
+        </li>
+        <!-- Servicio de Arquitectura Backend -->
+        <li>
+          <article class="caja_servicios">
+            <figure>
+              <img src="../img/Servicios/Backend.png" alt="servicio de desarrollo backend" width="300" height="300" />
+              <figcaption>
+                Servicio de Arquitectura Backend y Lógica de Negocio
+              </figcaption>
+            </figure>
 
-      <!-- Sección soluciones digitales y arquitectura de software -->
-      <section>
-        <h2>Soluciones Digitales y Arquitectura de Software</h2>
+            <p>
+              <strong>Arquitectura Backend y Lógica de Negocio:</strong>
+              Desarrollo de APIs y servicios robustos, optimización de
+              consultas y gestión de bases de datos para asegurar sistemas
+              escalables, seguros y de alto rendimiento.
+            </p>
+          </article>
+        </li>
 
+        <!-- Servicio de Desarrollo de Aplicaciones -->
+        <li>
+          <article class="caja_servicios">
+            <figure>
+              <img src="../img/Servicios/Aplicaciones.png" alt="servicio de desarrollo de app" width="300"
+                height="300" />
+              <figcaption>
+                Servicio de Desarrollo Integrado de Aplicaciones
+              </figcaption>
+            </figure>
+
+            <p>
+              <strong>Desarrollo Integrado de Aplicaciones:</strong>
+              Creación de soluciones digitales de extremo a extremo,
+              integrando el flujo de datos con el diseño interactivo para
+              maximizar el rendimiento.
+            </p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Sección soluciones digitales y arquitectura de software -->
+    <section class="seccion_soluciones">
+      <h2>Soluciones Digitales y Arquitectura de Software</h2>
+
+      <section class="subseccion_soluciones">
         <h3>Desarrollo ad hoc y Soluciones a Medida</h3>
-        <!-- Lista sin viñetas (puntos) -->
-        <ul style="list-style: none; padding: 0">
+        <!-- Sistemas a medida -->
+        <ul>
           <li>
-            <article>
-              <img
-                src="../img/Servicios/Software_Medida.png"
-                alt="Desarrollo de software a medida"
-                width="500"
-                height="500"
-              />
-              <h4><strong>Desarrollo de Software a Medida:</strong></h4>
-              <p>
-                Diseño e ingeniería de software adaptados al 100% a la lógica de
-                negocio, procesos operativos y requerimientos específicos de
-                cada empresa o cliente. Permite automatizar tareas complejas,
-                integrar sistemas existentes y escalar la solución conforme
-                crece el proyecto.
-              </p>
-              <p>Formas de pago: Transferencia, Crédito, Débito y en cuotas</p>
-            </article>
+            <section class="caja_solucion">
+              <article>
+                <figure>
+                  <img src="../img/Servicios/Software_Medida.png" alt="Desarrollo de software a medida" width="500"
+                    height="500" />
+                  <figcaption>Desarrollo de software a medida</figcaption>
+                </figure>
+                <h4><strong>Desarrollo de Software a Medida:</strong></h4>
+                <p>
+                  Diseño e ingeniería de software adaptados al 100% a la
+                  lógica de negocio, procesos operativos y requerimientos
+                  específicos de cada empresa o cliente. Permite automatizar
+                  tareas complejas, integrar sistemas existentes y escalar la
+                  solución conforme crece el proyecto.
+                </p>
+                <p class="formas_pago">
+                  Formas de pago: Transferencia, Crédito, Débito y en cuotas
+                </p>
+              </article>
 
-            <article>
-              <a
-                href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20gustar%C3%ADa%20solicitar%20un%20presupuesto%20y%20recibir%20asesoramiento%20exclusivo%20para%20un%20proyecto%20a%20medida%20que%20tengo%20pensado%20para%20mi%20empresa."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Solicitar presupuesto por WhatsApp
-              </a>
-            </article>
-            <article>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Solicitud%20de%20Presupuesto%20para%20Proyecto%20a%20Medida"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Solicitar presupuesto por Gmail
-              </a>
-            </article>
+              <article>
+                <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20gustar%C3%ADa%20solicitar%20un%20presupuesto%20y%20recibir%20asesoramiento%20exclusivo%20para%20un%20proyecto%20a%20medida%20que%20tengo%20pensado%20para%20mi%20empresa."
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Solicitar presupuesto por WhatsApp
+                </a>
+              </article>
+              <article>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Solicitud%20de%20Presupuesto%20para%20Proyecto%20a%20Medida"
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  Solicitar presupuesto por Gmail
+                </a>
+              </article>
+            </section>
           </li>
         </ul>
+      </section>
 
+      <section class="subseccion_soluciones">
         <h3>Ecosistemas Web y Presencia Digital</h3>
-        <!-- Lista sin viñetas (puntos) -->
-        <ul style="list-style: none; padding: 0">
+        <ul>
           <!-- Plataformas y sitios institucionales -->
           <li>
-            <article>
-              <img
-                src="../img/Servicios/Sitios_Institucionales.png"
-                alt="Plataformas y sitios institucionales"
-                width="500"
-                height="500"
-              />
-              <h4><strong>Plataformas y Sitios Institucionales:</strong></h4>
-              <p>
-                Sitios corporativos de alto nivel enfocados en consolidar la
-                identidad de marca, transmitir máxima credibilidad y optimizar
-                la experiencia de navegación del usuario en cualquier
-                dispositivo.
-              </p>
-              <p>$800 USD</p>
-              <p>Formas de pago: Transferencia, Crédito, Débito y en cuotas</p>
-            </article>
-            <article>
-              <a
-                href="https://wa.me/5493544656873?text=Hola%20Daniela,%20estuve%20viendo%20tus%20servicios%20de%20dise%C3%B1o%20institucional%20y%20me%20gustar%C3%ADa%20que%20charlemos%20sobre%20c%C3%B3mo%20podemos%20implementarlo%20en%20mi%20marca."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar por WhatsApp
-              </a>
-            </article>
-            <article>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Propuesta%20y%20Asesoramiento%20para%20Sitio%20Web%20Institucional"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Enviar un correo por Gmail
-              </a>
-            </article>
+            <section class="caja_solucion">
+              <article>
+                <figure>
+                  <img src="../img/Servicios/Sitios_Institucionales.png" alt="Plataformas y sitios institucionales"
+                    width="500" height="500" />
+                  <figcaption>
+                    Plataformas y sitios institucionales
+                  </figcaption>
+                </figure>
+                <h4>
+                  <strong>Plataformas y Sitios Institucionales:</strong>
+                </h4>
+                <p>
+                  Sitios corporativos de alto nivel enfocados en consolidar la
+                  identidad de marca, transmitir máxima credibilidad y
+                  optimizar la experiencia de navegación del usuario en
+                  cualquier dispositivo.
+                </p>
+                <p class="precio">$800 USD</p>
+                <p class="formas_pago">
+                  Formas de pago: Transferencia, Crédito, Débito y en cuotas
+                </p>
+              </article>
+              <article>
+                <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20estuve%20viendo%20tus%20servicios%20de%20dise%C3%B1o%20institucional%20y%20me%20gustar%C3%ADa%20que%20charlemos%20sobre%20c%C3%B3mo%20podemos%20implementarlo%20en%20mi%20marca."
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Consultar por WhatsApp
+                </a>
+              </article>
+              <article>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Propuesta%20y%20Asesoramiento%20para%20Sitio%20Web%20Institucional"
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  Enviar un correo por Gmail
+                </a>
+              </article>
+            </section>
           </li>
 
           <!-- E-commerce y comercio electrónico -->
           <li>
-            <article>
-              <img
-                src="../img/Servicios/E-commerce.png"
-                alt="E-commerce y comercio electrónico"
-                width="500"
-                height="500"
-              />
-              <h4><strong>E-commerce y Comercio Electrónico:</strong></h4>
-              <p>
-                Estructuras comerciales seguras y escalables, diseñadas para la
-                gestión eficiente de catálogos dinámicos, pasarelas de pago
-                automatizadas y un procesamiento fluido de pedidos.
-              </p>
-              <p>$1200 USD</p>
-              <p>Formas de pago: Transferencia, Crédito, Débito y en cuotas</p>
-            </article>
-            <article>
-              <a
-                href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20comunico%20porque%20me%20interesa%20el%20desarrollo%20de%20una%20tienda%20online%20(E-commerce)%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20personalizado%20para%20potenciar%20mi%20negocio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar por WhatsApp
-              </a>
-            </article>
-            <article>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20sobre%20Desarrollo%20de%20E-commerce%20y%20Asesoramiento"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Enviar un correo por Gmail
-              </a>
-            </article>
+            <section class="caja_solucion">
+              <article>
+                <img src="../img/Servicios/E-commerce.png" alt="E-commerce y comercio electrónico" width="500"
+                  height="500" />
+                <h4><strong>E-commerce y Comercio Electrónico:</strong></h4>
+                <p>
+                  Estructuras comerciales seguras y escalables, diseñadas para
+                  la gestión eficiente de catálogos dinámicos, pasarelas de
+                  pago automatizadas y un procesamiento fluido de pedidos.
+                </p>
+                <p class="precio">$1200 USD</p>
+                <p class="formas_pago">
+                  Formas de pago: Transferencia, Crédito, Débito y en cuotas
+                </p>
+              </article>
+              <article>
+                <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20comunico%20porque%20me%20interesa%20el%20desarrollo%20de%20una%20tienda%20online%20(E-commerce)%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20personalizado%20para%20potenciar%20mi%20negocio."
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Consultar por WhatsApp
+                </a>
+              </article>
+              <article>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20sobre%20Desarrollo%20de%20E-commerce%20y%20Asesoramiento"
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  Enviar un correo por Gmail
+                </a>
+              </article>
+            </section>
           </li>
 
           <!-- Landing Pages de Alto Rendimiento -->
           <li>
-            <article>
-              <img
-                src="../img/Servicios/Landing_Pages.png"
-                alt="Landing pages de alto rendimiento"
-                width="500"
-                height="500"
-              />
-              <h4><strong>Landing Pages de Alto Rendimiento:</strong></h4>
-              <p>
-                Páginas de aterrizaje optimizadas en velocidad y estructura
-                estratégica, enfocadas en captar prospectos calificados y
-                maximizar las tasas de conversión en campañas de marketing.
-              </p>
-              <p>$400 USD</p>
-              <p>Formas de pago: Transferencia, Crédito, Débito y en cuotas</p>
-            </article>
-            <article>
-              <a
-                href="https://wa.me/5493544656873?text=Hola%20Daniela,%20estuve%20viendo%20tus%20servicios%20de%20Landing%20Page%20y%20me%20gustar%C3%ADa%20que%20charlemos%20sobre%20c%C3%B3mo%20podemos%20implementarlo%20para%20mi%20marca."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar por WhatsApp
-              </a>
-            </article>
-            <article>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Propuesta%20y%20Asesoramiento%20para%20Landing%20Page"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Enviar un correo por Gmail
-              </a>
-            </article>
+            <section class="caja_solucion">
+              <article>
+                <figure>
+                  <img src="../img/Servicios/Landing_Pages.png" alt="Landing pages de alto rendimiento" width="500"
+                    height="500" />
+                  <figcaption>Landing pages de alto rendimiento</figcaption>
+                </figure>
+                <h4><strong>Landing Pages de Alto Rendimiento:</strong></h4>
+                <p>
+                  Páginas de aterrizaje optimizadas en velocidad y estructura
+                  estratégica, enfocadas en captar prospectos calificados y
+                  maximizar las tasas de conversión en campañas de marketing.
+                </p>
+                <p class="precio">$400 USD</p>
+                <p class="formas_pago">
+                  Formas de pago: Transferencia, Crédito, Débito y en cuotas
+                </p>
+              </article>
+              <article>
+                <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20estuve%20viendo%20tus%20servicios%20de%20Landing%20Page%20y%20me%20gustar%C3%ADa%20que%20charlemos%20sobre%20c%C3%B3mo%20podemos%20implementarlo%20para%20mi%20marca."
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Consultar por WhatsApp
+                </a>
+              </article>
+              <article>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Propuesta%20y%20Asesoramiento%20para%20Landing%20Page"
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  Enviar un correo por Gmail
+                </a>
+              </article>
+            </section>
           </li>
         </ul>
+      </section>
 
+      <section class="subseccion_aplicaciones">
         <h3>Sistemas de Gestión Operativa y Aplicaciones Especializadas</h3>
-        <!-- Lista sin viñetas (puntos) -->
-        <ul style="list-style: none; padding: 0">
+        <ul>
           <!-- Plataformas Educativas y Academias Online (LMS) -->
           <li>
-            <article>
-              <img
-                src="../img/Servicios/Plataformas_Educativas.png"
-                alt="Plataformas educativas y académicas"
-                width="300"
-                height="300"
-              />
-              <h4>
-                <strong
-                  >Plataformas Educativas y Academias Online (LMS):</strong
-                >
-              </h4>
-              <p>
-                Entornos digitales e interactivos orientados a la administración
-                de programas académicos, aulas virtuales, distribución de
-                contenidos multimedia y seguimiento detallado del progreso de
-                los estudiantes.
-              </p>
-              <p>$2000 USD</p>
-              <p>Formas de pago: Transferencia, Crédito, Débito y en cuotas</p>
-            </article>
-            <article>
-              <a
-                href="https://wa.me/5493544656873?text=Hola%20Daniela,%20vi%20el%20valor%20de%20la%20plataforma%20LMS%20y%20quisiera%20consultarte%20los%20detalles%20para%20digitalizar%20los%20cursos%20y%20capacitaciones%20de%20mi%20instituci%C3%B3n."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar por WhatsApp
-              </a>
-            </article>
-            <article>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Inter%C3%A9s%20en%20Desarrollo%20de%20Plataforma%20Educativa%20-%20[Nombre%20de%20tu%20Empresa]"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Enviar un correo por Gmail
-              </a>
-            </article>
+            <section class="caja_aplicaciones">
+              <article>
+                <figure>
+                  <img src="../img/Servicios/Plataformas_Educativas.png" alt="Plataformas educativas y académicas"
+                    width="300" height="300" />
+                  <figcaption>Plataformas educativas y académicas</figcaption>
+                </figure>
+                <h4>
+                  <strong>Plataformas Educativas y Academias Online (LMS):</strong>
+                </h4>
+                <p>
+                  Entornos digitales e interactivos orientados a la
+                  administración de programas académicos, aulas virtuales,
+                  distribución de contenidos multimedia y seguimiento
+                  detallado del progreso de los estudiantes.
+                </p>
+                <p class="precio">$2000 USD</p>
+                <p class="formas_pago">
+                  Formas de pago: Transferencia, Crédito, Débito y en cuotas
+                </p>
+              </article>
+              <article>
+                <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20vi%20el%20valor%20de%20la%20plataforma%20LMS%20y%20quisiera%20consultarte%20los%20detalles%20para%20digitalizar%20los%20cursos%20y%20capacitaciones%20de%20mi%20instituci%C3%B3n."
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Consultar por WhatsApp
+                </a>
+              </article>
+              <article>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Inter%C3%A9s%20en%20Desarrollo%20de%20Plataforma%20Educativa%20-%20[Nombre%20de%20tu%20Empresa]"
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  Enviar un correo por Gmail
+                </a>
+              </article>
+            </section>
           </li>
 
           <!-- Sistemas Comerciales y Punto de Venta (POS) -->
           <li>
-            <article>
-              <img
-                src="../img/Servicios/Sistemas_Comerciales.png"
-                alt="Sistemas comerciales y punto de venta"
-                width="300"
-                height="300"
-              />
-              <h4>
-                <strong>Sistemas Comerciales y Punto de Venta (POS):</strong>
-              </h4>
-              <p>
-                Soluciones integrales para el control centralizado de ventas,
-                facturación, trazabilidad de inventario en tiempo real y
-                generación de reportes financieros.
-              </p>
-              <p>$30 USD</p>
-              <p>Formas de pago: Suscripción mensual</p>
-              <!-- Enlace a la página de suscripción futura -->
-              <a href="suscribirse">Suscribirse</a>
-            </article>
-            <article>
-              <a
-                href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20comunico%20porque%20me%20interesa%20el%20sistema%20de%20Punto%20de%20Venta%20(POS)%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20personalizado%20para%20optimizar%20la%20gesti%C3%B3n%20de%20mi%20negocio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar por WhatsApp
-              </a>
-            </article>
-            <article>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20sobre%20Sistema%20POS%20Comercial%20y%20Asesoramiento"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Enviar un correo por Gmail
-              </a>
-            </article>
+            <section class="caja_aplicaciones">
+              <article>
+                <figure>
+                  <img src="../img/Servicios/Sistemas_Comerciales.png" alt="Sistemas comerciales y punto de venta"
+                    width="300" height="300" />
+                  <figcaption>
+                    Sistemas comerciales y punto de venta
+                  </figcaption>
+                </figure>
+                <h4>
+                  <strong>Sistemas Comerciales y Punto de Venta (POS):</strong>
+                </h4>
+                <p>
+                  Soluciones integrales para el control centralizado de
+                  ventas, facturación, trazabilidad de inventario en tiempo
+                  real y generación de reportes financieros.
+                </p>
+                <p class="precio">$30 USD</p>
+                <p class="formas_pago">Formas de pago: Suscripción mensual</p>
+                <a href="suscribirse">Suscribirse</a>
+              </article>
+              <article>
+                <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20comunico%20porque%20me%20interesa%20el%20sistema%20de%20Punto%20de%20Venta%20(POS)%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20personalizado%20para%20optimizar%20la%20gesti%C3%B3n%20de%20mi%20negocio."
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Consultar por WhatsApp
+                </a>
+              </article>
+              <article>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20sobre%20Sistema%20POS%20Comercial%20y%20Asesoramiento"
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  Enviar un correo por Gmail
+                </a>
+              </article>
+            </section>
           </li>
 
           <!-- Sistemas de Gestión Gastronómica -->
           <li>
-            <article>
-              <img
-                src="../img/Servicios/Sistemas_Gastronomicos.png"
-                alt="Sistemas de gestión gastronómica"
-                width="300"
-                height="300"
-              />
-              <h4><strong>Sistemas de Gestión Gastronómica:</strong></h4>
-              <p>
-                Software especializado para el sector de la restauración que
-                optimiza la recepción de pedidos, el despacho mediante comandas
-                digitales y el control operativo del establecimiento.
-              </p>
-              <p>$50 USD</p>
-              <p>Formas de pago: Suscripción mensual</p>
-              <!-- Enlace a la página de suscripción futura -->
-              <a href="suscribirse">Suscribirse</a>
-            </article>
-            <article>
-              <a
-                href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20comunico%20porque%20me%20interesa%20el%20sistema%20de%20gesti%C3%B3n%20para%20establecimiento%20gastron%C3%B3mico%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20personalizado%20para%20optimizar%20mi%20local."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar por WhatsApp
-              </a>
-            </article>
-            <article>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20sobre%20Sistema%20de%20Gesti%C3%B3n%20Gastron%C3%B3mica%20y%20Asesoramiento"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Enviar un correo por Gmail
-              </a>
-            </article>
+            <section class="caja_aplicaciones">
+              <article>
+                <figure>
+                  <img src="../img/Servicios/Sistemas_Gastronomicos.png" alt="Sistemas de gestión gastronómica"
+                    width="300" height="300" />
+                  <figcaption>Sistemas de gestión gastronómica</figcaption>
+                </figure>
+                <h4><strong>Sistemas de Gestión Gastronómica:</strong></h4>
+                <p>
+                  Software especializado para el sector de la restauración que
+                  optimiza la recepción de pedidos, el despacho mediante
+                  comandas digitales y el control operativo del
+                  establecimiento.
+                </p>
+                <p class="precio">$50 USD</p>
+                <p class="formas_pago">Formas de pago: Suscripción mensual</p>
+                <a href="suscribirse">Suscribirse</a>
+              </article>
+              <article>
+                <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20comunico%20porque%20me%20interesa%20el%20sistema%20de%20gesti%C3%B3n%20para%20establecimiento%20gastron%C3%B3mico%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20personalizado%20para%20optimizar%20mi%20local."
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Consultar por WhatsApp
+                </a>
+              </article>
+              <article>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20sobre%20Sistema%20de%20Gesti%C3%B3n%20Gastron%C3%B3mica%20y%20Asesoramiento"
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  Enviar un correo por Gmail
+                </a>
+              </article>
+            </section>
           </li>
 
           <!-- Plataformas Médicas y de Salud -->
           <li>
-            <article>
-              <img
-                src="../img/Servicios/Plataformas_Medicas.png"
-                alt="Plataformas médicas y de salud"
-                width="300"
-                height="300"
-              />
-              <h4><strong>Plataformas Médicas y de Salud:</strong></h4>
-              <p>
-                Sistemas para la gestión segura y organizada de expedientes
-                clínicos, historias de pacientes, asignación de profesionales y
-                coordinación de los flujos de atención asistencial.
-              </p>
-              <p>$60 USD</p>
-              <p>Formas de pago: Suscripción mensual</p>
-              <!-- Enlace a la página de suscripción futura -->
-              <a href="suscribirse">Suscribirse</a>
-            </article>
-            <article>
-              <a
-                href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20comunico%20porque%20me%20interesa%20el%20sistema%20de%20gesti%C3%B3n%20m%C3%A9dica%20/%20salud%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20personalizado%20para%20optimizar%20la%20atenci%C3%B3n%20de%20mi%20consultorio%20o%20cl%C3%ADnica."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar por WhatsApp
-              </a>
-            </article>
-            <article>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20sobre%20Sistema%20de%20Gesti%C3%B3n%20M%C3%A9dica%20y%20Asesoramiento"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Enviar un correo por Gmail
-              </a>
-            </article>
+            <section class="caja_aplicaciones">
+              <article>
+                <figure>
+                  <img src="../img/Servicios/Plataformas_Medicas.png" alt="Plataformas médicas y de salud" width="300"
+                    height="300" />
+                  <figcaption>Plataformas médicas y de salud</figcaption>
+                </figure>
+                <h4><strong>Plataformas Médicas y de Salud:</strong></h4>
+                <p>
+                  Sistemas para la gestión segura y organizada de expedientes
+                  clínicos, historias de pacientes, asignación de
+                  profesionales y coordinación de los flujos de atención
+                  asistencial.
+                </p>
+                <p class="precio">$60 USD</p>
+                <p class="formas_pago">Formas de pago: Suscripción mensual</p>
+                <a href="suscribirse">Suscribirse</a>
+              </article>
+              <article>
+                <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20comunico%20porque%20me%20interesa%20el%20sistema%20de%20gesti%C3%B3n%20m%C3%A9dica%20/%20salud%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20personalizado%20para%20optimizar%20la%20atenci%C3%B3n%20de%20mi%20consultorio%20o%20cl%C3%ADnica."
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Consultar por WhatsApp
+                </a>
+              </article>
+              <article>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20sobre%20Sistema%20de%20Gesti%C3%B3n%20M%C3%A9dica%20y%20Asesoramiento"
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  Enviar un correo por Gmail
+                </a>
+              </article>
+            </section>
           </li>
 
           <!-- Sistemas de Gestión Hotelera y Alojamiento -->
           <li>
-            <article>
-              <img
-                src="../img/Servicios/Sistemas_Gestion_Hotelera.png"
-                alt="Sistemas de gestión hotelera y alojamiento"
-                width="300"
-                height="300"
-              />
-              <h4>
-                <strong>Sistemas de Gestión Hotelera y Alojamiento:</strong>
-              </h4>
-              <p>
-                Plataformas para la administración centralizada de reservas,
-                control de ocupación en tiempo real, tarifas dinámicas y
-                automatización del check-in/check-out.
-              </p>
-              <p>$60 USD</p>
-              <p>Formas de pago: Suscripción mensual</p>
-              <!-- Enlace a la página de suscripción futura -->
-              <a href="suscribirse">Suscribirse</a>
-            </article>
-            <article>
-              <a
-                href="https://wa.me/5493544656873?text=Hola%20Daniela,%20estuve%20viendo%20tus%20servicios%20de%20sistema%20hotelero%20y%20me%20gustar%C3%ADa%20que%20charlemos%20sobre%20c%C3%B3mo%20podemos%20implementarlo%20en%20mi%20hotel%20o%20complejo."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar por WhatsApp
-              </a>
-            </article>
-            <article>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Propuesta%20y%20Asesoramiento%20para%20Sistema%20de%20Gesti%C3%B3n%20Hotelera"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Enviar un correo por Gmail
-              </a>
-            </article>
+            <section class="caja_aplicaciones">
+              <article>
+                <figure>
+                  <img src="../img/Servicios/Sistemas_Gestion_Hotelera.png"
+                    alt="Sistemas de gestión hotelera y alojamiento" width="300" height="300" />
+                  <figcaption>
+                    Sistemas de gestión hotelera y alojamiento
+                  </figcaption>
+                </figure>
+                <h4>
+                  <strong>Sistemas de Gestión Hotelera y Alojamiento:</strong>
+                </h4>
+                <p>
+                  Plataformas para la administración centralizada de reservas,
+                  control de ocupación en tiempo real, tarifas dinámicas y
+                  automatización del check-in/check-out.
+                </p>
+                <p class="precio">$60 USD</p>
+                <p class="formas_pago">Formas de pago: Suscripción mensual</p>
+                <a href="suscribirse">Suscribirse</a>
+              </article>
+              <article>
+                <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20estuve%20viendo%20tus%20servicios%20de%20sistema%20hotelero%20y%20me%20gustar%C3%ADa%20que%20charlemos%20sobre%20c%C3%B3mo%20podemos%20implementarlo%20en%20mi%20hotel%20o%20complejo."
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Consultar por WhatsApp
+                </a>
+              </article>
+              <article>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Propuesta%20y%20Asesoramiento%20para%20Sistema%20de%20Gesti%C3%B3n%20Hotelera"
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  Enviar un correo por Gmail
+                </a>
+              </article>
+            </section>
           </li>
 
           <!-- Sistemas de Reservas y Agenda de Turnos -->
           <li>
-            <article>
-              <img
-                src="../img/Servicios/Sistemas_Turnos.png"
-                alt="Sistemas de Reservas y Agenda de Turnos"
-                width="300"
-                height="300"
-              />
-              <h4><strong>Sistemas de Reservas y Agenda de Turnos:</strong></h4>
-              <p>
-                Módulos inteligentes para la programación automatizada de citas,
-                sincronización de agendas, gestión del flujo de clientes y envío
-                de recordatorios para reducir el ausentismo.
-              </p>
-              <p>$30 USD</p>
-              <p>Formas de pago: Suscripción mensual</p>
-              <!-- Enlace a la página de suscripción futura -->
-              <a href="suscribirse">Suscribirse</a>
-            </article>
-            <article>
-              <a
-                href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20comunico%20porque%20me%20interesa%20el%20sistema%20de%20reservas%20y%20turnos%20online%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20personalizado%20para%20automatizar%20la%20agenda%20de%20mi%20negocio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar por WhatsApp
-              </a>
-            </article>
-            <article>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20sobre%20Sistema%20de%20Reservas%20y%20Turnos%20Online%20y%20Asesoramiento"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Enviar un correo por Gmail
-              </a>
-            </article>
+            <section class="caja_aplicaciones">
+              <article>
+                <figure>
+                  <img src="../img/Servicios/Sistemas_Turnos.png" alt="Sistemas de Reservas y Agenda de Turnos"
+                    width="300" height="300" />
+                  <figcaption>
+                    Sistemas de Reservas y Agenda de Turnos
+                  </figcaption>
+                </figure>
+                <h4>
+                  <strong>Sistemas de Reservas y Agenda de Turnos:</strong>
+                </h4>
+                <p>
+                  Módulos inteligentes para la programación automatizada de
+                  citas, sincronización de agendas, gestión del flujo de
+                  clientes y envío de recordatorios para reducir el
+                  ausentismo.
+                </p>
+                <p class="precio">$30 USD</p>
+                <p class="formas_pago">Formas de pago: Suscripción mensual</p>
+                <a href="suscribirse">Suscribirse</a>
+              </article>
+              <article>
+                <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20me%20comunico%20porque%20me%20interesa%20el%20sistema%20de%20reservas%20y%20turnos%20online%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20personalizado%20para%20automatizar%20la%20agenda%20de%20mi%20negocio."
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Consultar por WhatsApp
+                </a>
+              </article>
+              <article>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20sobre%20Sistema%20de%20Reservas%20y%20Turnos%20Online%20y%20Asesoramiento"
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  Enviar un correo por Gmail
+                </a>
+              </article>
+            </section>
           </li>
         </ul>
       </section>
-    </main>
+    </section>
+  </main>
 
-    <!-- Pie de página con copyright y redes sociales -->
-    <footer>
-      <nav>
-        <ul style="list-style: none; padding: 0">
-          <li>
-            <a
-              href="https://wa.me/5493544656873?text=Hola%20Daniela,%20estoy%20interesado%20en%20tus%20servicios%20de%20desarrollo%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20para%20un%20proyecto%20que%20necesito%20implementar."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WhatsApp
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20de%20Cliente%20-%20Desarrollo%20de%20Proyecto%20Web/Software"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Gmail
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/daniela.romero___"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
-          </li>
-        </ul>
-      </nav>
+  <!-- Pie de página con copyright y redes sociales -->
+  <footer class="pie_pagina">
+    <nav class="navegacion_footer">
+      <ul>
+        <!-- WhatsApp -->
+        <li>
+          <a href="https://wa.me/5493544656873?text=Hola%20Daniela,%20estoy%20interesado%20en%20tus%20servicios%20de%20desarrollo%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20para%20un%20proyecto%20que%20necesito%20implementar."
+            target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+            </svg>
+          </a>
+        </li>
+        <!-- Gmail -->
+        <li>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniela.romero.developer@gmail.com&su=Consulta%20de%20Cliente%20-%20Desarrollo%20de%20Proyecto%20Web/Software"
+            target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+            </svg>
+          </a>
+        </li>
+        <!-- Instagram -->
+        <li>
+          <a href="https://www.instagram.com/daniela.romero___" target="_blank" rel="noopener noreferrer"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-      <p>© 2026 Daniela Romero — Desarrolladora Web y de Apps</p>
-    </footer>
-  </body>
+    <p>© 2026 Daniela Romero — Desarrolladora Web y de Apps</p>
+  </footer>
+</body>
+
 </html>

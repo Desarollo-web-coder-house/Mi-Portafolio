@@ -1,0 +1,1009 @@
+/* ========================================== */
+/* ESTILOS GENERALES                          */
+/* ========================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Google Sans Flex', sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  background-color: rgb(255, 248, 248);
+}
+
+
+/* ========================================== */
+/* HEADER PRINCIPAL                           */
+/* ========================================== */
+
+.header_principal {
+  background-color: rgb(196, 141, 104);
+  text-align: center;
+}
+
+.header_principal img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.navegacion ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navegacion li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.navegacion a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* ========================================== */
+/* CONTENIDO PRINCIPAL                        */
+/* ========================================== */
+
+.contenido_principal article figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.contenido_principal article {
+  background-color: rgb(206, 154, 119);
+  text-align: center;
+}
+
+.contenido_principal article h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.seccion_presentacion article p {
+  font-size: 20px;
+}
+
+/* ========================================== */
+/* SECCIÓN SOBRE MÍ                           */
+/* ========================================== */
+
+.sobre_mi {
+  background-color: rgb(225, 192, 170);
+  text-align: center;
+}
+
+.sobre_mi article h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sobre_mi article figure {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sobre_mi article figure img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.sobre_mi article p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre_mi article a {
+  color: #111111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ========================================== */
+/* SERVICIOS PRINCIPAL                        */
+/* ========================================== */
+
+.servicios_principal {
+  background-color: rgb(202, 151, 117);
+  text-align: center;
+}
+
+.servicios_principal h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.servicios_principal ul {
+  list-style: none;
+  text-align: center;
+}
+
+.servicios_principal li {
+  text-align: center;
+}
+
+.servicios_principal li article {
+  text-align: center;
+}
+
+.servicios_principal li article strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.servicios_principal li article p {
+  font-size: 16px;
+}
+
+.servicios_principal article a {
+  color: #111111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ========================================== */
+/* PROYECTOS PRINCIPAL                        */
+/* ========================================== */
+
+.proyectos_principal {
+  background-color: rgb(225, 192, 170);
+  text-align: center;
+}
+
+.proyectos_principal article {
+  text-align: center;
+}
+
+.proyectos_principal article h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.proyectos_principal article p {
+  font-size: 20px;
+  text-align: justify center;
+}
+
+.proyectos_principal article a {
+  color: #111111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ========================================== */
+/* CONTACTO PRINCIPAL                         */
+/* ========================================== */
+
+.contacto_principal {
+  background-color: rgb(202 151 117);
+  text-align: center;
+}
+
+.contacto_principal article h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contacto_principal article p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.contacto_principal ul {
+  list-style: none;
+  text-align: center;
+}
+
+.contacto_principal ul li {
+  text-align: center;
+}
+
+.contacto_principal article ul li a {
+  font-size: 20px;
+  background-color: rgb(202, 151, 117);
+  text-decoration: none;
+  color: #111111;
+  text-align: center;
+}
+
+.contacto_principal article ul li a svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.contacto_principal article a {
+  color: #111111;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ========================================== */
+/* FOOTER PRINCIPAL                           */
+/* ========================================== */
+
+.footer_principal {
+  background-color: rgb(84, 53, 33);
+  text-align: center;
+  color: #ffffff;
+}
+
+/* ========================================== */
+/* SECCIÓN PERFIL (SOBRE_MI.HTML)             */
+/* ========================================== */
+
+.seccion_perfil {
+  background-color: rgb(222, 191, 171);
+  text-align: center;
+}
+
+.seccion_perfil h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.seccion_perfil figure {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.seccion_perfil figure img {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seccion_perfil p {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+}
+
+.seccion_perfil a {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*SECCION FORMACION*/
+
+.seccion_formacion {
+  background-color: rgb(196, 141, 104);
+  text-align: center;
+}
+
+.seccion_formacion h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.seccion_formacion>ul {
+  list-style: none;
+  text-align: center;
+}
+
+.seccion_formacion>ul>li {
+  text-align: center;
+}
+
+.seccion_formacion article {
+  display: inline-block;
+  text-align: center;
+  max-width: 900px;
+}
+
+.seccion_formacion article h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.seccion_formacion article p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.seccion_formacion article strong {
+  font-weight: bold;
+}
+
+.seccion_formacion article ul {
+  list-style: none;
+  text-align: center;
+}
+
+.seccion_formacion article ul li {
+  display: inline-block;
+  text-align: center;
+  max-width: 800px;
+}
+
+.seccion_formacion article ul li strong {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* SECCIÓN STACK TECNOLÓGICO */
+
+.seccion_stack {
+  background-color: rgb(222, 191, 171);
+  text-align: center;
+}
+
+.seccion_stack h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.seccion_stack p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.caja_categoria {
+  text-align: center;
+  display: inline-block;
+  max-width: 900px;
+}
+
+.caja_categoria h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.caja_categoria p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.subseccion_tecnica {
+  text-align: center;
+  display: inline-block;
+  max-width: 850px;
+}
+
+.subseccion_tecnica h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.subseccion_tecnica p {
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.caja_detalle {
+  text-align: center;
+  display: inline-block;
+  max-width: 800px;
+}
+
+.caja_detalle h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.caja_detalle p {
+  font-size: 16px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+
+/* SECCIÓN PILARES Y FILOSOFÍA PROFESIONAL */
+
+.seccion_pilares {
+  background-color: rgb(184, 116, 71);
+  text-align: center;
+}
+
+.seccion_pilares h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.seccion_pilares p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.seccion_pilares ul {
+  list-style: none;
+  text-align: center;
+}
+
+.seccion_pilares ul li {
+  text-align: center;
+}
+
+.caja_pilares {
+  display: inline-block;
+  text-align: center;
+  max-width: 900px;
+}
+
+.caja_pilares h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.caja_pilares p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+/* SECCIÓN HABILIDADES Y COMPETENCIAS */
+
+
+.seccion_habilidades {
+  background-color: rgb(196, 141, 104);
+  text-align: center;
+}
+
+.seccion_habilidades h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.seccion_habilidades p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.seccion_habilidades h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.seccion_habilidades ul {
+  list-style: none;
+  text-align: center;
+}
+
+.seccion_habilidades ul li {
+  text-align: center;
+}
+
+.caja_habilidades {
+  display: inline-block;
+  text-align: center;
+  max-width: 900px;
+}
+
+.caja_habilidades h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.caja_habilidades p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.caja_habilidades_personales {
+  display: inline-block;
+  text-align: center;
+  max-width: 900px;
+}
+
+.caja_habilidades_personales h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.caja_habilidades_personales p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+/* ========================================== */
+/* PIE DE PÁGINA / FOOTER                     */
+/* ========================================== */
+
+.pie_pagina {
+  background-color: rgb(84, 53, 33);
+  color: #ffffff;
+  text-align: center;
+}
+
+.navegacion_footer {
+  text-align: center;
+}
+
+.navegacion_footer ul {
+  list-style: none;
+  text-align: center;
+}
+
+.navegacion_footer li {
+  display: inline-block;
+  text-align: center;
+}
+
+.navegacion_footer a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navegacion_footer svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.pie_pagina p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* ========================================== */
+/* PAGINA SERVICIOS (SERVICIOS.) */
+/* ========================================== */
+
+
+.servicios {
+  background-color: rgb(222, 191, 171);
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.servicios ul {
+  list-style: none;
+  text-align: center;
+}
+
+.servicios ul li {
+  text-align: center;
+}
+
+.caja_servicios {
+  display: inline-block;
+  text-align: center;
+  max-width: 900px;
+}
+
+.caja_servicios figure {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.caja_servicios figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caja_servicios figcaption {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.caja_servicios p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.caja_servicios strong {
+  font-weight: bold;
+}
+
+/* ========================================== */
+/* SECCIÓN SOLUCIONES DIGITALES               */
+/* ========================================== */
+
+.seccion_soluciones {
+  background-color: rgb(68, 51, 40);
+  text-align: center;
+
+}
+
+.seccion_soluciones h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.subseccion_soluciones {
+  text-align: center;
+}
+
+.subseccion_soluciones h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.subseccion_soluciones ul {
+  list-style: none;
+  text-align: center;
+}
+
+.subseccion_soluciones ul li {
+  text-align: center;
+}
+
+.caja_solucion {
+  background-color: rgb(231, 202, 184);
+  display: inline-block;
+  text-align: center;
+  max-width: 900px;
+}
+
+.caja_solucion p.formas_pago {
+  font-weight: bold;
+}
+
+.caja_solucion p.precio {
+  font-weight: bold;
+}
+
+.caja_solucion figure {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.caja_solucion figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caja_solucion figcaption {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.caja_solucion h4 {
+  font-size: 20px;
+  color: #333;
+}
+
+.caja_solucion p {
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+.caja_solucion strong {
+  font-weight: bold;
+}
+
+
+/* BOTONES DE CONTACTO (WHATSAPP / GMAIL) */
+
+.subseccion_soluciones article a {
+  display: inline-block;
+  text-align: center;
+  color: #161515;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ========================================== */
+/* SECCIÓN APLICACIONES Y SISTEMAS            */
+/* ========================================== */
+
+.subseccion_aplicaciones {
+  background-color: rgb(236, 212, 198);
+  text-align: center;
+}
+
+.subseccion_aplicaciones h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #141414;
+}
+
+.subseccion_aplicaciones ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.subseccion_aplicaciones ul li {
+  text-align: center;
+}
+
+.caja_aplicaciones {
+  background-color: rgb(202, 151, 117);
+  display: inline-block;
+  text-align: center;
+  max-width: 900px;
+}
+
+.caja_aplicaciones figure {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.caja_aplicaciones figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caja_aplicaciones figcaption {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.caja_aplicaciones h4 {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.caja_aplicaciones p {
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+
+  line-height: 1.5;
+}
+
+.caja_aplicaciones strong {
+  font-weight: bold;
+}
+
+.caja_aplicaciones p.formas_pago {
+  font-weight: bold;
+}
+
+.caja_aplicaciones p.precio {
+  font-weight: bold;
+}
+
+
+/* BOTONES Y ENLACES DE ACCIÓN */
+
+.subseccion_aplicaciones article {
+  text-align: center;
+}
+
+.subseccion_aplicaciones article a {
+  display: inline-block;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ========================================== */
+/* SECCIÓN PROYECTOS (PROYECTOS HTML)             */
+/* ========================================== */
+
+.seccion_proyectos {
+  background-color: rgb(51, 33, 20);
+  text-align: center;
+
+}
+
+.tarjeta_proyectos {
+  background-color: rgb(225 192 170);
+  display: inline-block;
+  text-align: center;
+  max-width: 1000px;
+
+}
+
+.tarjeta_proyectos h2 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.tarjeta_proyectos h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tarjeta_proyectos p {
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.tarjeta_proyectos figure {
+  width: auto;
+  max-width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.tarjeta_proyectos figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tarjeta_proyectos figcaption {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ========================================== */
+/* ENLACES Y BOTONES DE REPOSITORIO           */
+/* ========================================== */
+
+.tarjeta_proyectos strong {
+  font-weight: bold;
+}
+
+.tarjeta_proyectos article {
+  text-align: center;
+}
+
+.tarjeta_proyectos a {
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #131212;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* ========================================== */
+/* SECCIÓN CONTACTO Y TARJETAS                */
+/* ========================================== */
+
+.seccion_contacto {
+  background-color: rgb(231 202 184);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.seccion_contacto h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1a1919;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.seccion_contacto p {
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+  line-height: 1.5;
+  color: #0f0f0f;
+  margin-bottom: 20px;
+}
+
+.contacto_lista {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.contacto_lista li {
+  text-align: center;
+  display: inline-block;
+}
+
+.tarjeta_contacto {
+  display: inline-block;
+  text-align: center;
+  max-width: 900px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 30px;
+
+}
+
+.tarjeta_contacto h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1b1a1a;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tarjeta_contacto p {
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  display: inline-block;
+  line-height: 1.5;
+  color: #070707;
+  margin-bottom: 15px;
+}
+
+/* ========================================== */
+/* ENLACES Y BOTONES DE CONTACTO              */
+/* ========================================== */
+
+.tarjeta_contacto article {
+  text-align: center;
+}
+
+.tarjeta_contacto a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #141414;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+
+}
