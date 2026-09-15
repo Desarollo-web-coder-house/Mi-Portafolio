@@ -13,7 +13,13 @@
    - Control de padding interno y márgenes de sección
    ========================================== */
 
-   
+   /* ==========================================
+   PRE-ENTREGA 4: CSS GRID Y RESPONSIVIDAD (MOBILE-FIRST)
+   - Layout fluido con display: grid y grid-template-areas
+   - Columnas flexibles mediante unidades fr y propiedad gap
+   - Estrategia Mobile-First (secciones apiladas por defecto)
+   - Media query min-width: 1024px para la transformacion a Desktop
+   ========================================== */
 
 
 
