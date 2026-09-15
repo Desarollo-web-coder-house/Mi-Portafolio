@@ -13,22 +13,55 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&display=swap"
     rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 </head>
 
 <body>
-  <header class="header_principal">
-    <a href="../index.html"><img src="../img/logo.png" alt="Logo de Daniela Romero, desarrolladora web y de app"
-        width="100" /></a>
+  <header class="header_principal navbar navbar-expand-lg navbar-light navbar_propia">
 
-    <nav class="navegacion">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="sobre_mi.html">Sobre mí</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="container-fluid">
+
+      <!-- Logo / Identidad de marca -->
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo.png" alt="Logo de Daniela Romero, desarrolladora web y de app" width="100" />
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú de navegación principal -->
+      <nav class="navegacion collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="sobre_mi.html">Sobre mí</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">Proyectos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+
   </header>
 
   <main>
@@ -49,229 +82,280 @@
 
     <!-- Proyectos Web -->
     <section class="seccion_proyectos">
-      <article class="tarjeta_proyectos">
+      <!-- Encabezado Principal -->
+      <article class="tarjeta_proyectos mb-3">
         <h2>
-          Proyectos Web que desarrollé durante mi diplomatura en desarrollo web
-          en (Fundaes)
+          Proyectos Web que desarrollé durante mi diplomatura en desarrollo
+          web en (Fundaes)
         </h2>
         <p>
-          En este apartado podrás ver los trabajos que desarrollé en mi período
-          de cursada que realicé de la diplomatura en desarrollo web en Fundaes
-          durante el 2025-2026.
+          En este apartado podrás ver los trabajos que desarrollé en mi
+          período de cursada que realicé de la diplomatura en desarrollo web
+          en Fundaes durante el 2025-2026.
         </p>
       </article>
 
-      <!--mi curriculum vitae web-->
-      <article class="tarjeta_proyectos">
-        <h3>Mi Curriculum Vitae Web</h3>
-        <p>
-          Este fue uno de mis primeros proyectos integradores, diseñado para
-          consolidar y aplicar los conocimientos adquiridos a lo largo de mi
-          formación. En él presento una visión estructurada de mi perfil
-          profesional, abarcando desde mis datos de contacto y trayectoria
-          laboral, hasta mi formación académica, habilidades técnicas y
-          blandas, certificaciones, idiomas e intereses.
-        </p>
-        <figure>
-          <img src="../img/Proyectos/Curriculum.png" alt="Vista previa de mi curriculum vitae web" />
-          <figcaption>Vista previa de mi curriculum vitae web</figcaption>
-        </figure>
-        <p>
-          <strong>
-            <a href="https://github.com/Diplomatura-en-Desarrollo-web/Curriculum.git" target="_blank"
-              rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-              </svg>
-              Ver repositorio en GitHub
-            </a>
-          </strong>
-        </p>
-      </article>
+      <!-- Carrusel Adaptativo con textos completos -->
+      <div id="carouselGaleriaProyectos" class="carousel slide w-100 max-w-1000 my-3" data-bs-ride="false">
 
-      <!--petshop patitas-->
-      <article class="tarjeta_proyectos">
-        <h3>Petshop Patitas — Plataforma Web y Catálogo Digital</h3>
-        <p>
-          Plataforma web institucional y catálogo digital interactivo
-          desarrollado para una boutique especializada en mascotas. Diseñado
-          bajo estándares de arquitectura semántica HTML5 y enfocado en la
-          experiencia de usuario (UX), el sitio ofrece una navegación fluida e
-          intuitiva que permite explorar un catálogo organizado de productos
-          de alta gama para perros y gatos. El proyecto integra un sistema de
-          navegación optimizado por anclas, menús desplegables y una sección
-          institucional orientada a comunicar la identidad, misión y valores
-          de la marca con elegancia y claridad.
-        </p>
+        <!-- Indicadores Inferiores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselGaleriaProyectos" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Curriculum"></button>
+          <button type="button" data-bs-target="#carouselGaleriaProyectos" data-bs-slide-to="1"
+            aria-label="Petshop Patitas"></button>
+          <button type="button" data-bs-target="#carouselGaleriaProyectos" data-bs-slide-to="2"
+            aria-label="Superhéroes"></button>
+          <button type="button" data-bs-target="#carouselGaleriaProyectos" data-bs-slide-to="3"
+            aria-label="Game Shop"></button>
+          <button type="button" data-bs-target="#carouselGaleriaProyectos" data-bs-slide-to="4"
+            aria-label="TrailerFlix"></button>
+          <button type="button" data-bs-target="#carouselGaleriaProyectos" data-bs-slide-to="5"
+            aria-label="Tienda Online"></button>
+        </div>
 
-        <figure>
-          <img src="../img/Proyectos/Petshop.png" alt="Vista previa del sitio web Petshop Patitas" />
-          <figcaption>Vista previa del sitio web Petshop Patitas</figcaption>
-        </figure>
+        <!-- Contenido de las diapositivas -->
+        <div class="carousel-inner">
 
-        <p>
-          <strong>
-            <a href="https://github.com/Diplomatura-en-Desarrollo-web/Petshop-Patitas.git" target="_blank"
-              rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-              </svg>
-              Ver repositorio en GitHub
-            </a>
-          </strong>
-        </p>
-      </article>
+          <!-- Proyecto 1: Curriculum Vitae Web -->
+          <div class="carousel-item active">
+            <article class="tarjeta_proyectos">
+              <h3>Mi Curriculum Vitae Web</h3>
+              <p>
+                Este fue uno de mis primeros proyectos integradores, diseñado para
+                consolidar y aplicar los conocimientos adquiridos a lo largo de mi
+                formación. En él presento una visión estructurada de mi perfil
+                profesional, abarcando desde mis datos de contacto y trayectoria
+                laboral, hasta mi formación académica, habilidades técnicas y
+                blandas, certificaciones, idiomas e intereses.
+              </p>
+              <figure>
+                <img src="../img/Proyectos/Curriculum.png" alt="Vista previa de mi curriculum vitae web"
+                  class="carousel-img" />
+                <figcaption>Vista previa de mi curriculum vitae web</figcaption>
+              </figure>
+              <p>
+                <strong>
+                  <a href="https://github.com/Diplomatura-en-Desarrollo-web/Curriculum.git" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    Ver repositorio en GitHub
+                  </a>
+                </strong>
+              </p>
+            </article>
+          </div>
 
-      <!--galería interactiva y gestor de superhéroes-->
-      <article class="tarjeta_proyectos">
-        <h3>Galería Interactiva y Gestor de Superhéroes — Plataforma Web</h3>
-        <p>
-          Plataforma web interactiva desarrollada para la exhibición y gestión
-          dinámica de personajes icónicos. Diseñada bajo principios de
-          maquetación semántica y diseño visual altamente adaptativo
-          (responsive), la aplicación ofrece una experiencia inmersiva
-          mediante tarjetas informativas combinadas con ambientaciones y
-          fondos temáticos personalizados. El proyecto destaca por la
-          implementación de una arquitectura de estilos CSS modular y por la
-          integración de un módulo administrativo independiente para el
-          registro de nuevos personajes mediante un formulario estructurado.
-          Asimismo, prioriza el rendimiento web y la eficiencia en los tiempos
-          de respuesta a través de la optimización y uso exclusivo de formatos
-          multimedia de última generación (WebP).
-        </p>
+          <!-- Proyecto 2: Petshop Patitas -->
+          <div class="carousel-item">
+            <article class="tarjeta_proyectos">
+              <h3>Petshop Patitas — Plataforma Web y Catálogo Digital</h3>
+              <p>
+                Plataforma web institucional y catálogo digital interactivo
+                desarrollado para una boutique especializada en mascotas. Diseñado
+                bajo estándares de arquitectura semántica HTML5 y enfocado en la
+                experiencia de usuario (UX), el sitio ofrece una navegación fluida e
+                intuitiva que permite explorar un catálogo organizado de productos
+                de alta gama para perros y gatos. El proyecto integra un sistema de
+                navegación optimizado por anclas, menús desplegables y una sección
+                institucional orientada a comunicar la identidad, misión y valores
+                de la marca con elegancia y claridad.
+              </p>
+              <figure>
+                <img src="../img/Proyectos/Petshop.png" alt="Vista previa del sitio web Petshop Patitas"
+                  class="carousel-img" />
+                <figcaption>Vista previa del sitio web Petshop Patitas</figcaption>
+              </figure>
+              <p>
+                <strong>
+                  <a href="https://github.com/Diplomatura-en-Desarrollo-web/Petshop-Patitas.git" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    Ver repositorio en GitHub
+                  </a>
+                </strong>
+              </p>
+            </article>
+          </div>
 
-        <figure>
-          <img src="../img/Proyectos/SuperHeroes.png" alt="Vista previa de la plataforma web de Superhéroes" />
-          <figcaption>
-            Vista previa de la plataforma web de Superhéroes
-          </figcaption>
-        </figure>
+          <!-- Proyecto 3: Superhéroes -->
+          <div class="carousel-item">
+            <article class="tarjeta_proyectos">
+              <h3>Galería Interactiva y Gestor de Superhéroes — Plataforma Web</h3>
+              <p>
+                Plataforma web interactiva desarrollada para la exhibición y gestión
+                dinámica de personajes icónicos. Diseñada bajo principios de
+                maquetación semántica y diseño visual altamente adaptativo
+                (responsive), la aplicación ofrece una experiencia inmersiva
+                mediante tarjetas informativas combinadas con ambientaciones y
+                fondos temáticos personalizados. El proyecto destaca por la
+                implementación de una arquitectura de estilos CSS modular y por la
+                integración de un módulo administrativo independiente para el
+                registro de nuevos personajes mediante un formulario estructurado.
+                Asimismo, prioriza el rendimiento web y la eficiencia en los tiempos
+                de respuesta a través de la optimización y uso exclusivo de formatos
+                multimedia de última generación (WebP).
+              </p>
+              <figure>
+                <img src="../img/Proyectos/SuperHeroes.png" alt="Vista previa de la plataforma web de Superhéroes"
+                  class="carousel-img" />
+                <figcaption>Vista previa de la plataforma web de Superhéroes</figcaption>
+              </figure>
+              <p>
+                <strong>
+                  <a href="https://github.com/Diplomatura-en-Desarrollo-web/Super-Heroes.git" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    Ver repositorio en GitHub
+                  </a>
+                </strong>
+              </p>
+            </article>
+          </div>
 
-        <p>
-          <strong>
-            <a href="https://github.com/Diplomatura-en-Desarrollo-web/Super-Heroes.git" target="_blank"
-              rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-              </svg>
-              Ver repositorio en GitHub
-            </a>
-          </strong>
-        </p>
-      </article>
+          <!-- Proyecto 4: Game Shop -->
+          <div class="carousel-item">
+            <article class="tarjeta_proyectos">
+              <h3>Game Shop — Plataforma E-Commerce y Catálogo Gamer</h3>
+              <p>
+                Plataforma e-commerce e interfaz interactiva desarrollada para la
+                comercialización de videojuegos, accesorios e indumentaria del
+                ecosistema gamer. El proyecto combina un diseño moderno estructurado
+                bajo maquetación semántica HTML5 con una experiencia de usuario (UX)
+                ágil e intuitiva. Incorpora banners promocionales con llamadas a la
+                acción (CTA) dinámicas, un catálogo organizado de títulos populares
+                y productos estrella con información de precios y financiación,
+                además de navegación por categorías. Destaca por el uso eficiente de
+                iconografía vectorial (SVG) e imágenes de alta fidelidad optimizadas
+                en formato WebP, garantizando un rendimiento fluido y una
+                presentación visual atractiva.
+              </p>
+              <figure>
+                <img src="../img/Proyectos/GameShop.png" alt="Vista previa de la plataforma web Game Shop"
+                  class="carousel-img" />
+                <figcaption>Vista previa de la plataforma web Game Shop</figcaption>
+              </figure>
+              <p>
+                <strong>
+                  <a href="https://github.com/Diplomatura-en-Desarrollo-web/Game-Shop.git" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    Ver repositorio en GitHub
+                  </a>
+                </strong>
+              </p>
+            </article>
+          </div>
 
-      <!--game shop-->
-      <article class="tarjeta_proyectos">
-        <h3>Game Shop — Plataforma E-Commerce y Catálogo Gamer</h3>
-        <p>
-          Plataforma e-commerce e interfaz interactiva desarrollada para la
-          comercialización de videojuegos, accesorios e indumentaria del
-          ecosistema gamer. El proyecto combina un diseño moderno estructurado
-          bajo maquetación semántica HTML5 con una experiencia de usuario (UX)
-          ágil e intuitiva. Incorpora banners promocionales con llamadas a la
-          acción (CTA) dinámicas, un catálogo organizado de títulos populares
-          y productos estrella con información de precios y financiación,
-          además de navegación por categorías. Destaca por el uso eficiente de
-          iconografía vectorial (SVG) e imágenes de alta fidelidad optimizadas
-          en formato WebP, garantizando un rendimiento fluido y una
-          presentación visual atractiva.
-        </p>
+          <!-- Proyecto 5: TrailerFlix -->
+          <div class="carousel-item">
+            <article class="tarjeta_proyectos">
+              <h3>TrailerFlix — Catálogo Interactivo de Películas y Series</h3>
+              <p>
+                Aplicación web dinámica de streaming e información audiovisual
+                diseñada para la exploración interactiva de películas y series.
+                Desarrollada con JavaScript moderno (ES6+), la plataforma consume
+                una API REST mediante peticiones asíncronas (fetch) para renderizar
+                de forma fluida el catálogo en el DOM. Incorpora un sistema de
+                gestión de sesiones de usuario persistente mediante localStorage y
+                navegación inteligente entre vistas utilizando URLSearchParams para
+                el manejo de parámetros en URL. El proyecto resalta por una
+                arquitectura frontend modular, una sólida gestión de eventos e
+                integración limpia con interfaces maquetadas en HTML5 y CSS3.
+              </p>
+              <figure>
+                <img src="../img/Proyectos/TrailerFlix.png" alt="Vista previa de la plataforma TrailerFlix"
+                  class="carousel-img" />
+                <figcaption>Vista previa de la plataforma TrailerFlix</figcaption>
+              </figure>
+              <p>
+                <strong>
+                  <a href="https://github.com/Diplomatura-en-Desarrollo-web/Trabajo-Trailerflix.git" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    Ver repositorio en GitHub
+                  </a>
+                </strong>
+              </p>
+            </article>
+          </div>
 
-        <figure>
-          <img src="../img/Proyectos/GameShop.png" alt="Vista previa de la plataforma web Game Shop" />
-          <figcaption>Vista previa de la plataforma web Game Shop</figcaption>
-        </figure>
+          <!-- Proyecto 6: Tienda Online -->
+          <div class="carousel-item">
+            <article class="tarjeta_proyectos">
+              <h3>Tienda Online y Carrito de Compras — Plataforma E-Commerce</h3>
+              <p>
+                Tienda web interactiva diseñada para ofrecer una experiencia de
+                compra fluida y dinámica. La plataforma se conecta en tiempo real a
+                un servidor de productos para mostrar un catálogo actualizado de
+                forma automática.
+                <br /><br />
+                El sistema cuenta con dos secciones integradas: una tienda principal
+                donde el usuario puede explorar artículos y agregarlos al carrito de
+                forma instantánea, y una sección de compra dedicada donde es posible
+                ajustar cantidades, eliminar productos y visualizar el total
+                calculado al momento. Toda la información del usuario se conserva de
+                manera segura entre páginas para garantizar una navegación rápida,
+                confiable y sin interrupciones.
+              </p>
+              <figure>
+                <img src="../img/Proyectos/TiendaML.png" alt="Vista previa de la tienda online con carrito de compras"
+                  class="carousel-img" />
+                <figcaption>
+                  Vista previa de la tienda online con carrito de compras
+                </figcaption>
+              </figure>
+              <p>
+                <strong>
+                  <a href="https://github.com/Diplomatura-en-Desarrollo-web/Trabajo-final.git" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    Ver repositorio en GitHub
+                  </a>
+                </strong>
+              </p>
+            </article>
+          </div>
 
-        <p>
-          <strong>
-            <a href="https://github.com/Diplomatura-en-Desarrollo-web/Game-Shop.git" target="_blank"
-              rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-              </svg>
-              Ver repositorio en GitHub
-            </a>
-          </strong>
-        </p>
-      </article>
+        </div>
 
-      <!--trailerflix-->
-      <article class="tarjeta_proyectos">
-        <h3>TrailerFlix — Catálogo Interactivo de Películas y Series</h3>
-        <p>
-          Aplicación web dinámica de streaming e información audiovisual
-          diseñada para la exploración interactiva de películas y series.
-          Desarrollada con JavaScript moderno (ES6+), la plataforma consume
-          una API REST mediante peticiones asíncronas (fetch) para renderizar
-          de forma fluida el catálogo en el DOM. Incorpora un sistema de
-          gestión de sesiones de usuario persistente mediante localStorage y
-          navegación inteligente entre vistas utilizando URLSearchParams para
-          el manejo de parámetros en URL. El proyecto resalta por una
-          arquitectura frontend modular, una sólida gestión de eventos e
-          integración limpia con interfaces maquetadas en HTML5 y CSS3.
-        </p>
+        <!-- Controles laterales de desplazamiento -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaProyectos"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaProyectos"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
 
-        <figure>
-          <img src="../img/Proyectos/TrailerFlix.png" alt="Vista previa de la plataforma TrailerFlix" />
-          <figcaption>Vista previa de la plataforma TrailerFlix</figcaption>
-        </figure>
-
-        <p>
-          <strong>
-            <a href="https://github.com/Diplomatura-en-Desarrollo-web/Trabajo-Trailerflix.git" target="_blank"
-              rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-              </svg>
-              Ver repositorio en GitHub
-            </a>
-          </strong>
-        </p>
-      </article>
-
-      <!--tienda online y carrito de compras-->
-      <article class="tarjeta_proyectos">
-        <h3>Tienda Online y Carrito de Compras — Plataforma E-Commerce</h3>
-        <p>
-          Tienda web interactiva diseñada para ofrecer una experiencia de
-          compra fluida y dinámica. La plataforma se conecta en tiempo real a
-          un servidor de productos para mostrar un catálogo actualizado de
-          forma automática.
-          <br /><br />
-          El sistema cuenta con dos secciones integradas: una tienda principal
-          donde el usuario puede explorar artículos y agregarlos al carrito de
-          forma instantánea, y una sección de compra dedicada donde es posible
-          ajustar cantidades, eliminar productos y visualizar el total
-          calculado al momento. Toda la información del usuario se conserva de
-          manera segura entre páginas para garantizar una navegación rápida,
-          confiable y sin interrupciones.
-        </p>
-
-        <figure>
-          <img src="../img/Proyectos/TiendaML.png" alt="Vista previa de la tienda online con carrito de compras" />
-          <figcaption>
-            Vista previa de la tienda online con carrito de compras
-          </figcaption>
-        </figure>
-
-        <p>
-          <strong>
-            <a href="https://github.com/Diplomatura-en-Desarrollo-web/Trabajo-final.git" target="_blank"
-              rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-              </svg>
-              Ver repositorio en GitHub
-            </a>
-          </strong>
-        </p>
-      </article>
+      </div>
     </section>
   </main>
 
@@ -314,6 +398,9 @@
 
     <p>© 2026 Daniela Romero — Desarrolladora Web y de Apps</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -13,37 +13,69 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&display=swap"
     rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 </head>
 
 <body>
-  <header class="header_principal">
-    <a href="../index.html"><img src="../img/logo.png" alt="Logo de Daniela Romero, desarrolladora web y de app"
-        width="100" /></a>
+  <header class="header_principal navbar navbar-expand-lg navbar-light navbar_propia">
 
-    <nav class="navegacion">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="sobre_mi.html">Sobre mí</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="container-fluid">
+
+      <!-- Logo / Identidad de marca -->
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo.png" alt="Logo de Daniela Romero, desarrolladora web y de app" width="100" />
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú de navegación principal -->
+      <nav class="navegacion collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="sobre_mi.html">Sobre mí</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">Proyectos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+
   </header>
-
   <!-- Contenido Principal -->
   <main>
     <!-- Presentación de la sección (Sobre mí) -->
     <section class="contenido_principal">
       <article>
-      <figure>
+        <figure>
           <img src="../img/hero_section.png" alt="Imagen representativa de Daniela Romero" height="500" />
-      </figure>
-      <h1>Sobre mí</h1>
-      <p>
-        Explora mi trayectoria profesional, metodología de desarrollo y visión
-        técnica en la construcción de soluciones digitales.
-      </p>
+        </figure>
+        <h1>Sobre mí</h1>
+        <p>
+          Explora mi trayectoria profesional, metodología de desarrollo y
+          visión técnica en la construcción de soluciones digitales.
+        </p>
       </article>
     </section>
 
@@ -51,7 +83,7 @@
     <section class="seccion_perfil">
       <h2>Perfil Profesional</h2>
       <figure>
-        <img src="../img/Perfil.jpeg" alt="Fotografía profesional de Daniela Romero" height="400">
+        <img src="../img/Perfil.jpeg" alt="Fotografía profesional de Daniela Romero" height="400" />
         <figcaption>Daniela Romero - Desarrollo Web y Apps</figcaption>
       </figure>
 
@@ -411,12 +443,12 @@
         </li>
         <li>
           <article class="caja_habilidades">
-          <h4>Programación Web (Cliente y Servidor)</h4>
-          <p>
-            Uso de JavaScript para dar vida e interacción a las páginas web,
-            conectar sitios con bases de datos y construir servidores de
-            fondo mediante Node.js.
-          </p>
+            <h4>Programación Web (Cliente y Servidor)</h4>
+            <p>
+              Uso de JavaScript para dar vida e interacción a las páginas web,
+              conectar sitios con bases de datos y construir servidores de
+              fondo mediante Node.js.
+            </p>
           </article>
         </li>
         <li>
@@ -537,6 +569,9 @@
 
     <p>© 2026 Daniela Romero — Desarrolladora Web y de Apps</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
