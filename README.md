@@ -43,7 +43,6 @@
 - [♿ Accesibilidad y Posicionamiento (SEO)](#-accesibilidad-y-posicionamiento-seo)
 - [⚡ Rendimiento y Optimización](#-rendimiento-y-optimización)
 - [🌍 Compatibilidad](#-compatibilidad)
-- [🧩 Próximas Mejoras](#-próximas-mejoras)
 - [👩‍💻 Sobre la Autora](#-sobre-la-autora)
 - [📬 Contacto](#-contacto)
 - [📄 Licencia](#-licencia)
@@ -306,19 +305,6 @@ Un sitio accesible es, además, un sitio mejor posicionado: ambos objetivos comp
 | Opera | ✅ |
 
 Compatible con las dos últimas versiones estables de cada navegador, siguiendo los estándares de soporte oficiales de Bootstrap 5.
-
----
-
-## 🧩 Próximas Mejoras
-
-- [ ] Modo oscuro (*dark mode*) mediante variables CSS.
-- [ ] Formulario de contacto funcional integrado con un servicio de envío de correos.
-- [ ] Conversión de imágenes a formato WebP para reducir aún más los tiempos de carga.
-- [ ] Animaciones al desplazar la página (*scroll reveal*) para reforzar la narrativa visual.
-- [ ] Migración de la hoja de estilos a SCSS con metodología BEM estricta.
-- [ ] Versión en inglés del portafolio (internacionalización).
-- [ ] Auditorías automatizadas de accesibilidad y rendimiento con Lighthouse.
-- [ ] Incorporación de capturas reales en la sección de vista previa.
 
 ---
 
