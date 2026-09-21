@@ -1,0 +1,105 @@
+@use "../utilities/variables" as *;
+
+/* ========================================== */
+/* FOOTER PRINCIPAL                           */
+/* Variante genérica de contenedor de footer. */
+/* Nota: la clase realmente utilizada en el    */
+/* HTML es ".pie_pagina" (bloque siguiente);   */
+/* esta clase queda disponible como alternativa*/
+/* de nomenclatura para futuras páginas.       */
+/* ========================================== */
+
+.footer_principal {
+  background-color: $color-primary-dark;
+  text-align: center;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+/* ========================================== */
+/* PIE DE PÁGINA / FOOTER                     */
+/* Contenedor del footer + navegación de       */
+/* íconos sociales/contacto con sus estados    */
+/* :hover, :focus, :active.                    */
+/* ========================================== */
+
+.pie_pagina {
+  background-color: $color-primary-dark;
+  color: $color-white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+// Contenedor de la navegación del footer (lista de enlaces/íconos)
+.navegacion_footer {
+  width: 100%;
+  max-width: 900px;
+}
+
+.navegacion_footer ul {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+// Cada enlace se muestra como botón circular con ícono SVG centrado
+.navegacion_footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $color-white;
+  background-color: $color-primary-dark;
+
+  box-shadow:
+    0 4px 12px $color-rgba-84-53-33-0p25;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.navegacion_footer a svg {
+  width: 20px;
+  height: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.navegacion_footer a:hover {
+  color: $color-white;
+  background-color: $color-primary;
+
+  box-shadow:
+    0 8px 20px $color-rgba-84-53-33-0p35;
+}
+
+.navegacion_footer a:hover svg {
+  opacity: 0.9;
+}
+
+.navegacion_footer a:focus {
+  outline: 2px solid $color-primary-dark;
+  outline-offset: 4px;
+}
+
+.navegacion_footer a:active {
+  box-shadow:
+    0 2px 6px $color-rgba-84-53-33-0p2;
+}

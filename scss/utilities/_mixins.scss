@@ -1,0 +1,9 @@
+/* ========================================== */
+/* MIXINS REUTILIZABLES                       */
+/* Herramientas SCSS para evitar repetir       */
+/* declaraciones de transición e interacción.  */
+/* ========================================== */
+
+@mixin transition($values...) {
+  transition: $values;
+}

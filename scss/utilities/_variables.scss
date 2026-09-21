@@ -1,0 +1,105 @@
+//* ========================================== */
+/* VARIABLES GLOBALES Y PALETA DE COLORES     */
+/* Centraliza los valores reutilizados en todo */
+/* el proyecto para mantener consistencia      */
+/* visual y facilitar cambios futuros.         */
+/* ========================================== */
+
+$color-bg-body: rgb(255, 248, 248);
+$color-primary: rgb(196, 141, 104);
+$color-primary-dark: rgb(84, 53, 33);
+$color-secondary-light: rgb(225, 192, 170);
+$color-accent-dark: rgb(112, 72, 42);
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$font-principal: 'Google Sans Flex', sans-serif;
+
+/* ========================================== */
+/* COLORES COMPLEMENTARIOS                    */
+/* Valores originales del diseño, centralizados */
+/* para evitar colores repetidos en partials.  */
+/* ========================================== */
+$color-rgba-84-53-33-0p25: rgba(84, 53, 33, 0.25);
+$color-rgba-84-53-33-0p35: rgba(84, 53, 33, 0.35);
+$color-rgba-84-53-33-0p2: rgba(84, 53, 33, 0.2);
+$color-rgb-250-244-240: rgb(250, 244, 240);
+$color-rgb-206-154-119: rgb(206, 154, 119);
+$color-rgb-236-216-202: rgb(236, 216, 202);
+$color-rgb-214-171-143: rgb(214, 171, 143);
+$color-rgb-255-250-247: rgb(255, 250, 247);
+$color-hex-111111: #111111;
+$color-rgb-202-151-117: rgb(202, 151, 117);
+$color-rgb-231-202-184: rgb(231, 202, 184);
+$color-rgb-139-101-75: rgb(139, 101, 75);
+$color-rgba-84-53-33-0p18: rgba(84, 53, 33, 0.18);
+$color-rgba-84-53-33-0p22: rgba(84, 53, 33, 0.22);
+$color-rgb-222-191-171: rgb(222, 191, 171);
+$color-rgb-241-223-212: rgb(241, 223, 212);
+$color-hex-333333: #333333;
+$color-rgb-123-72-40: rgb(123, 72, 40);
+$color-rgb-54-31-17: rgb(54, 31, 17);
+$color-rgb-250-243-239: rgb(250, 243, 239);
+$color-rgba-215-164-132: rgba(215, 164, 132);
+$color-rgb-215-164-132: rgb(215, 164, 132);
+$color-rgb-184-116-71: rgb(184, 116, 71);
+$color-rgb-19-11-6: rgb(19, 11, 6);
+$color-hex-222222: #222222;
+$color-rgb-228-202-186: rgb(228, 202, 186);
+$color-rgb-246-237-232: rgb(246, 237, 232);
+$color-rgb-255-233-219: rgb(255, 233, 219);
+$color-rgb-68-51-40: rgb(68, 51, 40);
+$color-rgb-185-162-148: rgb(185, 162, 148);
+$color-rgb-249-240-242: rgb(249, 240, 242);
+$color-hex-070707: #070707;
+$color-rgb-176-127-94: rgb(176, 127, 94);
+$color-rgb-120-88-66: rgb(120, 88, 66);
+$color-rgb-236-212-198: rgb(236, 212, 198);
+$color-hex-141414: #141414;
+$color-rgb-103-75-57: rgb(103, 75, 57);
+$color-rgb-233-207-190: rgb(233, 207, 190);
+$color-rgb-253-250-248: rgb(253, 250, 248);
+$color-rgb-157-114-85: rgb(157, 114, 85);
+$color-rgb-51-33-20: rgb(51, 33, 20);
+$color-rgb-234-209-193: rgb(234, 209, 193);
+$color-rgb-189-115-66: rgb(189, 115, 66);
+$color-rgb-248-241-236: rgb(248, 241, 236);
+$color-hex-131212: #131212;
+$color-hex-1a1919: #1a1919;
+$color-hex-0f0f0f: #0f0f0f;
+$color-rgb-246-234-226: rgb(246, 234, 226);
+$color-hex-1b1a1a: #1b1a1a;
+$color-rgba-0-0-0-0p15: rgba(0, 0, 0, 0.15);
+$color-rgba-43-27-18-0p68: rgba(43, 27, 18, 0.68);
+$color-rgba-255-255-255-0p12: rgba(255, 255, 255, 0.12);
+$color-rgba-0-0-0-0p25: rgba(0, 0, 0, 0.25);
+$color-rgba-0-0-0-0p4: rgba(0, 0, 0, 0.4);
+$color-rgba-43-27-18-0p75: rgba(43, 27, 18, 0.75);
+$color-rgba-0-0-0-0p28: rgba(0, 0, 0, 0.28);
+$color-hex-c48d68: #c48d68;
+$color-rgba-196-141-104-0p6: rgba(196, 141, 104, 0.6);
+$color-rgba-84-53-33-0p8: rgba(84, 53, 33, 0.8);
+$color-rgba-255-255-255-0p2: rgba(255, 255, 255, 0.2);
+$color-rgba-255-255-255-0p4: rgba(255, 255, 255, 0.4);
+$color-rgba-196-141-104-0p4: rgba(196, 141, 104, 0.4);
+$color-rgba-0-0-0-0p3: rgba(0, 0, 0, 0.3);
+$color-hex-fafafa: #fafafa;
+$color-rgba-84-53-33-0p3: rgba(84, 53, 33, 0.3);
+$color-rgb-0-0-0-0p18: rgb(0, 0, 0, 0.18);
+$color-rgba-84-53-33-0p82: rgba(84, 53, 33, 0.82);
+$color-rgba-84-53-33-0p45: rgba(84, 53, 33, 0.45);
+$color-rgba-84-53-33-0: rgba(84, 53, 33, 0);
+$color-rgba-43-27-18-0p8: rgba(43, 27, 18, 0.8);
+$color-rgba-43-27-18-0p5: rgba(43, 27, 18, 0.5);
+$color-rgb-255-255-255: rgb(255, 255, 255);
+$color-rgba-84-53-33-0p88: rgba(84, 53, 33, 0.88);
+$color-rgba-84-53-33-0p48: rgba(84, 53, 33, 0.48);
+$color-rgba-196-141-104-0p55: rgba(196, 141, 104, 0.55);
+$color-rgba-84-53-33-0p78: rgba(84, 53, 33, 0.78);
+$color-rgba-255-255-255-0p18: rgba(255, 255, 255, 0.18);
+$color-rgba-0-0-0-0p22: rgba(0, 0, 0, 0.22);
+$color-rgba-196-141-104-0p9: rgba(196, 141, 104, 0.9);
+$color-rgba-84-53-33-0p42: rgba(84, 53, 33, 0.42);
+$color-rgba-84-53-33-0p06: rgba(84, 53, 33, 0.06);
+$color-rgba-84-53-33-0p15: rgba(84, 53, 33, 0.15);

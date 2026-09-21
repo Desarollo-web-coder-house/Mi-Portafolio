@@ -1,0 +1,54 @@
+@use "../utilities/variables" as *;
+
+/* ========================================== */
+/* NAVEGACIÓN PRINCIPAL                      */
+/* Menú responsive y estados interactivos.     */
+/* ========================================== */
+
+.header_principal {
+  .navegacion {
+    .navbar-nav {
+      gap: 20px;
+    }
+
+    .nav-link {
+      color: $color-black !important;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      padding: 8px 12px !important;
+      transition: color 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        color: $color-white !important;
+        background-color: $color-primary-dark;
+      }
+
+      &:focus {
+        color: $color-white !important;
+        background-color: $color-accent-dark;
+        outline: 2px solid $color-primary-dark;
+        outline-offset: 2px;
+      }
+
+      &:active {
+        color: $color-white !important;
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .navegacion {
+      width: 100%;
+      text-align: center;
+
+      .navbar-nav {
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}
+
+

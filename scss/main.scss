@@ -1,0 +1,17 @@
+/* ========================================== */
+/* ARCHIVO MAESTRO DE SCSS                    */
+/* Único punto de entrada del proyecto.       */
+/* ========================================== */
+
+@use "utilities/variables" as *;
+@use "utilities/mixins";
+
+@use "base/tipografia";
+@use "base/base";
+
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+
+@use "components/buttons";
+@use "components/cards";

@@ -1,0 +1,868 @@
+@use "../utilities/variables" as *;
+
+/* ========================================== */
+/* ESTILOS GENERALES Y RESETEO                */
+/* Normaliza el comportamiento por defecto     */
+/* del navegador para partir de una base       */
+/* consistente en todo el sitio.               */
+/* ========================================== */
+
+// Reset universal: elimina márgenes/paddings por defecto del
+// navegador y unifica el modelo de caja a "border-box" para que
+// el padding y el border no sumen al ancho/alto definidos.
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Estilos base del <body>: tipografía, tamaño y color de fondo
+// aplicados globalmente y heredados por el resto de los elementos.
+
+/* ========================================== */
+/* CONTENIDO PRINCIPAL                        */
+/* Bloque "hero" del index: imagen de portada, */
+/* título principal y texto de presentación.   */
+/* ========================================== */
+
+.contenido_principal {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+// Tarjeta hero: overflow hidden para que la imagen de portada
+// respete el recorte del contenedor sin desbordar sus bordes.
+.contenido_principal article {
+  background-color: $color-rgb-206-154-119;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  padding: 0 0 40px 0;
+  overflow: hidden;
+}
+
+.contenido_principal article figure {
+  width: 100%;
+  margin: 0;
+}
+
+// Imagen de portada a ancho completo, recortada con object-fit
+// para mantener una altura fija sin deformar la foto.
+.contenido_principal article figure img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.contenido_principal article h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+// Párrafo de presentación/bajada debajo del título principal
+.seccion_presentacion article p {
+  font-size: 20px;
+  margin-top: 40px;
+  line-height: 1.5;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ========================================== */
+/* SECCIÓN SOBRE MÍ                           */
+/* Bloque de presentación personal con foto,   */
+/* texto y enlace de llamada a la acción.      */
+/* ========================================== */
+
+.sobre_mi {
+  background-color: $color-secondary-light;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.sobre_mi article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.sobre_mi article h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  line-height: 1.1;
+}
+
+.sobre_mi article figure {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50px;
+
+  transition:
+    box-shadow 0.35s ease;
+}
+
+.sobre_mi figure:hover {
+  box-shadow:
+    0 10px 24px $color-primary;
+}
+
+.sobre_mi article figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  display: block;
+}
+
+.sobre_mi article p {
+  background-color: $color-rgb-236-216-202;
+  padding: 20px;
+  margin: 20px auto;
+  font-size: 20px;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+  border-radius: 10px;
+
+  box-shadow:
+    0 4px 15px $color-rgb-214-171-143;
+}
+
+.sobre_mi article a {
+  background-color: $color-rgb-255-250-247;
+  padding: 10px 20px;
+  margin: 10px auto;
+  font-size: 16px;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+  color: $color-hex-111111;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.sobre_mi article>a:hover {
+  color: $color-white;
+  background-color: $color-primary-dark;
+
+  box-shadow:
+    0 4px 15px $color-rgb-214-171-143;
+}
+
+.sobre_mi article>a:focus {
+  outline: 2px solid $color-primary;
+  outline-offset: 4px;
+}
+
+.sobre_mi article>a:active {
+  box-shadow:
+    0 2px 7px $color-rgba-84-53-33-0p2;
+}
+
+/* ========================================== */
+/* SERVICIOS PRINCIPAL                        */
+/* Grilla flexible de servicios ofrecidos,     */
+/* mostrada en el index.html.                  */
+/* ========================================== */
+
+.servicios_principal {
+  background-color: $color-rgb-202-151-117;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.servicios_principal h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.servicios_principal ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicios_principal li {
+  background-color: $color-secondary-light;
+  padding: 20px;
+  margin: 20px;
+  flex: 1 1 280px;
+  max-width: 360px;
+  display: flex;
+  border-radius: 10px;
+}
+
+/* ========================================== */
+/* PROYECTOS PRINCIPAL                        */
+/* Sección introductoria de proyectos en el    */
+/* index.html (contiene al carrusel de vista   */
+/* previa, estilizado en _carousel.scss).      */
+/* ========================================== */
+
+.proyectos_principal {
+  background-color: $color-secondary-light;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.proyectos_principal article {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.proyectos_principal article h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+.proyectos_principal article p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+.proyectos_principal article a {
+  background-color: $color-rgb-255-250-247;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+  color: $color-hex-111111;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* ========================================== */
+/* CONTACTO PRINCIPAL                         */
+/* Sección de contacto del index.html: título, */
+/* texto y lista de íconos/enlaces de redes.   */
+/* ========================================== */
+
+.contacto_principal {
+  background-color: $color-rgb-202-151-117;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.contacto_principal article {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.contacto_principal article h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.contacto_principal article p {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.contacto_principal ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contacto_principal ul li {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.contacto_principal article ul li a {
+  font-size: 20px;
+  background-color: $color-rgb-202-151-117;
+  text-decoration: none;
+  color: $color-hex-111111;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 14px;
+
+  transition:
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.contacto_principal article ul li a:hover {
+  color: $color-black;
+  background-color: $color-rgb-231-202-184;
+
+  box-shadow:
+    0 9px 22px $color-rgb-139-101-75;
+}
+
+.contacto_principal article ul li a:focus {
+  outline: 2px solid $color-rgb-231-202-184;
+  outline-offset: 4px;
+}
+
+.contacto_principal article ul li a:active {
+  box-shadow:
+    0 2px 7px $color-rgba-84-53-33-0p18;
+}
+
+.contacto_principal article ul li a svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.contacto_principal article a {
+  background-color: $color-rgb-255-250-247;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: $color-hex-111111;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contacto_principal article a:hover {
+  color: $color-white;
+  background-color: $color-primary-dark;
+
+  box-shadow:
+    0 6px 16px $color-rgba-84-53-33-0p22;
+}
+
+.contacto_principal article a:focus {
+  outline: 2px solid $color-primary;
+  outline-offset: 4px;
+}
+
+.contacto_principal article a:active {
+  box-shadow:
+    0 2px 7px $color-rgba-84-53-33-0p18;
+}
+
+/* ========================================== */
+/* SECCIÓN PERFIL (SOBRE_MI.HTML)             */
+/* Bloque de foto + biografía extendida usado  */
+/* en la página "Sobre mí".                    */
+/* ========================================== */
+
+.seccion_perfil {
+  background-color: $color-rgb-222-191-171;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 20px;
+}
+
+.seccion_perfil h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.seccion_perfil figure {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50px;
+
+  transition:
+    box-shadow 0.35s ease;
+}
+
+.seccion_perfil figure:hover {
+  box-shadow:
+    0 10px 24px $color-primary;
+}
+
+.seccion_perfil figure img {
+  transition: filter 0.4s ease;
+}
+
+.seccion_perfil figure:hover img {
+  filter: brightness(1.03);
+}
+
+.seccion_perfil figure img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 50px;
+  height: auto;
+  display: block;
+}
+
+.seccion_perfil p {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  color: $color-hex-111111;
+}
+
+/* ========================================== */
+/* ADAPTACIÓN A CELULARES Y TABLETS           */
+/* Ajustes responsive transversales que no      */
+/* dependen de un breakpoint específico: evitan */
+/* scroll horizontal y controlan el quiebre de  */
+/* palabras/texto largo en pantallas chicas.    */
+/* ========================================== */
+
+// Evita el scroll horizontal accidental provocado por elementos
+// que puedan desbordar el viewport en pantallas angostas.
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+}
+
+// Ninguna imagen o ícono debe superar el ancho de su contenedor
+img,
+svg {
+  max-width: 100%;
+}
+
+// Permite cortar palabras largas (URLs, nombres de proyecto) para
+// que nunca fuercen un desborde horizontal en pantallas chicas
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+strong,
+figcaption {
+  overflow-wrap: anywhere;
+}
+
+.header_principal {
+  gap: 20px;
+}
+
+.navegacion {
+  min-width: 0;
+}
+
+.navegacion ul {
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.contenido_principal article figure img {
+  height: clamp(240px, 50vw, 500px);
+}
+
+.contenido_principal article h1 {
+  font-size: clamp(2rem, 6vw, 3.125rem);
+}
+
+.servicios_principal li,
+.caja_solucion,
+.caja_aplicaciones,
+.tarjeta_proyectos {
+  margin: 0;
+}
+
+/* ========================================== */
+/* TABLETS Y CELULARES                        */
+/* Breakpoint principal (<=768px): reduce       */
+/* tamaños de fuente/paddings y apila el menú   */
+/* y las tarjetas en una sola columna.          */
+/* ========================================== */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* ---------- HEADER ---------- */
+
+  .header_principal {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .header_principal img {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto;
+
+  }
+
+  .navegacion {
+    width: 100%;
+  }
+
+  /* MENÚ VERTICAL */
+  .navegacion ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .navegacion li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navegacion a {
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  /* ---------- CONTENIDO ---------- */
+
+  .contenido_principal article h1 {
+    margin-top: 26px;
+    margin-bottom: 12px;
+  }
+
+  .contenido_principal article p,
+  .sobre_mi article p,
+  .seccion_perfil p,
+  .seccion_stack p,
+  .seccion_pilares p,
+  .seccion_habilidades p,
+  .caja_servicios p {
+    font-size: 1rem;
+  }
+
+  .sobre_mi,
+  .servicios_principal,
+  .proyectos_principal,
+  .contacto_principal,
+  .seccion_perfil,
+  .seccion_formacion,
+  .seccion_stack,
+  .seccion_pilares,
+  .seccion_habilidades,
+  .servicios,
+  .seccion_soluciones,
+  .subseccion_aplicaciones,
+  .seccion_proyectos,
+  .seccion_contacto {
+    padding: 28px 14px;
+  }
+
+  .sobre_mi article,
+  .proyectos_principal article,
+  .contacto_principal article,
+  .caja_categoria,
+  .caja_servicios,
+  .caja_solucion,
+  .caja_aplicaciones,
+  .tarjeta_proyectos,
+  .tarjeta_contacto {
+    padding: 18px 14px;
+  }
+
+  .sobre_mi article h2,
+  .servicios_principal h2,
+  .proyectos_principal article h2,
+  .contacto_principal article h2,
+  .seccion_perfil h2,
+  .seccion_formacion h2,
+  .seccion_stack h2,
+  .seccion_pilares h2,
+  .seccion_habilidades h2,
+  .servicios h2,
+  .seccion_soluciones h2,
+  .subseccion_soluciones h3 {
+    font-size: clamp(1.5rem, 6vw, 2.25rem);
+  }
+
+  .servicios_principal li,
+  .subseccion_soluciones ul li,
+  .subseccion_aplicaciones ul li {
+    flex-basis: 100%;
+    max-width: 520px;
+  }
+
+  .servicios_principal li article {
+    padding: 12px;
+  }
+
+  .servicios_principal ul>a,
+  .proyectos_principal article a,
+  .sobre_mi article a,
+  .contacto_principal article>a,
+  .tarjeta_proyectos a,
+  .tarjeta_contacto a,
+  .subseccion_soluciones article a,
+  .subseccion_aplicaciones article a {
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seccion_formacion>ul>li {
+    padding: 18px 14px;
+  }
+
+  .subseccion_tecnica {
+    padding: 12px 0;
+  }
+
+  .subseccion_soluciones {
+    padding: 26px 12px;
+  }
+
+  .caja_solucion figure,
+  .caja_aplicaciones figure {
+    max-width: min(260px, 100%);
+  }
+
+  .tarjeta_proyectos h2,
+  .tarjeta_proyectos h3,
+  .tarjeta_proyectos p,
+  .seccion_contacto h2,
+  .seccion_contacto p,
+  .tarjeta_contacto h3,
+  .tarjeta_contacto p {
+    margin: 8px 0;
+  }
+
+  .footer_principal,
+  .pie_pagina {
+    padding: 24px 14px;
+  }
+}
+
+/* ========================================== */
+/* CELULARES PEQUEÑOS                         */
+/* Ajustes finos adicionales (<=480px) para     */
+/* pantallas muy angostas: header, menú y      */
+/* tarjetas más compactas.                     */
+/* ========================================== */
+
+@media (max-width: 480px) {
+
+  .header_principal {
+    gap: 8px;
+    padding: 10px 8px;
+  }
+
+  .header_principal img {
+    width: 58px;
+    height: 58px;
+  }
+
+  /* MENÚ VERTICAL PARA CELULARES PEQUEÑOS */
+  .navegacion ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .navegacion li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navegacion a {
+    display: block;
+    width: 100%;
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .contenido_principal article figure img {
+    height: 240px;
+  }
+
+  .contacto_principal ul {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .contacto_principal ul li,
+  .contacto_principal article ul li a {
+    width: 100%;
+  }
+
+  .contacto_principal article ul li a {
+    justify-content: center;
+  }
+
+  .caja_solucion,
+  .caja_aplicaciones,
+  .tarjeta_proyectos,
+  .tarjeta_contacto {
+    padding: 14px 10px;
+  }
+
+  .tarjeta_proyectos a,
+  .tarjeta_contacto a,
+  .subseccion_soluciones article a,
+  .subseccion_aplicaciones article a {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ========================================== */
+/* PRE-ENTREGA 4 - GRID                       */
+/* GRID SERVICIOS                             */
+/* Grilla CSS (mobile first) para la lista de  */
+/* soluciones/servicios en la página servicios.*/
+/* ========================================== */
+
+/* Estilos base (Mobile First: 1 sola columna por defecto) */
+.servicios .subseccion_soluciones ul {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr;
+}
+
+.servicios .subseccion_soluciones ul li {
+  min-width: 0;
+}
+
+/* Breakpoint para pantallas grandes (Desktop First en la jerarquía, Mobile First en la lógica) */
+@media (min-width: 1024px) {
+  .servicios .subseccion_soluciones:nth-of-type(2) ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* ========================================== */
+/* GRID SOBRE MÍ                              */
+/* Grilla CSS (mobile first) para las tarjetas */
+/* de "pilares"/filosofía en la sección Sobre  */
+/* mí: 1 columna en mobile, 2 en tablet y 3 en */
+/* escritorio.                                 */
+/* ========================================== */
+
+/* Estilos base Mobile: flujo vertical centrado */
+.seccion_pilares ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.seccion_pilares ul li {
+  min-width: 0;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* Breakpoint Tablet/Escritorio medio: 2 columnas */
+@media (min-width: 768px) {
+  .seccion_pilares ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .seccion_pilares ul li {
+    max-width: 100%;
+  }
+}
+
+/* Breakpoint Desktop: 3 columnas, el 4to pilar queda alineado a la izquierda en la segunda fila */
+@media (min-width: 1024px) {
+  .seccion_pilares ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

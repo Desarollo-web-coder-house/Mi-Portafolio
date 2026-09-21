@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+
+/* ========================================== */
+/* TIPOGRAFÍA GENERAL                         */
+/* Mantiene exactamente la tipografía original */
+/* del portafolio sin modificar su apariencia. */
+/* ========================================== */
+
+body {
+  font-family: $font-principal;
+  font-size: 16px;
+  line-height: 2;
+  background-color: $color-bg-body;
+}

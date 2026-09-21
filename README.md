@@ -25,27 +25,109 @@
 
 ---
 
+## 🎨 Arquitectura SCSS — Pre-Entrega
+
+La hoja de estilos fue refactorizada completamente a SCSS sin modificar las cinco páginas HTML ni la identidad visual existente. El proyecto utiliza `scss/main.scss` como único punto de entrada y `@use` para orquestar todos los partials.
+
+### Estructura obligatoria
+
+```text
+scss/
+├── main.scss
+├── utilities/
+│   ├── _variables.scss
+│   └── _mixins.scss
+├── base/
+│   ├── _tipografia.scss
+│   └── _base.scss
+├── layout/
+│   ├── _header.scss
+│   ├── _footer.scss
+│   └── _nav.scss
+└── components/
+    ├── _buttons.scss
+    └── _cards.scss
+```
+
+No se agregan otras carpetas dentro de `scss/`. Los colores y demás valores reutilizados se centralizan en `_variables.scss`; los mixins reutilizables se encuentran en `_mixins.scss`; y los componentes utilizan variables en lugar de colores escritos directamente.
+
+### Compilación
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Compilar el único archivo CSS final:
+
+```bash
+npm run build
+```
+
+> **Importante:** `css/style.css` es un archivo generado. Después de cualquier modificación dentro de `scss/`, ejecutá `npm run build` para actualizarlo.
+
+### Checklist de cumplimiento de la Pre-Entrega
+
+- `scss/main.scss` es el único punto de entrada y utiliza `@use`.
+- La arquitectura se divide en `utilities`, `base`, `layout` y `components`.
+- Los colores reutilizados están centralizados en `_variables.scss`.
+- Los mixins reutilizables están centralizados en `_mixins.scss`.
+- Se utiliza nesting y `&` en los componentes y estados interactivos.
+- La responsividad está organizada con metodología **Mobile First** y breakpoints ascendentes mediante `min-width`.
+- Se mantienen los estados `:hover`, `:focus` y `:active` donde aportan interacción.
+- No se utilizan transformaciones `transform` para los efectos visuales.
+- El diseño visual, la paleta y la estructura HTML original se conservan.
+
+El comando genera:
+
+```text
+css/style.css
+```
+
+Para trabajar con compilación automática:
+
+```bash
+npm run watch
+```
+
+El CSS generado no utiliza source map, por lo que el entregable conserva un único archivo CSS final.
+
+---
+
 ## 📖 Tabla de Contenidos
 
-- [🔗 Sitio en Producción](#-sitio-en-producción)
-- [🎯 Filosofía del Proyecto](#-filosofía-del-proyecto)
-- [🧭 Descripción General](#-descripción-general)
-- [🖼️ Vista Previa](#️-vista-previa)
-- [✨ Características Principales](#-características-principales)
-- [🛠️ Stack Tecnológico](#️-stack-tecnológico)
-- [📂 Arquitectura del Proyecto](#-arquitectura-del-proyecto)
-- [🔍 Detalle Técnico por Vista](#-detalle-técnico-por-vista)
-- [🎨 Sistema de Diseño](#-sistema-de-diseño)
-- [🚀 Instalación y Puesta en Marcha](#-instalación-y-puesta-en-marcha)
-- [🌐 Despliegue en GitHub Pages](#-despliegue-en-github-pages)
-- [🗺️ Mapa del Sitio](#️-mapa-del-sitio)
-- [🧱 Principios de Trabajo y Buenas Prácticas](#-principios-de-trabajo-y-buenas-prácticas)
-- [♿ Accesibilidad y Posicionamiento (SEO)](#-accesibilidad-y-posicionamiento-seo)
-- [⚡ Rendimiento y Optimización](#-rendimiento-y-optimización)
-- [🌍 Compatibilidad](#-compatibilidad)
-- [👩‍💻 Sobre la Autora](#-sobre-la-autora)
-- [📬 Contacto](#-contacto)
-- [📄 Licencia](#-licencia)
+- [🌐 Portafolio Profesional — Daniela Romero](#-portafolio-profesional--daniela-romero)
+    - [**Desarrolladora Web y de Aplicaciones**](#desarrolladora-web-y-de-aplicaciones)
+    - [🔗 **VER SITIO EN VIVO →**](#-ver-sitio-en-vivo-)
+  - [🎨 Arquitectura SCSS — Pre-Entrega](#-arquitectura-scss--pre-entrega)
+    - [Estructura obligatoria](#estructura-obligatoria)
+    - [Compilación](#compilación)
+    - [Checklist de cumplimiento de la Pre-Entrega](#checklist-de-cumplimiento-de-la-pre-entrega)
+  - [📖 Tabla de Contenidos](#-tabla-de-contenidos)
+  - [🔗 Sitio en Producción](#-sitio-en-producción)
+  - [🎯 Filosofía del Proyecto](#-filosofía-del-proyecto)
+  - [🧭 Descripción General](#-descripción-general)
+  - [🖼️ Vista Previa](#️-vista-previa)
+  - [✨ Características Principales](#-características-principales)
+  - [🛠️ Stack Tecnológico](#️-stack-tecnológico)
+  - [🎨 Arquitectura SCSS — Entrega de refactorización](#-arquitectura-scss--entrega-de-refactorización)
+    - [Compilación](#compilación-1)
+  - [📂 Arquitectura del Proyecto](#-arquitectura-del-proyecto)
+  - [🔍 Detalle Técnico por Vista](#-detalle-técnico-por-vista)
+  - [🎨 Sistema de Diseño](#-sistema-de-diseño)
+  - [🚀 Instalación y Puesta en Marcha](#-instalación-y-puesta-en-marcha)
+  - [🌐 Despliegue en GitHub Pages](#-despliegue-en-github-pages)
+    - [Cómo replicar este despliegue](#cómo-replicar-este-despliegue)
+    - [Alternativas de despliegue](#alternativas-de-despliegue)
+  - [🗺️ Mapa del Sitio](#️-mapa-del-sitio)
+  - [🧱 Principios de Trabajo y Buenas Prácticas](#-principios-de-trabajo-y-buenas-prácticas)
+  - [♿ Accesibilidad y Posicionamiento (SEO)](#-accesibilidad-y-posicionamiento-seo)
+  - [⚡ Rendimiento y Optimización](#-rendimiento-y-optimización)
+  - [🌍 Compatibilidad](#-compatibilidad)
+  - [👩‍💻 Sobre la Autora](#-sobre-la-autora)
+  - [📬 Contacto](#-contacto)
+  - [📄 Licencia](#-licencia)
 
 ---
 
@@ -139,6 +221,53 @@ El sitio se organiza en **cinco vistas independientes pero interconectadas**, ca
 > **💡 Decisión técnica:** el proyecto evita deliberadamente herramientas de compilación (Webpack, Vite) y frameworks de componentes (React, Vue). Al mantenerse como un sitio estático liviano, logra tiempos de carga mínimos, cero dependencias que mantener y un despliegue inmediato en cualquier servicio de alojamiento.
 
 ---
+
+
+---
+
+## 🎨 Arquitectura SCSS — Entrega de refactorización
+
+La hoja de estilos fue refactorizada completamente a **SCSS**, manteniendo la estructura HTML y la apariencia visual existente. El archivo `style.css` es únicamente el resultado compilado de `scss/main.scss`.
+
+```text
+scss/
+├── main.scss              # único punto de entrada (con @use)
+├── utilities/
+│   ├── _variables.scss
+│   └── _mixins.scss
+├── base/
+│   ├── _tipografia.scss
+│   └── _base.scss
+├── layout/
+│   ├── _header.scss
+│   ├── _footer.scss
+│   └── _nav.scss
+└── components/
+    ├── _buttons.scss
+    └── _cards.scss
+```
+
+### Compilación
+
+Instalar las dependencias:
+
+```bash
+npm install
+```
+
+Compilar el SCSS:
+
+```bash
+npm run build
+```
+
+Modo desarrollo con compilación automática:
+
+```bash
+npm run watch
+```
+
+`scss/main.scss` es el único punto de entrada y utiliza `@use` para orquestar los partials. Los colores reutilizados están centralizados en `_variables.scss` y las herramientas reutilizables de SCSS se encuentran en `_mixins.scss`.
 
 ## 📂 Arquitectura del Proyecto
 
@@ -294,6 +423,7 @@ Un sitio accesible es, además, un sitio mejor posicionado: ambos objetivos comp
 
 ---
 
+
 ## 🌍 Compatibilidad
 
 | Navegador | Soporte |
@@ -347,17 +477,9 @@ Este proyecto se publica con fines de exhibición profesional. Todos los derecho
 
 <div align="center">
 
-**© 2026 Daniela Romero — Desarrolladora Web y de Apps**
+© 2026 Daniela Romero — Desarrolladora Web y de Apps
 
-*Hecho con precisión técnica, criterio estético y atención al detalle.*
+Hecho con precisión técnica, criterio estético y atención al detalle.
 
-### 🔗 [desarollo-web-coder-house.github.io/Mi-Portafolio](https://desarollo-web-coder-house.github.io/Mi-Portafolio/)
-
-</div>
----
-
-<div align="center">
-
-**© 2026 Daniela Romero — Desarrolladora Web y de Apps**
-
+🔗 desarollo-web-coder-house.github.io/Mi-Portafolio
 </div>
