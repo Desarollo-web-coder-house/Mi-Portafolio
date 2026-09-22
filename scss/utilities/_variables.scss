@@ -17,6 +17,13 @@ $color-black: #000000;
 $font-principal: 'Google Sans Flex', sans-serif;
 
 /* ========================================== */
+/* UNIDAD DE ESPACIADO                        */
+/* Operador SCSS utilizado para mantener      */
+/* proporciones sin alterar el diseño.        */
+/* ========================================== */
+$spacing-unit: 10px;
+
+/* ========================================== */
 /* COLORES COMPLEMENTARIOS                    */
 /* Valores originales del diseño, centralizados */
 /* para evitar colores repetidos en partials.  */
@@ -102,4 +109,4 @@ $color-rgba-0-0-0-0p22: rgba(0, 0, 0, 0.22);
 $color-rgba-196-141-104-0p9: rgba(196, 141, 104, 0.9);
 $color-rgba-84-53-33-0p42: rgba(84, 53, 33, 0.42);
 $color-rgba-84-53-33-0p06: rgba(84, 53, 33, 0.06);
-$color-rgba-84-53-33-0p15: rgba(84, 53, 33, 0.15);
+$color-rgba-84-53-33-0p15: rgba(84, 53, 33, 0.15)

@@ -120,12 +120,13 @@
   border-radius: 50px;
 
   transition:
-    box-shadow 0.35s ease;
+    box-shadow 0.35s ease, transform 0.35s ease;
 }
 
 .sobre_mi figure:hover {
   box-shadow:
     0 10px 24px $color-primary;
+  transform: translateY(-4px);
 }
 
 .sobre_mi article figure img {
@@ -165,12 +166,13 @@
   transition:
     color 0.3s ease,
     background-color 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .sobre_mi article>a:hover {
   color: $color-white;
   background-color: $color-primary-dark;
+  transform: translateY(-5px);
 
   box-shadow:
     0 4px 15px $color-rgb-214-171-143;
@@ -184,6 +186,7 @@
 .sobre_mi article>a:active {
   box-shadow:
     0 2px 7px $color-rgba-84-53-33-0p2;
+  transform: translateY(-5px);
 }
 
 /* ========================================== */
@@ -352,10 +355,12 @@
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .contacto_principal article ul li a:hover {
+  transform: translateY(-5px);
   color: $color-black;
   background-color: $color-rgb-231-202-184;
 
@@ -369,6 +374,7 @@
 }
 
 .contacto_principal article ul li a:active {
+  transform: translateY(-5px);
   box-shadow:
     0 2px 7px $color-rgba-84-53-33-0p18;
 }
@@ -393,10 +399,12 @@
   transition:
     color 0.3s ease,
     background-color 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .contacto_principal article a:hover {
+  transform: translateY(-5px);
   color: $color-white;
   background-color: $color-primary-dark;
 
@@ -410,6 +418,7 @@
 }
 
 .contacto_principal article a:active {
+  transform: translateY(-5px);
   box-shadow:
     0 2px 7px $color-rgba-84-53-33-0p18;
 }
@@ -448,10 +457,12 @@
   border-radius: 50px;
 
   transition:
-    box-shadow 0.35s ease;
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
 }
 
 .seccion_perfil figure:hover {
+  transform: translateY(-5px);
   box-shadow:
     0 10px 24px $color-primary;
 }
@@ -521,6 +532,14 @@ figcaption {
   overflow-wrap: anywhere;
 }
 
+/* Evita desbordes producidos por márgenes en tarjetas de ancho completo. */
+.servicios_principal li,
+.caja_solucion,
+.caja_aplicaciones,
+.tarjeta_proyectos {
+  margin: 0;
+}
+
 .header_principal {
   gap: 20px;
 }
@@ -551,76 +570,206 @@ figcaption {
 }
 
 /* ========================================== */
-/* TABLETS Y CELULARES                        */
-/* Breakpoint principal (<=768px): reduce       */
-/* tamaños de fuente/paddings y apila el menú   */
-/* y las tarjetas en una sola columna.          */
+/* RESPONSIVE MOBILE-FIRST                    */
+/* Base mobile + 768px tablet + 1024px desktop */
 /* ========================================== */
 
-@media (max-width: 768px) {
+/* ---------- BASE: MOBILE ---------- */
 
-  body {
-    font-size: 15px;
-    line-height: 1.6;
-  }
+html,
+body {
+  overflow-x: hidden;
+}
 
-  /* ---------- HEADER ---------- */
+body {
+  min-width: 320px;
+  font-size: 15px;
+  line-height: 1.6;
+}
 
+img,
+svg {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+strong,
+figcaption {
+  overflow-wrap: anywhere;
+}
+
+/* Evita desbordes producidos por márgenes en tarjetas de ancho completo. */
+.servicios_principal li,
+.caja_solucion,
+.caja_aplicaciones,
+.tarjeta_proyectos {
+  margin: 0;
+}
+
+.header_principal {
+  gap: 8px;
+  padding: 10px 8px;
+}
+
+.contenido_principal article figure img {
+  height: 240px;
+}
+
+.contenido_principal article h1 {
+  font-size: clamp(2rem, 6vw, 3.125rem);
+  margin-top: 26px;
+  margin-bottom: 12px;
+}
+
+.contenido_principal article p,
+.sobre_mi article p,
+.seccion_perfil p,
+.seccion_stack p,
+.seccion_pilares p,
+.seccion_habilidades p,
+.caja_servicios p {
+  font-size: 1rem;
+}
+
+.sobre_mi,
+.servicios_principal,
+.proyectos_principal,
+.contacto_principal,
+.seccion_perfil,
+.seccion_formacion,
+.seccion_stack,
+.seccion_pilares,
+.seccion_habilidades,
+.servicios,
+.seccion_soluciones,
+.subseccion_aplicaciones,
+.seccion_proyectos,
+.seccion_contacto {
+  padding: 28px 14px;
+}
+
+.sobre_mi article,
+.proyectos_principal article,
+.contacto_principal article,
+.caja_categoria,
+.caja_servicios,
+.caja_solucion,
+.caja_aplicaciones,
+.tarjeta_proyectos,
+.tarjeta_contacto {
+  padding: 14px 10px;
+}
+
+.sobre_mi article h2,
+.servicios_principal h2,
+.proyectos_principal article h2,
+.contacto_principal article h2,
+.seccion_perfil h2,
+.seccion_formacion h2,
+.seccion_stack h2,
+.seccion_pilares h2,
+.seccion_habilidades h2,
+.servicios h2,
+.seccion_soluciones h2,
+.subseccion_soluciones h3 {
+  font-size: clamp(1.5rem, 6vw, 2.25rem);
+}
+
+.servicios_principal li,
+.subseccion_soluciones ul li,
+.subseccion_aplicaciones ul li {
+  flex-basis: 100%;
+  max-width: 520px;
+}
+
+.servicios_principal li article {
+  padding: 12px;
+}
+
+.servicios_principal ul > a,
+.proyectos_principal article a,
+.sobre_mi article a,
+.contacto_principal article > a,
+.tarjeta_proyectos a,
+.tarjeta_contacto a,
+.subseccion_soluciones article a,
+.subseccion_aplicaciones article a {
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seccion_formacion > ul > li {
+  padding: 18px 14px;
+}
+
+.subseccion_tecnica {
+  padding: 12px 0;
+}
+
+.subseccion_soluciones {
+  padding: 26px 12px;
+}
+
+.caja_solucion figure,
+.caja_aplicaciones figure {
+  max-width: min(260px, 100%);
+}
+
+.tarjeta_proyectos h2,
+.tarjeta_proyectos h3,
+.tarjeta_proyectos p,
+.seccion_contacto h2,
+.seccion_contacto p,
+.tarjeta_contacto h3,
+.tarjeta_contacto p {
+  margin: 8px 0;
+}
+
+.footer_principal,
+.pie_pagina {
+  padding: 24px 14px;
+}
+
+.contacto_principal ul {
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.contacto_principal ul li,
+.contacto_principal article ul li a {
+  width: 100%;
+}
+
+.contacto_principal article ul li a {
+  justify-content: center;
+}
+
+/* ========================================== */
+/* TABLET: 768PX                             */
+/* ========================================== */
+
+@media (min-width: 768px) {
   .header_principal {
-    flex-direction: column;
-    align-items: center;
     padding: 16px;
     gap: 12px;
   }
 
-  .header_principal img {
-    width: 76px;
-    height: 76px;
-    margin: 0 auto;
-
+  .contenido_principal article figure img {
+    height: clamp(320px, 45vw, 500px);
   }
-
-  .navegacion {
-    width: 100%;
-  }
-
-  /* MENÚ VERTICAL */
-  .navegacion ul {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-  }
-
-  .navegacion li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .navegacion a {
-    display: block;
-    width: 100%;
-    padding: 6px 10px;
-    font-size: 0.95rem;
-    text-align: center;
-  }
-
-  /* ---------- CONTENIDO ---------- */
 
   .contenido_principal article h1 {
     margin-top: 26px;
     margin-bottom: 12px;
-  }
-
-  .contenido_principal article p,
-  .sobre_mi article p,
-  .seccion_perfil p,
-  .seccion_stack p,
-  .seccion_pilares p,
-  .seccion_habilidades p,
-  .caja_servicios p {
-    font-size: 1rem;
   }
 
   .sobre_mi,
@@ -652,6 +801,88 @@ figcaption {
     padding: 18px 14px;
   }
 
+  .servicios_principal ul > a,
+  .proyectos_principal article a,
+  .sobre_mi article a,
+  .contacto_principal article > a,
+  .tarjeta_proyectos a,
+  .tarjeta_contacto a,
+  .subseccion_soluciones article a,
+  .subseccion_aplicaciones article a {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .footer_principal,
+  .pie_pagina {
+    padding: 24px 14px;
+  }
+}
+
+/* ========================================== */
+/* ESCRITORIO: 1024PX                        */
+/* ========================================== */
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .header_principal {
+    padding: 15px 30px;
+    gap: 20px;
+  }
+
+  .contenido_principal article figure img {
+    height: 500px;
+  }
+
+  .contenido_principal article h1 {
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .contenido_principal article p,
+  .sobre_mi article p,
+  .seccion_perfil p,
+  .seccion_stack p,
+  .seccion_pilares p,
+  .seccion_habilidades p,
+  .caja_servicios p {
+    font-size: 20px;
+  }
+
+  .sobre_mi,
+  .servicios_principal,
+  .proyectos_principal,
+  .contacto_principal,
+  .seccion_perfil,
+  .seccion_formacion,
+  .seccion_stack,
+  .seccion_pilares,
+  .seccion_habilidades,
+  .servicios,
+  .seccion_soluciones,
+  .subseccion_aplicaciones,
+  .seccion_proyectos,
+  .seccion_contacto {
+    padding: 40px 20px;
+  }
+
+  .sobre_mi article,
+  .proyectos_principal article,
+  .contacto_principal article,
+  .caja_categoria,
+  .caja_servicios,
+  .caja_solucion,
+  .caja_aplicaciones,
+  .tarjeta_proyectos,
+  .tarjeta_contacto {
+    padding: 20px;
+  }
+
   .sobre_mi article h2,
   .servicios_principal h2,
   .proyectos_principal article h2,
@@ -660,53 +891,60 @@ figcaption {
   .seccion_formacion h2,
   .seccion_stack h2,
   .seccion_pilares h2,
-  .seccion_habilidades h2,
-  .servicios h2,
-  .seccion_soluciones h2,
+  .seccion_habilidades h2 {
+    font-size: 30px;
+  }
+
+  .servicios h2 {
+    font-size: 40px;
+  }
+
+  .seccion_soluciones h2 {
+    font-size: 40px;
+  }
+
   .subseccion_soluciones h3 {
-    font-size: clamp(1.5rem, 6vw, 2.25rem);
+    font-size: 30px;
   }
 
   .servicios_principal li,
   .subseccion_soluciones ul li,
   .subseccion_aplicaciones ul li {
-    flex-basis: 100%;
-    max-width: 520px;
+    flex-basis: 320px;
+    max-width: 380px;
   }
 
   .servicios_principal li article {
-    padding: 12px;
+    padding: 20px;
   }
 
-  .servicios_principal ul>a,
+  .servicios_principal ul > a,
   .proyectos_principal article a,
   .sobre_mi article a,
-  .contacto_principal article>a,
+  .contacto_principal article > a,
   .tarjeta_proyectos a,
   .tarjeta_contacto a,
   .subseccion_soluciones article a,
   .subseccion_aplicaciones article a {
-    width: 100%;
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    max-width: 800px;
   }
 
-  .seccion_formacion>ul>li {
-    padding: 18px 14px;
+  .seccion_formacion > ul > li {
+    padding: 20px;
   }
 
   .subseccion_tecnica {
-    padding: 12px 0;
+    padding: 15px 20px;
   }
 
   .subseccion_soluciones {
-    padding: 26px 12px;
+    padding: 40px 20px;
   }
 
   .caja_solucion figure,
   .caja_aplicaciones figure {
-    max-width: min(260px, 100%);
+    max-width: 260px;
   }
 
   .tarjeta_proyectos h2,
@@ -721,93 +959,25 @@ figcaption {
 
   .footer_principal,
   .pie_pagina {
-    padding: 24px 14px;
-  }
-}
-
-/* ========================================== */
-/* CELULARES PEQUEÑOS                         */
-/* Ajustes finos adicionales (<=480px) para     */
-/* pantallas muy angostas: header, menú y      */
-/* tarjetas más compactas.                     */
-/* ========================================== */
-
-@media (max-width: 480px) {
-
-  .header_principal {
-    gap: 8px;
-    padding: 10px 8px;
-  }
-
-  .header_principal img {
-    width: 58px;
-    height: 58px;
-  }
-
-  /* MENÚ VERTICAL PARA CELULARES PEQUEÑOS */
-  .navegacion ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    width: 100%;
-  }
-
-  .navegacion li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .navegacion a {
-    display: block;
-    width: 100%;
-    padding: 4px 8px;
-    font-size: 0.85rem;
-    text-align: center;
-  }
-
-  .contenido_principal article figure img {
-    height: 240px;
+    padding: 30px 20px;
   }
 
   .contacto_principal ul {
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
   }
 
   .contacto_principal ul li,
   .contacto_principal article ul li a {
-    width: 100%;
-  }
-
-  .contacto_principal article ul li a {
-    justify-content: center;
-  }
-
-  .caja_solucion,
-  .caja_aplicaciones,
-  .tarjeta_proyectos,
-  .tarjeta_contacto {
-    padding: 14px 10px;
-  }
-
-  .tarjeta_proyectos a,
-  .tarjeta_contacto a,
-  .subseccion_soluciones article a,
-  .subseccion_aplicaciones article a {
-    padding: 10px 12px;
-    font-size: 0.9rem;
+    width: auto;
   }
 }
 
 /* ========================================== */
-/* PRE-ENTREGA 4 - GRID                       */
-/* GRID SERVICIOS                             */
-/* Grilla CSS (mobile first) para la lista de  */
-/* soluciones/servicios en la página servicios.*/
+/* GRILLA RESPONSIVE - MOBILE FIRST           */
 /* ========================================== */
 
-/* Estilos base (Mobile First: 1 sola columna por defecto) */
 .servicios .subseccion_soluciones ul {
   display: grid;
   gap: 30px;
@@ -818,7 +988,6 @@ figcaption {
   min-width: 0;
 }
 
-/* Breakpoint para pantallas grandes (Desktop First en la jerarquía, Mobile First en la lógica) */
 @media (min-width: 1024px) {
   .servicios .subseccion_soluciones:nth-of-type(2) ul {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -827,15 +996,6 @@ figcaption {
   }
 }
 
-/* ========================================== */
-/* GRID SOBRE MÍ                              */
-/* Grilla CSS (mobile first) para las tarjetas */
-/* de "pilares"/filosofía en la sección Sobre  */
-/* mí: 1 columna en mobile, 2 en tablet y 3 en */
-/* escritorio.                                 */
-/* ========================================== */
-
-/* Estilos base Mobile: flujo vertical centrado */
 .seccion_pilares ul {
   display: grid;
   grid-template-columns: 1fr;
@@ -849,18 +1009,16 @@ figcaption {
   margin: 0 auto;
 }
 
-/* Breakpoint Tablet/Escritorio medio: 2 columnas */
 @media (min-width: 768px) {
   .seccion_pilares ul {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .seccion_pilares ul li {
     max-width: 100%;
   }
 }
 
-/* Breakpoint Desktop: 3 columnas, el 4to pilar queda alineado a la izquierda en la segunda fila */
 @media (min-width: 1024px) {
   .seccion_pilares ul {
     grid-template-columns: repeat(3, 1fr);

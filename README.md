@@ -3,16 +3,16 @@
 <div align="center">
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CSS3-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![AOS](https://img.shields.io/badge/AOS-Animation-6C63FF?style=for-the-badge)
+![Responsive](https://img.shields.io/badge/Diseño-Mobile--First-2ea44f?style=for-the-badge)
 ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
-![Responsive](https://img.shields.io/badge/Diseño-Responsivo-2ea44f?style=for-the-badge)
-![Accessibility](https://img.shields.io/badge/Accesibilidad-WCAG-0d6efd?style=for-the-badge)
 
 ### **Desarrolladora Web y de Aplicaciones**
 
-*Diseño y construcción de experiencias digitales claras, sólidas y preparadas para crecer*
+*Diseño y construcción de experiencias digitales claras, sólidas, responsivas y preparadas para crecer.*
 
 <br>
 
@@ -25,73 +25,28 @@
 
 ---
 
-## 🎨 Arquitectura SCSS — Pre-Entrega
+## 📌 Pre-entrega 8 — Animaciones y Full Responsive
 
-La hoja de estilos fue refactorizada completamente a SCSS sin modificar las cinco páginas HTML ni la identidad visual existente. El proyecto utiliza `scss/main.scss` como único punto de entrada y `@use` para orquestar todos los partials.
+Esta versión corresponde a la **Pre-entrega 8** del proyecto y representa la última capa de evolución visual y técnica del portafolio.
 
-### Estructura obligatoria
+El objetivo principal de esta etapa es conservar la identidad visual desarrollada durante las entregas anteriores y, sobre esa base, incorporar **animaciones sutiles, una arquitectura SCSS más avanzada y un cierre integral de la responsividad**.
 
-```text
-scss/
-├── main.scss
-├── utilities/
-│   ├── _variables.scss
-│   └── _mixins.scss
-├── base/
-│   ├── _tipografia.scss
-│   └── _base.scss
-├── layout/
-│   ├── _header.scss
-│   ├── _footer.scss
-│   └── _nav.scss
-└── components/
-    ├── _buttons.scss
-    └── _cards.scss
-```
+La implementación se realizó sin reemplazar la estructura existente del proyecto. Los nuevos recursos se integran dentro de la arquitectura SCSS ya definida, manteniendo `scss/main.scss` como único punto de entrada.
 
-No se agregan otras carpetas dentro de `scss/`. Los colores y demás valores reutilizados se centralizan en `_variables.scss`; los mixins reutilizables se encuentran en `_mixins.scss`; y los componentes utilizan variables en lugar de colores escritos directamente.
+### Objetivos alcanzados
 
-### Compilación
-
-Instalar dependencias:
-
-```bash
-npm install
-```
-
-Compilar el único archivo CSS final:
-
-```bash
-npm run build
-```
-
-> **Importante:** `css/style.css` es un archivo generado. Después de cualquier modificación dentro de `scss/`, ejecutá `npm run build` para actualizarlo.
-
-### Checklist de cumplimiento de la Pre-Entrega
-
-- `scss/main.scss` es el único punto de entrada y utiliza `@use`.
-- La arquitectura se divide en `utilities`, `base`, `layout` y `components`.
-- Los colores reutilizados están centralizados en `_variables.scss`.
-- Los mixins reutilizables están centralizados en `_mixins.scss`.
-- Se utiliza nesting y `&` en los componentes y estados interactivos.
-- La responsividad está organizada con metodología **Mobile First** y breakpoints ascendentes mediante `min-width`.
-- Se mantienen los estados `:hover`, `:focus` y `:active` donde aportan interacción.
-- No se utilizan transformaciones `transform` para los efectos visuales.
-- El diseño visual, la paleta y la estructura HTML original se conservan.
-
-El comando genera:
-
-```text
-css/style.css
-```
-
-Para trabajar con compilación automática:
-
-```bash
-npm run watch
-```
-
-El CSS generado no utiliza source map, por lo que el entregable conserva un único archivo CSS final.
+- Arquitectura SCSS modular y organizada.
+- Metodología **Mobile First**.
+- Breakpoints ascendentes en `768px` y `1024px`.
+- Animaciones nativas mediante `transition`, `transform` y estados interactivos.
+- Integración de la librería **AOS (Animate On Scroll)**.
+- Uso de **mixins parametrizados**.
+- Uso de **`@extend`**.
+- Uso de **operadores SCSS**.
+- Mantenimiento de la identidad visual, paleta cromática y estructura HTML.
+- Ajustes responsive en las cinco páginas del portafolio.
+- Corrección del centrado responsive de los controles del carrusel de proyectos.
+- CSS final generado a partir de SCSS.
 
 ---
 
@@ -100,30 +55,49 @@ El CSS generado no utiliza source map, por lo que el entregable conserva un úni
 - [🌐 Portafolio Profesional — Daniela Romero](#-portafolio-profesional--daniela-romero)
     - [**Desarrolladora Web y de Aplicaciones**](#desarrolladora-web-y-de-aplicaciones)
     - [🔗 **VER SITIO EN VIVO →**](#-ver-sitio-en-vivo-)
-  - [🎨 Arquitectura SCSS — Pre-Entrega](#-arquitectura-scss--pre-entrega)
-    - [Estructura obligatoria](#estructura-obligatoria)
-    - [Compilación](#compilación)
-    - [Checklist de cumplimiento de la Pre-Entrega](#checklist-de-cumplimiento-de-la-pre-entrega)
+  - [📌 Pre-entrega 8 — Animaciones y Full Responsive](#-pre-entrega-8--animaciones-y-full-responsive)
+    - [Objetivos alcanzados](#objetivos-alcanzados)
   - [📖 Tabla de Contenidos](#-tabla-de-contenidos)
   - [🔗 Sitio en Producción](#-sitio-en-producción)
-  - [🎯 Filosofía del Proyecto](#-filosofía-del-proyecto)
-  - [🧭 Descripción General](#-descripción-general)
-  - [🖼️ Vista Previa](#️-vista-previa)
+  - [🎯 Objetivo del Proyecto](#-objetivo-del-proyecto)
   - [✨ Características Principales](#-características-principales)
-  - [🛠️ Stack Tecnológico](#️-stack-tecnológico)
-  - [🎨 Arquitectura SCSS — Entrega de refactorización](#-arquitectura-scss--entrega-de-refactorización)
-    - [Compilación](#compilación-1)
+  - [🎬 Animaciones e Interactividad](#-animaciones-e-interactividad)
+    - [1. Animación nativa](#1-animación-nativa)
+    - [2. Librería AOS](#2-librería-aos)
+    - [3. Carrusel de proyectos](#3-carrusel-de-proyectos)
+  - [🎨 Arquitectura SCSS](#-arquitectura-scss)
+    - [Responsabilidad de cada capa](#responsabilidad-de-cada-capa)
+  - [🧩 Recursos Avanzados de SCSS](#-recursos-avanzados-de-scss)
+    - [Mixin con parámetros](#mixin-con-parámetros)
+    - [`@extend`](#extend)
+    - [Operadores SCSS](#operadores-scss)
+    - [Nesting y `&`](#nesting-y-)
+  - [📱 Estrategia Responsive](#-estrategia-responsive)
+    - [Base — Mobile](#base--mobile)
+    - [Tablet — `768px`](#tablet--768px)
+    - [Escritorio — `1024px`](#escritorio--1024px)
+    - [Verificación responsive](#verificación-responsive)
   - [📂 Arquitectura del Proyecto](#-arquitectura-del-proyecto)
   - [🔍 Detalle Técnico por Vista](#-detalle-técnico-por-vista)
+  - [🛠️ Stack Tecnológico](#️-stack-tecnológico)
   - [🎨 Sistema de Diseño](#-sistema-de-diseño)
-  - [🚀 Instalación y Puesta en Marcha](#-instalación-y-puesta-en-marcha)
+    - [Identidad cromática](#identidad-cromática)
+    - [Tipografía](#tipografía)
+    - [Componentes](#componentes)
+  - [🚀 Instalación y Desarrollo](#-instalación-y-desarrollo)
+    - [1. Clonar el repositorio](#1-clonar-el-repositorio)
+    - [2. Acceder al proyecto](#2-acceder-al-proyecto)
+    - [3. Instalar dependencias](#3-instalar-dependencias)
+    - [4. Compilar SCSS](#4-compilar-scss)
+    - [5. Compilación automática durante el desarrollo](#5-compilación-automática-durante-el-desarrollo)
+    - [6. Visualización local](#6-visualización-local)
   - [🌐 Despliegue en GitHub Pages](#-despliegue-en-github-pages)
-    - [Cómo replicar este despliegue](#cómo-replicar-este-despliegue)
-    - [Alternativas de despliegue](#alternativas-de-despliegue)
+    - [Sitio publicado](#sitio-publicado)
+    - [Flujo de actualización](#flujo-de-actualización)
   - [🗺️ Mapa del Sitio](#️-mapa-del-sitio)
-  - [🧱 Principios de Trabajo y Buenas Prácticas](#-principios-de-trabajo-y-buenas-prácticas)
-  - [♿ Accesibilidad y Posicionamiento (SEO)](#-accesibilidad-y-posicionamiento-seo)
-  - [⚡ Rendimiento y Optimización](#-rendimiento-y-optimización)
+  - [🧱 Buenas Prácticas](#-buenas-prácticas)
+  - [♿ Accesibilidad](#-accesibilidad)
+  - [⚡ Rendimiento](#-rendimiento)
   - [🌍 Compatibilidad](#-compatibilidad)
   - [👩‍💻 Sobre la Autora](#-sobre-la-autora)
   - [📬 Contacto](#-contacto)
@@ -133,173 +107,258 @@ El CSS generado no utiliza source map, por lo que el entregable conserva un úni
 
 ## 🔗 Sitio en Producción
 
-El portafolio se encuentra **publicado y disponible en línea**, desplegado mediante **GitHub Pages**, el servicio de alojamiento estático integrado a GitHub que publica el sitio directamente desde el repositorio.
+El portafolio se encuentra publicado mediante **GitHub Pages**, permitiendo acceder a la versión funcional directamente desde un navegador.
 
 | Recurso | Enlace |
 |---|---|
-| 🌐 **Sitio en vivo** | **[desarollo-web-coder-house.github.io/Mi-Portafolio](https://desarollo-web-coder-house.github.io/Mi-Portafolio/)** |
+| 🌐 **Sitio en vivo** | [desarollo-web-coder-house.github.io/Mi-Portafolio](https://desarollo-web-coder-house.github.io/Mi-Portafolio/) |
 | 📂 **Repositorio** | [github.com/Desarollo-web-coder-house/Mi-Portafolio](https://github.com/Desarollo-web-coder-house/Mi-Portafolio) |
-| 🔄 **Actualización** | Automática ante cada `push` a la rama principal |
-
-> Al tratarse de un sitio completamente estático, cada actualización del código se refleja en producción en cuestión de segundos, sin necesidad de servidores intermedios ni procesos de compilación.
+| 🔄 **Actualización** | Mediante commits y `push` al repositorio |
 
 ---
 
-## 🎯 Filosofía del Proyecto
+## 🎯 Objetivo del Proyecto
 
-Este portafolio no fue pensado como una simple vidriera de trabajos, sino como **una pieza de ingeniería web en sí misma**: un caso de estudio vivo que demuestra, a través de su propia construcción, los mismos criterios de calidad, orden y escalabilidad que se aplican a cada proyecto entregado a un cliente.
+El proyecto consiste en un **portafolio profesional de desarrollo web y aplicaciones**, diseñado para presentar de forma clara la identidad profesional, formación, proyectos, servicios y medios de contacto.
 
-Cada decisión —desde la organización del código hasta la elección tipográfica— responde a un principio rector: **la forma comunica tanto como el contenido**. Por eso el sitio se apoya en una estructura de información clara, una identidad visual coherente y una navegación fluida, sin sacrificar velocidad de carga ni accesibilidad.
+La Pre-entrega 8 parte de la versión desarrollada en módulos anteriores y profundiza especialmente en tres áreas:
 
-En términos simples: el sitio no solo *cuenta* cómo se trabaja, sino que lo *demuestra* en cada línea de código.
+1. **Animación e interacción visual.**
+2. **Uso avanzado de SCSS.**
+3. **Responsividad integral mediante una estrategia Mobile First.**
 
----
-
-## 🧭 Descripción General
-
-Este repositorio contiene el **sitio web de portafolio personal** de Daniela Romero: una plataforma de presentación profesional que integra identidad de marca, trayectoria académica y técnica, catálogo de servicios y canales de contacto directo en una experiencia unificada, accesible y completamente adaptable a cualquier dispositivo.
-
-El proyecto está construido sobre una **estructura semántica HTML5** —es decir, un código que describe el significado de cada bloque de contenido y no solo su apariencia—, complementada con una hoja de estilos propia (`style.css`) y el framework **Bootstrap 5**. En todo momento se priorizó la fidelidad visual, la facilidad de uso, la mantenibilidad del código y el rendimiento de carga.
-
-El sitio se organiza en **cinco vistas independientes pero interconectadas**, cada una con un propósito comunicacional definido dentro del recorrido de un potencial cliente:
-
-| Etapa | Vista | Objetivo |
-|---|---|---|
-| 1️⃣ Captar atención | **Inicio** | Transmitir la propuesta de valor en los primeros segundos |
-| 2️⃣ Generar confianza | **Sobre mí** | Respaldar con formación, trayectoria y filosofía de trabajo |
-| 3️⃣ Demostrar capacidad | **Proyectos** | Evidenciar resultados concretos y competencia técnica |
-| 4️⃣ Presentar la oferta | **Servicios** | Explicar con claridad qué soluciones se ofrecen |
-| 5️⃣ Facilitar la acción | **Contacto** | Reducir al mínimo el esfuerzo para iniciar la conversación |
-
----
-
-## 🖼️ Vista Previa
-
-> *Sugerencia: reemplazar este bloque con capturas reales del sitio publicado una vez tomadas las pantallas de cada vista.*
-
-| Inicio | Sobre mí | Proyectos | Servicios | Contacto |
-|:---:|:---:|:---:|:---:|:---:|
-| 🏠 | 👩‍💻 | 💼 | 🛠️ | 📬 |
-
-**[👉 Explorar el sitio completo en vivo](https://desarollo-web-coder-house.github.io/Mi-Portafolio/)**
+El criterio central de esta etapa es mejorar la experiencia de interacción sin alterar la identidad visual previamente construida.
 
 ---
 
 ## ✨ Características Principales
 
-- **🔄 Diseño totalmente responsivo (enfoque *Mobile First*)** — La interfaz se adapta con naturalidad a cualquier pantalla gracias al sistema de grillas de Bootstrap 5. El diseño se concibe primero para el celular y luego escala hacia tablets, notebooks y monitores de escritorio, garantizando una experiencia consistente en todos los contextos de uso.
-
-- **🧭 Navegación clara y persistente** — Barra de navegación replicada de forma idéntica en las cinco vistas, con menú desplegable (*hamburger menu*) en dispositivos móviles. El usuario siempre sabe dónde está y cómo llegar a cualquier sección.
-
-- **🎠 Carrusel dinámico de proyectos destacados** — Componente interactivo con transición automática, indicadores de posición y controles manuales, que permite recorrer los trabajos realizados sin abandonar la vista actual.
-
-- **📲 Canales de contacto preconfigurados** — Enlaces directos a WhatsApp (con mensaje inicial ya redactado), Gmail (con destinatario y asunto precargados) e Instagram. El objetivo es eliminar toda fricción: el usuario pasa de la intención al contacto en un solo clic.
-
-- **🔤 Tipografía corporativa personalizada** — Tres familias tipográficas integradas desde Google Fonts (*Google Sans Flex*, *Roboto* y *Stack Sans Headline*), combinadas estratégicamente para construir jerarquía visual y reforzar la identidad de marca.
-
-- **🎯 Iconografía vectorial integrada** — Íconos en formato SVG incorporados directamente en el código, lo que garantiza nitidez perfecta en cualquier resolución y evita descargas adicionales que ralenticen el sitio.
-
-- **♿ Accesibilidad como estándar, no como agregado** — Textos alternativos en imágenes y etiquetas descriptivas en elementos interactivos, para que el sitio sea comprensible también para personas que navegan con lectores de pantalla.
-
-- **🧩 Estructura modular de contenido** — Cada bloque del sitio funciona como una unidad autónoma y reutilizable, lo que facilita mantener, corregir o ampliar el proyecto sin afectar al resto.
+- **📱 Diseño Mobile First:** la estructura parte de dispositivos móviles y escala progresivamente hacia tablet y escritorio.
+- **🧭 Navegación responsive:** menú adaptable a distintos tamaños de pantalla.
+- **🎠 Carruseles interactivos:** navegación mediante controles e indicadores, con adaptación responsive.
+- **🎬 Animaciones nativas:** transiciones y transformaciones aplicadas de manera sutil a elementos interactivos.
+- **✨ Animaciones AOS:** incorporación de animaciones al desplazarse por determinadas secciones.
+- **🧩 Arquitectura SCSS modular:** estilos separados por responsabilidad.
+- **🎨 Identidad visual preservada:** se mantienen la paleta cromática, tipografías, componentes y lenguaje visual del proyecto.
+- **♿ Consideraciones de accesibilidad:** atributos descriptivos y estructura semántica.
+- **🌐 Publicación online:** despliegue mediante GitHub Pages.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🎬 Animaciones e Interactividad
 
-| Categoría | Tecnología | Función dentro del proyecto |
-|---|---|---|
-| **Estructura** | HTML5 semántico | Organiza el contenido dando significado a cada sección |
-| **Estilos** | CSS3 (`style.css`) | Define la identidad visual, el layout y el theming de marca |
-| **Framework UI** | Bootstrap 5.0.2 | Aporta el sistema de grillas y los componentes responsivos |
-| **Iconografía** | Bootstrap Icons (SVG) | Íconos vectoriales de contacto y redes sociales |
-| **Tipografía** | Google Fonts | *Google Sans Flex*, *Roboto*, *Stack Sans Headline* |
-| **Interactividad** | Bootstrap Bundle (JS) | Anima el menú desplegable y el carrusel de proyectos |
-| **Versionado** | Git & GitHub | Historial de cambios y trazabilidad del desarrollo |
-| **Despliegue** | GitHub Pages | Publicación automática del sitio en producción |
+La Pre-entrega 8 incorpora dos mecanismos de animación, de acuerdo con los requisitos del módulo.
 
-> **💡 Decisión técnica:** el proyecto evita deliberadamente herramientas de compilación (Webpack, Vite) y frameworks de componentes (React, Vue). Al mantenerse como un sitio estático liviano, logra tiempos de carga mínimos, cero dependencias que mantener y un despliegue inmediato en cualquier servicio de alojamiento.
+### 1. Animación nativa
+
+Se utilizan recursos propios de CSS/SCSS, principalmente:
+
+- `transition`
+- `transform`
+- `:hover`
+- `:focus`
+- `:active`
+
+Las transiciones tienen como objetivo acompañar la interacción del usuario sin interferir con la navegación ni generar movimientos innecesarios.
+
+Los `transform` existentes del proyecto se conservan como parte de la identidad interactiva desarrollada anteriormente.
+
+### 2. Librería AOS
+
+Se integra **AOS (Animate On Scroll)** para incorporar animaciones asociadas al desplazamiento de la página.
+
+Los documentos HTML incluyen:
+
+- hoja de estilos de AOS;
+- biblioteca JavaScript de AOS;
+- atributos `data-aos` en los elementos seleccionados;
+- inicialización mediante `AOS.init()`.
+
+La animación se utiliza como recurso complementario y no como sustituto de la estructura visual del sitio.
+
+### 3. Carrusel de proyectos
+
+El carrusel de `proyectos.html` conserva sus controles interactivos y cuenta con un ajuste específico para garantizar su **centrado vertical en diferentes tamaños de pantalla**.
+
+Este ajuste se incorporó dentro del partial correspondiente de componentes, evitando modificar innecesariamente el resto del diseño.
 
 ---
 
+## 🎨 Arquitectura SCSS
 
----
-
-## 🎨 Arquitectura SCSS — Entrega de refactorización
-
-La hoja de estilos fue refactorizada completamente a **SCSS**, manteniendo la estructura HTML y la apariencia visual existente. El archivo `style.css` es únicamente el resultado compilado de `scss/main.scss`.
+La hoja de estilos se encuentra completamente organizada mediante **SCSS**, utilizando `scss/main.scss` como único punto de entrada.
 
 ```text
 scss/
-├── main.scss              # único punto de entrada (con @use)
+│
+├── main.scss
+│
 ├── utilities/
 │   ├── _variables.scss
 │   └── _mixins.scss
+│
 ├── base/
 │   ├── _tipografia.scss
 │   └── _base.scss
+│
 ├── layout/
 │   ├── _header.scss
 │   ├── _footer.scss
 │   └── _nav.scss
+│
 └── components/
     ├── _buttons.scss
     └── _cards.scss
 ```
 
-### Compilación
+### Responsabilidad de cada capa
 
-Instalar las dependencias:
+| Carpeta | Responsabilidad |
+|---|---|
+| `utilities/` | Variables y herramientas reutilizables |
+| `base/` | Tipografía y estilos generales |
+| `layout/` | Estructura del encabezado, navegación y pie |
+| `components/` | Botones, tarjetas, carruseles y componentes visuales |
+| `main.scss` | Punto único de entrada y orquestación de los partials |
 
-```bash
-npm install
+Esta organización permite mantener el código separado por responsabilidades y facilita futuras modificaciones.
+
+---
+
+## 🧩 Recursos Avanzados de SCSS
+
+La Pre-entrega 8 profundiza el uso de las funcionalidades del preprocesador.
+
+### Mixin con parámetros
+
+Se utilizan **mixins parametrizados** para evitar repetir declaraciones y permitir reutilizar estilos con diferentes valores.
+
+Conceptualmente:
+
+```scss
+@mixin ejemplo($fondo, $color, $radio) {
+  background-color: $fondo;
+  color: $color;
+  border-radius: $radio;
+}
 ```
 
-Compilar el SCSS:
+Los valores se reciben como parámetros y pueden adaptarse según el componente que utilice el mixin.
 
-```bash
-npm run build
+### `@extend`
+
+Se utiliza `@extend` para compartir un conjunto de propiedades entre componentes relacionados, evitando duplicación innecesaria de estilos.
+
+### Operadores SCSS
+
+También se incorporan operaciones con variables, por ejemplo:
+
+```scss
+$spacing-unit: 10px;
+
+padding: $spacing-unit * 2;
 ```
 
-Modo desarrollo con compilación automática:
+El operador permite construir valores a partir de variables y mantener una lógica de espaciado reutilizable.
 
-```bash
-npm run watch
+### Nesting y `&`
+
+Se mantiene el uso de nesting y del selector padre `&` para organizar estados y relaciones entre elementos:
+
+```scss
+.elemento {
+  &.activo {
+    /* estado */
+  }
+
+  &:focus {
+    /* accesibilidad */
+  }
+}
 ```
 
-`scss/main.scss` es el único punto de entrada y utiliza `@use` para orquestar los partials. Los colores reutilizados están centralizados en `_variables.scss` y las herramientas reutilizables de SCSS se encuentran en `_mixins.scss`.
+---
+
+## 📱 Estrategia Responsive
+
+La responsividad de la Pre-entrega 8 sigue estrictamente una metodología **Mobile First**.
+
+### Base — Mobile
+
+Los estilos principales se aplican sin media query y están pensados inicialmente para pantallas pequeñas.
+
+### Tablet — `768px`
+
+```scss
+@media (min-width: 768px) {
+  /* ajustes para tablet */
+}
+```
+
+### Escritorio — `1024px`
+
+```scss
+@media (min-width: 1024px) {
+  /* ajustes para escritorio */
+}
+```
+
+La estrategia evita depender de media queries descendentes y permite ampliar progresivamente la interfaz.
+
+### Verificación responsive
+
+Las cinco páginas fueron contempladas para los siguientes escenarios:
+
+| Vista | Mobile | Tablet | Escritorio |
+|---|---:|---:|---:|
+| Inicio | ✅ | ✅ | ✅ |
+| Sobre mí | ✅ | ✅ | ✅ |
+| Proyectos | ✅ | ✅ | ✅ |
+| Servicios | ✅ | ✅ | ✅ |
+| Contacto | ✅ | ✅ | ✅ |
+
+El objetivo de esta etapa es evitar:
+
+- scroll horizontal innecesario;
+- contenido superpuesto;
+- textos cortados;
+- controles fuera de posición;
+- elementos que excedan el ancho disponible.
+
+---
 
 ## 📂 Arquitectura del Proyecto
 
-```
+```text
 Mi-Portafolio/
 │
-├── index.html                     # Página principal — presentación y punto de entrada
+├── index.html
 │
 ├── css/
-│   └── style.css                  # Hoja de estilos global: el núcleo visual del sitio
+│   └── style.css
+│
+├── scss/
+│   ├── main.scss
+│   ├── utilities/
+│   ├── base/
+│   ├── layout/
+│   └── components/
 │
 ├── img/
-│   ├── logo.png                   # Identidad de marca (barra de navegación)
-│   ├── hero_section.png           # Imagen principal de cabecera
-│   ├── Perfil.jpeg                # Fotografía de perfil profesional
-│   ├── Proyectos/                 # Imágenes de los proyectos destacados
-│   │   ├── Curriculum.png
-│   │   ├── Petshop.png
-│   │   ├── SuperHeroes.png
-│   │   ├── GameShop.png
-│   │   ├── TrailerFlix.png
-│   │   └── TiendaML.png
-│   └── Servicios/                 # Imágenes del catálogo de servicios
+│   ├── logo.png
+│   ├── hero_section.png
+│   ├── Perfil.jpeg
+│   ├── Proyectos/
+│   └── Servicios/
 │
 └── pages/
-    ├── sobre_mi.html              # Perfil profesional, formación y competencias
-    ├── proyectos.html             # Galería completa de proyectos
-    ├── servicios.html             # Catálogo detallado de soluciones
-    └── contacto.html              # Canales de comunicación directa
+    ├── sobre_mi.html
+    ├── proyectos.html
+    ├── servicios.html
+    └── contacto.html
 ```
 
-Esta organización responde al principio de **cada cosa en su lugar**: los recursos visuales (`img/`), los estilos (`css/`) y las vistas internas (`pages/`) se mantienen separados de la página raíz. El resultado es un proyecto ordenado, fácil de recorrer para cualquier desarrollador y preparado para crecer sin volverse caótico.
+La separación de recursos facilita la lectura del proyecto, el mantenimiento y la incorporación de futuras funcionalidades.
 
 ---
 
@@ -307,67 +366,126 @@ Esta organización responde al principio de **cada cosa en su lugar**: los recur
 
 | Vista | Contenido | Componentes destacados |
 |---|---|---|
-| **`index.html`** | Cabecera de presentación, síntesis de "Sobre mí", adelanto de servicios, carrusel de proyectos y bloque de contacto | Carrusel Bootstrap, navegación interna |
-| **`sobre_mi.html`** | Perfil profesional, formación académica (Diplomatura en Desarrollo Web Full Stack y Carrera de Desarrollo de Apps Móviles), stack técnico segmentado (Frontend y Backend, Web y Mobile), pilares de trabajo, habilidades técnicas y blandas | Jerarquía de encabezados `h2`–`h4`, listados de competencias |
-| **`proyectos.html`** | Galería ampliada de los seis proyectos destacados, con descripción técnica de cada desarrollo | Carrusel extendido, tarjetas de proyecto |
-| **`servicios.html`** | Catálogo de soluciones: desarrollo a medida, ecosistemas web y presencia digital, sistemas de gestión operativa | Tarjetas de servicio estructuradas semánticamente |
-| **`contacto.html`** | Canales directos de contacto con enlaces ya configurados | Tarjetas de contacto con iconografía SVG |
+| **`index.html`** | Presentación, síntesis de perfil, servicios, proyectos y contacto | Navbar responsive, carrusel Bootstrap y animaciones AOS |
+| **`sobre_mi.html`** | Perfil, formación, stack técnico, habilidades y pilares de trabajo | Secciones informativas y componentes responsivos |
+| **`proyectos.html`** | Galería ampliada de proyectos | Carrusel, tarjetas, controles responsive y animaciones |
+| **`servicios.html`** | Catálogo de servicios ofrecidos | Tarjetas y componentes reutilizables |
+| **`contacto.html`** | Canales de comunicación directa | Tarjetas y enlaces de contacto |
+
+---
+
+## 🛠️ Stack Tecnológico
+
+| Categoría | Tecnología | Función |
+|---|---|---|
+| Estructura | HTML5 | Organización semántica del contenido |
+| Estilos | SCSS | Arquitectura modular y generación de CSS |
+| Framework UI | Bootstrap 5.0.2 | Grid y componentes responsive |
+| Animaciones | CSS3 / SCSS | Transiciones y transformaciones nativas |
+| Animaciones externas | AOS | Animaciones al desplazarse |
+| Interactividad | JavaScript / Bootstrap Bundle | Navbar y carruseles |
+| Tipografía | Google Fonts | Identidad tipográfica |
+| Versionado | Git & GitHub | Control de versiones |
+| Despliegue | GitHub Pages | Publicación del sitio |
 
 ---
 
 ## 🎨 Sistema de Diseño
 
-- **Jerarquía tipográfica:** *Google Sans Flex* para títulos y elementos de impacto, *Roboto* para el cuerpo de texto por su alta legibilidad en pantalla, y *Stack Sans Headline* para acentos y niveles intermedios. La combinación guía la lectura sin necesidad de recursos visuales adicionales.
+La Pre-entrega 8 mantiene deliberadamente el sistema visual construido durante las etapas anteriores.
 
-- **Identidad de marca consistente:** el logo acompaña al usuario en las cinco vistas, reforzando el reconocimiento visual a lo largo de todo el recorrido.
+### Identidad cromática
 
-- **Lenguaje visual unificado:** tarjetas, secciones y artículos comparten una misma gramática de espaciado, bordes y sombras. Esta repetición deliberada genera coherencia y sensación de solidez.
+No se reemplaza la paleta existente. Los colores se mantienen centralizados en las variables SCSS correspondientes para asegurar consistencia entre las distintas vistas.
 
-- **Micro-interacciones sutiles:** sombreados, bordes redondeados y transiciones suaves del carrusel aportan profundidad y modernidad sin comprometer el rendimiento ni distraer del contenido.
+### Tipografía
+
+Se mantienen las familias tipográficas utilizadas anteriormente:
+
+- **Google Sans Flex**
+- **Roboto**
+- **Stack Sans Headline**
+
+### Componentes
+
+La interfaz conserva:
+
+- tarjetas;
+- botones;
+- navegación;
+- carruseles;
+- secciones informativas;
+- pie de página.
+
+Las animaciones agregadas funcionan como **micro-interacciones**, sin modificar la composición visual original.
 
 ---
 
-## 🚀 Instalación y Puesta en Marcha
+## 🚀 Instalación y Desarrollo
 
-El proyecto es completamente estático: **no requiere instalar dependencias, gestores de paquetes ni ejecutar procesos de compilación**. Puede ejecutarse de inmediato tras clonarlo.
+Para trabajar con el proyecto localmente:
+
+### 1. Clonar el repositorio
 
 ```bash
-# 1. Clonar el repositorio
 git clone https://github.com/Desarollo-web-coder-house/Mi-Portafolio.git
-
-# 2. Acceder al directorio del proyecto
-cd Mi-Portafolio
-
-# 3. Abrir index.html en el navegador
-#    Recomendado: usar la extensión "Live Server" de VS Code,
-#    que simula un servidor local con recarga automática al guardar.
 ```
 
-> 💡 **Recomendación técnica:** el sitio utiliza rutas relativas entre `index.html` y las vistas alojadas en `pages/`. Por eso conviene servirlo mediante un servidor local (Live Server, `http-server`, `serve`) en lugar de abrir los archivos directamente con doble clic (protocolo `file://`), que puede provocar fallos en la carga de imágenes y estilos.
+### 2. Acceder al proyecto
+
+```bash
+cd Mi-Portafolio
+```
+
+### 3. Instalar dependencias
+
+```bash
+npm install
+```
+
+### 4. Compilar SCSS
+
+```bash
+npm run build
+```
+
+Esto genera el archivo:
+
+```text
+css/style.css
+```
+
+### 5. Compilación automática durante el desarrollo
+
+```bash
+npm run watch
+```
+
+### 6. Visualización local
+
+Se recomienda utilizar **Live Server** desde Visual Studio Code para ejecutar correctamente las rutas relativas y visualizar los cambios durante el desarrollo.
+
+> `css/style.css` es el archivo CSS generado a partir de `scss/main.scss`. Los cambios de estilos deben realizarse dentro de los partials SCSS y posteriormente compilarse.
 
 ---
 
 ## 🌐 Despliegue en GitHub Pages
 
-El sitio está publicado en **GitHub Pages**, que toma el contenido del repositorio y lo sirve como una página web accesible desde cualquier navegador, sin costo y sin necesidad de configurar un servidor propio.
+El proyecto se publica mediante GitHub Pages.
 
-**🔗 Sitio publicado:** https://desarollo-web-coder-house.github.io/Mi-Portafolio/
+### Sitio publicado
 
-### Cómo replicar este despliegue
+https://desarollo-web-coder-house.github.io/Mi-Portafolio/
 
-1. Subir el proyecto a un repositorio público de GitHub.
-2. Ingresar a **Settings → Pages** dentro del repositorio.
-3. En *Source*, seleccionar la rama principal (`main`) y la carpeta raíz (`/root`).
-4. Guardar los cambios y esperar unos instantes: GitHub genera la URL pública automáticamente.
-5. A partir de ese momento, **cada `push` actualiza el sitio en vivo** sin pasos adicionales.
+### Flujo de actualización
 
-### Alternativas de despliegue
+```bash
+git add .
+git commit -m "Actualización Pre-entrega 8"
+git push
+```
 
-| Plataforma | Ventaja principal |
-|---|---|
-| **GitHub Pages** ⭐ | Gratuito, integrado al repositorio, despliegue automático *(opción actual)* |
-| **Netlify** | Publicación continua con vistas previas de cada cambio antes de publicarlo |
-| **Vercel** | Distribución global de alto rendimiento con configuración mínima |
+Una vez enviado el commit al repositorio, GitHub Pages actualiza la versión publicada.
 
 ---
 
@@ -375,94 +493,93 @@ El sitio está publicado en **GitHub Pages**, que toma el contenido del reposito
 
 | Página | Ruta | Propósito |
 |---|---|---|
-| **Inicio** | [`/`](https://desarollo-web-coder-house.github.io/Mi-Portafolio/) | Primera impresión, propuesta de valor y acceso al resto del sitio |
-| **Sobre mí** | [`/pages/sobre_mi.html`](https://desarollo-web-coder-house.github.io/Mi-Portafolio/pages/sobre_mi.html) | Construir confianza mediante trayectoria, formación y filosofía de trabajo |
-| **Proyectos** | [`/pages/proyectos.html`](https://desarollo-web-coder-house.github.io/Mi-Portafolio/pages/proyectos.html) | Demostrar capacidad técnica con trabajos concretos |
-| **Servicios** | [`/pages/servicios.html`](https://desarollo-web-coder-house.github.io/Mi-Portafolio/pages/servicios.html) | Presentar de forma ordenada la oferta de soluciones |
-| **Contacto** | [`/pages/contacto.html`](https://desarollo-web-coder-house.github.io/Mi-Portafolio/pages/contacto.html) | Facilitar el primer contacto con el menor esfuerzo posible |
+| **Inicio** | `/` | Presentación y acceso al resto del sitio |
+| **Sobre mí** | `/pages/sobre_mi.html` | Perfil, formación y competencias |
+| **Proyectos** | `/pages/proyectos.html` | Presentación de proyectos |
+| **Servicios** | `/pages/servicios.html` | Catálogo de servicios |
+| **Contacto** | `/pages/contacto.html` | Canales de comunicación |
 
 ---
 
-## 🧱 Principios de Trabajo y Buenas Prácticas
+## 🧱 Buenas Prácticas
 
-- **📱 Mobile First** — El diseño se concibe primero para la pantalla más pequeña y luego se amplía. Este orden garantiza que la experiencia móvil, hoy mayoritaria, nunca quede relegada a un segundo plano.
-
-- **🏷️ Código con significado (semántica)** — Uso disciplinado de etiquetas como `<header>`, `<main>`, `<section>`, `<article>` y `<footer>`. Esto permite que buscadores y tecnologías de asistencia comprendan la estructura del sitio, no solo su apariencia.
-
-- **🧩 Separación de responsabilidades** — Contenido (HTML), presentación (CSS) y comportamiento (JavaScript) se mantienen en capas independientes. Modificar el diseño nunca implica tocar el contenido, y viceversa.
-
-- **🔗 Rutas relativas consistentes** — La jerarquía de carpetas está diseñada para que todos los enlaces funcionen correctamente, tanto en entorno local como en producción.
-
-- **📝 Nomenclatura descriptiva** — Clases con nombres claros y autoexplicativos (`contenido_principal`, `tarjeta_contacto`, `navbar_propia`) que permiten entender la función de cada bloque con solo leerlo.
-
-- **🛡️ Mejora progresiva** — El sitio permanece legible y funcional incluso si algún recurso externo (una fuente, un ícono) no llega a cargar. La experiencia se degrada con elegancia, nunca se rompe.
-
-- **♻️ No repetirse (principio DRY)** — Los componentes compartidos —barra de navegación, pie de página, tarjetas— mantienen una estructura idéntica entre vistas, de modo que una corrección se aplica una sola vez y de forma predecible.
+- **📱 Mobile First:** el diseño parte de la pantalla más pequeña.
+- **🧩 Separación de responsabilidades:** HTML, SCSS y JavaScript cumplen funciones diferenciadas.
+- **♻️ Reutilización:** variables, mixins, `@extend` y componentes reducen la duplicación.
+- **🏷️ Semántica HTML:** se utilizan elementos estructurales adecuados para cada contenido.
+- **📝 Nomenclatura clara:** las clases mantienen nombres descriptivos.
+- **🔗 Rutas relativas consistentes:** permiten mantener la navegación entre las distintas páginas.
+- **🎯 Animaciones con propósito:** los efectos visuales acompañan la interacción y no reemplazan la funcionalidad.
+- **📐 Breakpoints ascendentes:** se utiliza `min-width` para ampliar progresivamente la interfaz.
 
 ---
 
-## ♿ Accesibilidad y Posicionamiento (SEO)
+## ♿ Accesibilidad
 
-Un sitio accesible es, además, un sitio mejor posicionado: ambos objetivos comparten las mismas buenas prácticas.
+Se mantienen prácticas orientadas a mejorar la accesibilidad:
 
-- **Textos alternativos descriptivos** en la totalidad de las imágenes, para que su contenido sea comprensible mediante lectores de pantalla.
-- **Etiquetas descriptivas** (`aria-label`, `aria-controls`, `aria-expanded`) en todos los elementos interactivos, como el botón del menú y los controles del carrusel.
-- **Jerarquía de encabezados respetada** (`h1` a `h4`), sin alterarla por razones estéticas. Esto favorece tanto la navegación asistida como la interpretación del contenido por parte de los buscadores.
-- **Enlaces externos seguros** mediante `rel="noopener noreferrer"`, previniendo vulnerabilidades conocidas al abrir páginas en pestañas nuevas.
-- **Configuración correcta de `viewport`**, asegurando una visualización adaptada desde el primer instante de carga en dispositivos móviles.
-
----
-
-## ⚡ Rendimiento y Optimización
-
-- **Íconos SVG integrados directamente en el código**, en lugar de descargar librerías completas de íconos: menos peso y menos peticiones al servidor.
-- **`preconnect` a Google Fonts**, que anticipa la conexión con el servidor tipográfico y reduce el tiempo de espera antes de que el texto se muestre correctamente.
-- **Bootstrap servido desde CDN** con verificación de integridad (`integrity` + `crossorigin`), lo que aprovecha la caché del navegador y garantiza que el archivo recibido no haya sido alterado.
-- **Recursos visuales optimizados** y una estructura de documento pensada para que el contenido esencial se muestre primero.
-- **Sitio 100 % estático**, sin base de datos ni lógica de servidor: la respuesta es prácticamente instantánea.
+- textos alternativos en imágenes;
+- etiquetas descriptivas para controles;
+- atributos `aria-label`, `aria-controls` y `aria-expanded` cuando corresponden;
+- jerarquía de encabezados;
+- configuración adecuada del viewport;
+- estados `:focus` para elementos interactivos.
 
 ---
 
+## ⚡ Rendimiento
+
+El proyecto prioriza una estructura liviana y organizada:
+
+- Bootstrap se incorpora mediante CDN;
+- las animaciones se mantienen sutiles;
+- los estilos se generan desde una arquitectura SCSS modular;
+- se evita duplicar reglas innecesariamente;
+- el sitio mantiene una estructura estática y de fácil despliegue.
+
+---
 
 ## 🌍 Compatibilidad
+
+El diseño está preparado para adaptarse a diferentes tamaños de pantalla y navegadores modernos.
 
 | Navegador | Soporte |
 |---|:---:|
 | Google Chrome | ✅ |
 | Mozilla Firefox | ✅ |
 | Microsoft Edge | ✅ |
-| Safari (macOS / iOS) | ✅ |
+| Safari | ✅ |
 | Opera | ✅ |
-
-Compatible con las dos últimas versiones estables de cada navegador, siguiendo los estándares de soporte oficiales de Bootstrap 5.
 
 ---
 
 ## 👩‍💻 Sobre la Autora
 
-**Daniela Romero** es desarrolladora web y de aplicaciones móviles, formada en **Desarrollo Web Full Stack** y en **Desarrollo de Aplicaciones Móviles**. Su enfoque profesional se sostiene sobre cinco pilares:
+**Daniela Romero** es desarrolladora web y de aplicaciones móviles, formada en **Desarrollo Web Full Stack** y **Desarrollo de Aplicaciones Móviles**.
 
-| Pilar | En qué se traduce |
-|---|---|
-| 🏗️ **Arquitectura sólida y escalable** | Bases de código pensadas para crecer sin volverse frágiles |
-| 🎨 **Diseño centrado en el usuario (UX/UI)** | Cada decisión visual responde a una necesidad real de uso |
-| ⏱️ **Cumplimiento metódico de plazos** | Entregas puntuales y planificación realista desde el inicio |
-| ✅ **Calidad de código y buenas prácticas** | Código legible, documentado y mantenible en el tiempo |
-| 💬 **Comunicación transparente** | Alineación constante con el cliente durante todo el proceso |
+Este portafolio funciona tanto como presentación profesional como demostración práctica de conocimientos en:
 
-Su stack técnico abarca el desarrollo **frontend y backend web**, el desarrollo de **aplicaciones móviles** y servicios en la nube, complementado con competencias sólidas en diseño de interfaces, optimización de rendimiento y resolución analítica de problemas.
+- desarrollo frontend;
+- HTML5 semántico;
+- CSS y SCSS;
+- Bootstrap;
+- JavaScript;
+- diseño responsive;
+- organización y mantenimiento de código;
+- control de versiones con Git y GitHub.
 
 ---
 
 ## 📬 Contacto
 
-¿Tenés un proyecto en mente o buscás digitalizar tu empresa? Conversemos y convirtamos esa idea en una solución digital concreta.
-
 <div align="center">
 
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5493544656873)
+
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:daniela.romero.developer@gmail.com)
+
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/daniela.romero___)
+
 [![Portafolio](https://img.shields.io/badge/Portafolio_Web-1a73e8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://desarollo-web-coder-house.github.io/Mi-Portafolio/)
 
 </div>
@@ -471,7 +588,9 @@ Su stack técnico abarca el desarrollo **frontend y backend web**, el desarrollo
 
 ## 📄 Licencia
 
-Este proyecto se publica con fines de exhibición profesional. Todos los derechos sobre el diseño, la estructura de contenido y los recursos visuales pertenecen a **Daniela Romero**. Queda prohibida su reproducción total o parcial —con fines comerciales o como portafolio propio— sin autorización previa y expresa de la autora.
+Este proyecto se publica con fines de exhibición profesional. Los derechos sobre el diseño, contenido y recursos visuales pertenecen a **Daniela Romero**.
+
+La reproducción total o parcial del proyecto para fines comerciales o como portafolio propio requiere autorización previa de la autora.
 
 ---
 
@@ -479,7 +598,6 @@ Este proyecto se publica con fines de exhibición profesional. Todos los derecho
 
 © 2026 Daniela Romero — Desarrolladora Web y de Apps
 
-Hecho con precisión técnica, criterio estético y atención al detalle.
+**Pre-entrega 8 · Animaciones · SCSS avanzado · Full Responsive**
 
-🔗 desarollo-web-coder-house.github.io/Mi-Portafolio
 </div>

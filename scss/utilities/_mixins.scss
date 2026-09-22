@@ -1,9 +1,20 @@
 /* ========================================== */
 /* MIXINS REUTILIZABLES                       */
-/* Herramientas SCSS para evitar repetir       */
-/* declaraciones de transición e interacción.  */
+/* Herramientas SCSS reutilizables con         */
+/* parámetros para mantener estilos consistentes. */
 /* ========================================== */
 
 @mixin transition($values...) {
   transition: $values;
+}
+
+/* Mixin parametrizado: permite reutilizar el */
+/* estilo base de botones sin repetir reglas. */
+@mixin button-base($background, $color, $radius: 10px) {
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: $radius;
+  background-color: $background;
+  color: $color;
 }

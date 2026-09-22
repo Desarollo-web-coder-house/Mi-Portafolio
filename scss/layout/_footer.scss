@@ -73,7 +73,8 @@
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .navegacion_footer a svg {
@@ -83,6 +84,7 @@
 }
 
 .navegacion_footer a:hover {
+  transform: translateY(-4px);
   color: $color-white;
   background-color: $color-primary;
 
@@ -100,6 +102,7 @@
 }
 
 .navegacion_footer a:active {
+  transform: translateY(-4px);
   box-shadow:
     0 2px 6px $color-rgba-84-53-33-0p2;
 }

@@ -1,23 +1,12 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as mix;
 
 /* ========================================== */
 /* COMPONENTE: BOTONES                       */
-/* Base reutilizable para enlaces que cumplen   */
-/* la función visual de botón en el portafolio. */
+/* Mixin parametrizado aplicado al componente */
+/* sin modificar su apariencia existente.     */
 /* ========================================== */
 
-@mixin button-base {
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 10px;
-}
-
-/* Clase reutilizable para futuros botones.
-   No se aplica a ninguna etiqueta HTML nueva:
-   conserva intacta la estructura existente. */
 .btn-portafolio {
-  @include button-base;
-  background-color: $color-white;
-  color: $color-black;
+  @include mix.button-base($color-white, $color-black, 10px);
 }

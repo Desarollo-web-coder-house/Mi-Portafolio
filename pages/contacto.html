@@ -16,6 +16,8 @@
     rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Librería de animación AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -67,7 +69,7 @@
   <main>
     <!-- Sección de Introducción y Cabecera de Contacto -->
 
-    <section class="contenido_principal">
+    <section class="contenido_principal" data-aos="fade-up">
       <article>
         <figure>
           <img src="../img/hero_section.png" alt="Imagen representativa de Daniela Romero" height="500" />
@@ -87,7 +89,7 @@
     </section>
 
     <!-- Sección de Canales de Contacto Directo -->
-    <section class="seccion_contacto">
+    <section class="seccion_contacto" data-aos="fade-up">
       <h2>Canales Directos de Comunicación</h2>
       <p>
         Elige la vía de contacto que te resulte más cómoda para iniciar la
@@ -151,9 +153,18 @@
     </section>
   </main>
 
-  <footer class="footer_principal">
+  <footer class="footer_principal" data-aos="fade-up">
     <p>© 2026 Daniela Romero — Desarrolladora Web y de Apps</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 60
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>

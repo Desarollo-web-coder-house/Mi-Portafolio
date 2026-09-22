@@ -20,16 +20,18 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  padding: 20px;
+  padding: $spacing-unit * 2;
   width: 100%;
   border-radius: 16px;
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .servicios_principal li article:hover {
+  transform: translateY(-6px);
   background-color: $color-rgb-241-223-212;
 
   box-shadow:
@@ -67,10 +69,12 @@
   transition:
     color 0.3s ease,
     background-color 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .servicios_principal>ul>a:hover {
+  transform: translateY(-5px);
   color: $color-white;
   background-color: $color-primary-dark;
 
@@ -84,6 +88,7 @@
 }
 
 .servicios_principal>ul>a:active {
+  transform: translateY(-5px);
   box-shadow:
     0 2px 7px $color-rgba-84-53-33-0p2;
 }
@@ -133,17 +138,20 @@
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .seccion_formacion>ul>li h3,
 .seccion_formacion>ul>li p,
 .seccion_formacion>ul>li strong,
 .seccion_formacion>ul>li li {
-  transition: color 0.3s ease;
+  transition: color 0.3s ease,
+  transform 0.3s ease;
 }
 
 .seccion_formacion>ul>li:hover {
+  transform: translateY(-2px);
   background-color: $color-rgb-123-72-40;
 
   box-shadow:
@@ -154,6 +162,7 @@
 .seccion_formacion>ul>li:hover p,
 .seccion_formacion>ul>li:hover strong,
 .seccion_formacion>ul>li:hover li {
+  transform: translateY(-2px);
   color: $color-white !important;
 }
 
@@ -167,6 +176,7 @@
 .seccion_formacion>ul>li:active p,
 .seccion_formacion>ul>li:active strong,
 .seccion_formacion>ul>li:active li {
+  transform: translateY(-2px);
   color: $color-white !important;
 
   box-shadow:
@@ -273,10 +283,12 @@
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .caja_categoria:hover {
+  transform: translateY(-4px);
   background-color: $color-rgb-250-243-239;
 
   box-shadow:
@@ -286,6 +298,12 @@
 .caja_categoria:focus-within {
   outline: 2px solid $color-rgb-215-164-132;
   outline-offset: 3px;
+}
+
+.caja_categoria:active {
+  transform: translateY(-4px);
+  box-shadow:
+    0 2px 7px $color-rgba-84-53-33-0p2;
 }
 
 .caja_categoria h3 {
@@ -421,17 +439,20 @@
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .caja_pilares h3,
 .caja_pilares p,
 .caja_pilares strong,
 .caja_pilares span {
-  transition: color 0.3s ease;
+  transition: color 0.3s ease,
+  transform 0.3s ease;
 }
 
 .caja_pilares:hover {
+  transform: translateY(-4px);
   background-color: $color-rgb-54-31-17;
 
   box-shadow:
@@ -453,6 +474,12 @@
 .caja_pilares:focus-within {
   outline: 2px solid $color-primary;
   outline-offset: 4px;
+}
+
+.caja_pilares:active {
+  transform: translateY(-4px);
+  box-shadow:
+    0 2px 7px $color-rgba-84-53-33-0p2;
 }
 
 .caja_pilares h3 {
@@ -530,8 +557,10 @@
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
+
 
 // Tarjeta individual de habilidad técnica
 .caja_habilidades {
@@ -587,17 +616,25 @@
   line-height: 1.5;
 }
 
-.caja_habilidades,
-.caja_habilidades_personales {
+/* Placeholder SCSS para compartir la base de las tarjetas. */
+/* @extend genera los mismos estilos sin cambiar el diseño. */
+%tarjeta-interactiva {
   border-radius: 20px;
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.caja_habilidades,
+.caja_habilidades_personales {
+  @extend %tarjeta-interactiva;
 }
 
 .caja_habilidades:hover,
 .caja_habilidades_personales:hover {
+  transform: translateY(-4px);
   background-color: $color-rgb-255-233-219;
 
   box-shadow:
@@ -608,6 +645,13 @@
 .caja_habilidades_personales:focus-within {
   outline: 2px solid $color-rgb-255-233-219;
   outline-offset: 4px;
+}
+
+.caja_habilidades:active,
+.caja_habilidades_personales:active {
+  transform: translateY(-4px);
+  box-shadow:
+    0 2px 7px $color-rgba-84-53-33-0p2;
 }
 
 /* ========================================== */
@@ -658,10 +702,12 @@
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .servicios ul li:hover {
+  transform: translateY(-4px);
   background-color: $color-rgb-214-171-143;
 
   box-shadow:
@@ -674,6 +720,7 @@
 }
 
 .servicios ul li:active {
+  transform: translateY(-4px);
   box-shadow:
     0 2px 7px $color-rgb-139-101-75;
 }
@@ -814,10 +861,12 @@
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .caja_solucion:hover {
+  transform: translateY(-4px);
   background-color: $color-secondary-light;
 
   box-shadow:
@@ -830,6 +879,7 @@
 }
 
 .caja_solucion:active {
+  transform: translateY(-4px);
   box-shadow:
     0 2px 7px $color-rgb-202-151-117;
 }
@@ -923,10 +973,12 @@
   transition:
     box-shadow 0.3s ease,
     background-color 0.3s ease,
-    color 0.3s ease;
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .caja_solucion a:hover {
+  transform: translateY(-4px);
   color: $color-black;
   background-color: $color-rgb-176-127-94;
 
@@ -944,6 +996,7 @@
 }
 
 .subseccion_soluciones article a:active {
+  transform: translateY(-4px);
   box-shadow:
     0 2px 7px $color-rgb-120-88-66;
 }
@@ -1010,10 +1063,12 @@
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .caja_aplicaciones:hover {
+  transform: translateY(-4px);
   background-color: $color-rgb-214-171-143;
 
   box-shadow:
@@ -1026,6 +1081,7 @@
 }
 
 .caja_aplicaciones:active {
+  transform: translateY(-4px);
   box-shadow:
     0 2px 7px $color-rgb-103-75-57;
 }
@@ -1121,10 +1177,12 @@
   transition:
     box-shadow 0.3s ease,
     background-color 0.3s ease,
-    color 0.3s ease;
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .caja_aplicaciones a:hover {
+  transform: translateY(-4px);
   color: $color-white;
   background-color: $color-rgb-68-51-40;
 
@@ -1138,6 +1196,7 @@
 }
 
 .caja_aplicaciones a:active {
+  transform: translateY(-4px);
   box-shadow:
     0 2px 7px $color-rgb-157-114-85;
 }
@@ -1182,10 +1241,12 @@
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .tarjeta_proyectos:hover {
+  transform: translateY(-5px);
   background-color: $color-rgb-234-209-193;
 
   box-shadow:
@@ -1198,6 +1259,7 @@
 }
 
 .tarjeta_proyectos:active {
+  transform: translateY(-5px);
   box-shadow:
     0 2px 7px $color-rgb-189-115-66;
 }
@@ -1364,10 +1426,12 @@
 
   transition:
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .tarjeta_contacto:hover {
+  transform: translateY(-4px);
   background-color: $color-rgb-202-151-117;
 
   box-shadow:
@@ -1380,6 +1444,7 @@
 }
 
 .tarjeta_contacto:active {
+  transform: translateY(-4px);
   box-shadow:
     0 2px 7px $color-rgb-120-88-66;
 }
@@ -1437,10 +1502,12 @@
   transition:
     box-shadow 0.3s ease,
     background-color 0.3s ease,
-    color 0.3s ease;
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .tarjeta_contacto a:hover {
+  transform: translateY(-4px);
   color: $color-black;
   background-color: $color-rgb-250-244-240;
 
@@ -1454,6 +1521,7 @@
 }
 
 .tarjeta_contacto a:active {
+  transform: translateY(-4px);
   box-shadow:
     0 2px 7px $color-secondary-light;
 }
@@ -1600,24 +1668,63 @@
   }
 
   // ==========================================
-  // TABLET
-  // RESPONSIVIDAD DEL CARRUSEL
+  // BASE MOBILE-FIRST
   // ==========================================
 
-  @media (max-width: 768px) {
+  &-img {
+    height: 230px;
+    border-radius: 10px;
+  }
+
+  &-caption {
+    width: 92%;
+    max-width: 92%;
+    bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+
+    h5 {
+      font-size: 0.9rem;
+      margin-bottom: 2px;
+    }
+
+    p {
+      font-size: 0.75rem;
+      line-height: 1.2;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  &-indicators {
+    [data-bs-target] {
+      width: 6px;
+      height: 6px;
+      margin: 0 4px;
+    }
+
+    .active {
+      width: 18px;
+    }
+  }
+
+  // ==========================================
+  // TABLET: 768PX
+  // ==========================================
+
+  @media (min-width: 768px) {
     &-img {
       height: 320px;
       border-radius: 12px;
     }
 
     &-caption {
-      left: 50% !important;
-      right: auto !important;
       width: 88%;
       max-width: 88%;
       bottom: 16px;
       padding: 12px 18px;
-      transform: translateX(-50%);
 
       h5 {
         font-size: 1.05rem;
@@ -1625,57 +1732,64 @@
 
       p {
         font-size: 0.85rem;
+        display: block;
       }
     }
   }
 
   // ==========================================
-  // CELULAR
-  // RESPONSIVIDAD EN PANTALLAS CHICAS
+  // ESCRITORIO: 1024PX
   // ==========================================
 
-  @media (max-width: 576px) {
+  @media (min-width: 1024px) {
     &-img {
-      height: 230px;
-      border-radius: 10px;
+      height: 440px;
+      border-radius: 16px;
     }
 
     &-caption {
-      left: 50% !important;
-      right: auto !important;
-      width: 92%;
-      max-width: 92%;
-      bottom: 10px;
-      padding: 8px 12px;
-      border-radius: 10px;
-      transform: translateX(-50%);
+      width: 85%;
+      max-width: 800px;
+      bottom: 24px;
+      padding: 16px 24px;
+      border-radius: 14px;
 
       h5 {
-        font-size: 0.9rem;
-        margin-bottom: 2px;
+        font-size: 1.25rem;
       }
 
       p {
-        font-size: 0.75rem;
-        line-height: 1.2;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        font-size: 0.95rem;
       }
     }
 
     &-indicators {
       [data-bs-target] {
-        width: 6px;
-        height: 6px;
-        margin: 0 4px;
+        width: 10px;
+        height: 10px;
+        margin: 0 6px;
       }
 
       .active {
-        width: 18px;
+        width: 28px;
       }
     }
+  }
+}
+
+// ==========================================
+// CONTROLES DEL CARRUSEL DE PROYECTOS
+// CENTRADO RESPONSIVE
+// ==========================================
+
+#carouselGaleriaProyectos {
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    bottom: auto;
+    height: auto;
+    transform: translateY(-50%);
+    align-items: center;
   }
 }
 
@@ -1725,11 +1839,13 @@
 
   transition:
     background-color 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
+  transform: translateY(-2px);
   background-color: $color-primary;
 
   border-color: $color-rgba-255-255-255-0p4;
@@ -1748,23 +1864,33 @@
 
 .carousel-control-prev:focus .carousel-control-prev-icon,
 .carousel-control-next:focus .carousel-control-next-icon {
+  transform: translateY(-2px);
   outline: 2px solid $color-primary;
   outline-offset: 3px;
 }
 
-@media (max-width: 768px) {
+/* ========================================== */
+/* CONTROLES: BASE MOBILE-FIRST               */
+/* ========================================== */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  padding: 12px;
+  background-size: 50%;
+}
+
+@media (min-width: 768px) {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     padding: 16px;
-    background-size: 50%;
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 1024px) {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    padding: 12px;
-    background-size: 50%;
+    padding: 22px;
+    background-size: 45%;
   }
 }
 
@@ -1805,9 +1931,11 @@
     transition:
       background-color 0.3s ease,
       color 0.3s ease,
-      box-shadow 0.3s ease;
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
 
     &:hover {
+      transform: translateY(-5px);
       background-color: $color-primary-dark;
       color: $color-hex-fafafa;
 
@@ -1820,27 +1948,44 @@
     }
 
     &:active {
+      transform: translateY(-5px);
       box-shadow: 0 2px 8px $color-rgba-84-53-33-0p3;
     }
   }
 
-  @media (max-width: 768px) {
+  // Base mobile-first
+  article {
+    padding: 10px;
+  }
+
+  article a.mt-3,
+  article > a {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  @media (min-width: 768px) {
     article {
       padding: 10px;
     }
 
     article a.mt-3,
     article > a {
+      width: auto;
       padding: 10px 22px;
-      font-size: 0.9rem;
     }
   }
 
-  @media (max-width: 576px) {
+  @media (min-width: 1024px) {
+    article {
+      padding: 20px;
+    }
+
+    article a.mt-3,
     article > a {
-      width: 100%;
-      padding: 10px 20px;
-      font-size: 0.9rem;
+      padding: 12px 28px;
+      font-size: 1rem;
     }
   }
 }
@@ -2022,19 +2167,93 @@
 
     box-shadow: 0 6px 16px $color-rgba-0-0-0-0p22;
 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
   .carousel-control-prev:hover .carousel-control-prev-icon,
   .carousel-control-next:hover .carousel-control-next-icon {
+    transform: translateY(-2px);
     background-color: $color-rgba-196-141-104-0p9;
   }
 
+  .carousel-control-prev:focus .carousel-control-prev-icon,
+  .carousel-control-next:focus .carousel-control-next-icon {
+    transform: translateY(-2px);
+    outline: 2px solid $color-primary;
+    outline-offset: 3px;
+  }
+
+  .carousel-control-prev:active .carousel-control-prev-icon,
+  .carousel-control-next:active .carousel-control-next-icon {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 7px $color-rgba-84-53-33-0p2;
+  }
+
+
   // ==========================================
-  // TABLET
+  // BASE MOBILE-FIRST
   // ==========================================
 
-  @media (max-width: 768px) {
+  & {
+    margin: 15px auto;
+    border-radius: 12px;
+  }
+
+  .carousel-img {
+    height: 260px;
+    border-radius: 12px;
+  }
+
+  .carousel-caption {
+    bottom: 0;
+    width: 100%;
+    padding: 50px 20px 15px;
+    border-radius: 0;
+
+    background: linear-gradient(
+      to top,
+      $color-rgba-84-53-33-0p82,
+      $color-rgba-84-53-33-0p35,
+      $color-rgba-84-53-33-0
+    );
+
+    h5 {
+      margin-bottom: 2px;
+      font-size: 0.95rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      line-height: 1.2;
+    }
+  }
+
+  .carousel-indicators {
+    margin-bottom: 8px;
+
+    [data-bs-target] {
+      width: 7px;
+      height: 7px;
+      margin: 0 4px;
+    }
+
+    .active {
+      width: 20px;
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+    padding: 9px;
+  }
+
+  // ==========================================
+  // TABLET: 768PX
+  // ==========================================
+
+  @media (min-width: 768px) {
     margin: 20px auto;
     border-radius: 16px;
 
@@ -2044,10 +2263,7 @@
     }
 
     .carousel-caption {
-      bottom: 0;
-      width: 100%;
       padding: 60px 30px 20px;
-      border-radius: 0;
 
       background: linear-gradient(
         to top,
@@ -2069,65 +2285,47 @@
     .carousel-control-next-icon {
       width: 42px;
       height: 42px;
+      padding: 12px;
     }
   }
 
   // ==========================================
-  // CELULAR
+  // ESCRITORIO: 1024PX
   // ==========================================
 
-  @media (max-width: 576px) {
-    margin: 15px auto;
-    border-radius: 12px;
+  @media (min-width: 1024px) {
+    margin: 30px auto;
+    border-radius: 20px;
 
     .carousel-img {
-      height: 260px;
-      border-radius: 12px;
+      height: 520px;
+      border-radius: 20px;
     }
 
     .carousel-caption {
-      bottom: 0;
-      width: 100%;
-      padding: 50px 20px 15px;
-      border-radius: 0;
+      padding: 70px 60px 28px;
 
       background: linear-gradient(
         to top,
         $color-rgba-84-53-33-0p82,
-        $color-rgba-84-53-33-0p35,
+        $color-rgba-84-53-33-0p45,
         $color-rgba-84-53-33-0
       );
 
       h5 {
-        margin-bottom: 2px;
-        font-size: 0.95rem;
+        font-size: 1.25rem;
       }
 
       p {
-        font-size: 0.75rem;
-        line-height: 1.2;
-      }
-    }
-
-    .carousel-indicators {
-      margin-bottom: 8px;
-
-      [data-bs-target] {
-        width: 7px;
-        height: 7px;
-        margin: 0 4px;
-      }
-
-      .active {
-        width: 20px;
+        font-size: 0.95rem;
       }
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      width: 35px;
-      height: 35px;
-      padding: 9px;
+      width: 45px;
+      height: 45px;
+      padding: 12px;
     }
   }
 }
@@ -2153,13 +2351,15 @@
     transition:
       color 0.3s ease,
       background-color 0.3s ease,
-      box-shadow 0.3s ease;
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
 
     svg {
       transition: fill 0.3s ease;
     }
 
     &:hover {
+      transform: translateY(-5px);
       background-color: $color-primary-dark;
       color: $color-white;
       border-color: $color-primary-dark;
@@ -2167,6 +2367,7 @@
       box-shadow: 0 6px 16px $color-rgba-84-53-33-0p25;
 
       svg {
+        transform: rotate(15deg);
         fill: $color-white;
       }
     }
@@ -2177,13 +2378,21 @@
     }
 
     &:active {
+      transform: translateY(-5px);
       box-shadow: 0 2px 7px $color-rgba-84-53-33-0p2;
     }
 
-    @media (max-width: 576px) {
-      width: 100%;
+    /* Base mobile-first */
+    & {
+      width: auto;
       justify-content: center;
       font-size: 0.85rem;
+    }
+
+    @media (min-width: 768px) {
+      width: auto;
+      justify-content: initial;
+      font-size: 1rem;
     }
   }
 }
@@ -2193,8 +2402,8 @@
 // ==========================================
 
 .max-w-1000 {
-  width: 100%;
-  max-width: 1000px;
+  width: auto;
+  max-width: auto;
   margin-left: auto;
   margin-right: auto;
 }

@@ -3,27 +3,31 @@
 
 /* ========================================== */
 /* HEADER PRINCIPAL                           */
-/* Mantiene el encabezado y el logo del sitio  */
-/* exactamente con la apariencia original.    */
+/* Mobile-first: base para celulares,         */
+/* ampliación progresiva en 768px y 1024px.   */
 /* ========================================== */
 
 .header_principal {
   background-color: $color-primary;
-  padding: 15px 30px;
+  padding: 10px 8px;
   width: 100%;
+  gap: 8px;
 
   .container-fluid {
     padding-left: 0;
     padding-right: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar-brand {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 
     img {
-      width: 100px;
-      height: 100px;
+      width: 58px;
+      height: 58px;
+      margin: 0 auto;
       border-radius: 50%;
       object-fit: cover;
       display: block;
@@ -31,12 +35,8 @@
   }
 
   &.navbar img {
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 40px;
-    margin-right: 40px;
     display: block;
 
     @include mix.transition(
@@ -47,6 +47,8 @@
 
     &:hover {
       box-shadow: 0 0 20px $color-rgb-250-244-240;
+      transform: scale(1.1);
+      transform-origin: center;
     }
 
     &:focus {
@@ -63,6 +65,7 @@
   .navbar-toggler {
     border: 2px solid $color-primary-dark;
     padding: 8px 10px;
+    margin-top: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
 
     &:focus {
@@ -70,22 +73,48 @@
     }
   }
 
-  @media (max-width: 991px) {
+  /* ========================================== */
+  /* TABLET: 768PX                              */
+  /* ========================================== */
+
+  @media (min-width: 768px) {
+    padding: 16px;
+    gap: 12px;
+
+    .navbar-brand img {
+      width: 76px;
+      height: 76px;
+    }
+  }
+
+  /* ========================================== */
+  /* ESCRITORIO: 1024PX                        */
+  /* ========================================== */
+
+  @media (min-width: 1024px) {
+    padding: 15px 30px;
+    gap: 20px;
+
     .container-fluid {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
 
     .navbar-brand {
-      margin: 0 auto;
+      margin: 0;
+    }
 
-      img {
-        margin: 0 auto;
-      }
+    .navbar-brand img,
+    &.navbar img {
+      width: 100px;
+      height: 100px;
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
     .navbar-toggler {
-      margin-top: 20px;
+      margin-top: 0;
     }
   }
 }
+
