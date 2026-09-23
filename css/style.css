@@ -46,6 +46,34 @@ body {
 /* Único punto de entrada del proyecto.       */
 /* ========================================== */
 /* ========================================== */
+/* ANIMACIÓN NATIVA DEL HEADER                */
+/* El header aparece progresivamente mediante  */
+/* un cambio suave de opacidad.               */
+/* ========================================== */
+@keyframes entradaSuave {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Aplicación de la animación al header */
+.header_principal {
+  animation: entradaSuave 1.5s ease-in-out both;
+}
+
+/* ========================================== */
+/* ACCESIBILIDAD: REDUCCIÓN DE MOVIMIENTO     */
+/* Respeta la preferencia del usuario sin     */
+/* modificar el diseño visual del sitio.      */
+/* ========================================== */
+@media (prefers-reduced-motion: reduce) {
+  .header_principal {
+    animation: none;
+  }
+}
+/* ========================================== */
 /* ESTILOS GENERALES Y RESETEO                */
 /* Normaliza el comportamiento por defecto     */
 /* del navegador para partir de una base       */
@@ -1601,6 +1629,7 @@ figcaption {
   padding: 15px 20px;
 }
 
+.caja_detalle h4,
 .caja_detalle h5 {
   font-size: 18px;
   font-weight: bold;
@@ -2701,7 +2730,7 @@ figcaption {
   box-sizing: border-box;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.carousel-caption h5 {
+.carousel-caption h3 {
   margin: 0 0 6px;
   color: #ffffff;
   font-size: 1.25rem;
@@ -2757,7 +2786,7 @@ figcaption {
   padding: 8px 12px;
   border-radius: 10px;
 }
-.carousel-caption h5 {
+.carousel-caption h3 {
   font-size: 0.9rem;
   margin-bottom: 2px;
 }
@@ -2788,7 +2817,7 @@ figcaption {
     bottom: 16px;
     padding: 12px 18px;
   }
-  .carousel-caption h5 {
+  .carousel-caption h3 {
     font-size: 1.05rem;
   }
   .carousel-caption p {
@@ -2808,7 +2837,7 @@ figcaption {
     padding: 16px 24px;
     border-radius: 14px;
   }
-  .carousel-caption h5 {
+  .carousel-caption h3 {
     font-size: 1.25rem;
   }
   .carousel-caption p {
@@ -3010,7 +3039,7 @@ figcaption {
   -webkit-backdrop-filter: none;
   transition: opacity 0.3s ease;
 }
-#carouselProyectosIndex .carousel-caption h5 {
+#carouselProyectosIndex .carousel-caption h3 {
   margin: 0 0 4px;
   color: #ffffff;
   font-size: 1.3rem;
@@ -3112,7 +3141,7 @@ figcaption {
   border-radius: 0;
   background: linear-gradient(to top, rgba(84, 53, 33, 0.82), rgba(84, 53, 33, 0.35), rgba(84, 53, 33, 0));
 }
-#carouselProyectosIndex .carousel-caption h5 {
+#carouselProyectosIndex .carousel-caption h3 {
   margin-bottom: 2px;
   font-size: 0.95rem;
 }
@@ -3150,7 +3179,7 @@ figcaption {
     padding: 60px 30px 20px;
     background: linear-gradient(to top, rgba(84, 53, 33, 0.82), rgba(84, 53, 33, 0.42), rgba(84, 53, 33, 0));
   }
-  #carouselProyectosIndex .carousel-caption h5 {
+  #carouselProyectosIndex .carousel-caption h3 {
     font-size: 1.1rem;
   }
   #carouselProyectosIndex .carousel-caption p {
@@ -3176,7 +3205,7 @@ figcaption {
     padding: 70px 60px 28px;
     background: linear-gradient(to top, rgba(84, 53, 33, 0.82), rgba(84, 53, 33, 0.45), rgba(84, 53, 33, 0));
   }
-  #carouselProyectosIndex .carousel-caption h5 {
+  #carouselProyectosIndex .carousel-caption h3 {
     font-size: 1.25rem;
   }
   #carouselProyectosIndex .carousel-caption p {

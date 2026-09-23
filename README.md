@@ -12,7 +12,7 @@
 
 ### **Desarrolladora Web y de Aplicaciones**
 
-*Diseño y construcción de experiencias digitales claras, sólidas, responsivas y preparadas para crecer.*
+*Diseño y construcción de experiencias digitales claras, sólidas, responsivas, accesibles y preparadas para crecer.*
 
 <br>
 
@@ -25,46 +25,27 @@
 
 ---
 
-## 📌 Pre-entrega 8 — Animaciones y Full Responsive
-
-Esta versión corresponde a la **Pre-entrega 8** del proyecto y representa la última capa de evolución visual y técnica del portafolio.
-
-El objetivo principal de esta etapa es conservar la identidad visual desarrollada durante las entregas anteriores y, sobre esa base, incorporar **animaciones sutiles, una arquitectura SCSS más avanzada y un cierre integral de la responsividad**.
-
-La implementación se realizó sin reemplazar la estructura existente del proyecto. Los nuevos recursos se integran dentro de la arquitectura SCSS ya definida, manteniendo `scss/main.scss` como único punto de entrada.
-
-### Objetivos alcanzados
-
-- Arquitectura SCSS modular y organizada.
-- Metodología **Mobile First**.
-- Breakpoints ascendentes en `768px` y `1024px`.
-- Animaciones nativas mediante `transition`, `transform` y estados interactivos.
-- Integración de la librería **AOS (Animate On Scroll)**.
-- Uso de **mixins parametrizados**.
-- Uso de **`@extend`**.
-- Uso de **operadores SCSS**.
-- Mantenimiento de la identidad visual, paleta cromática y estructura HTML.
-- Ajustes responsive en las cinco páginas del portafolio.
-- Corrección del centrado responsive de los controles del carrusel de proyectos.
-- CSS final generado a partir de SCSS.
-
----
-
 ## 📖 Tabla de Contenidos
 
 - [🌐 Portafolio Profesional — Daniela Romero](#-portafolio-profesional--daniela-romero)
     - [**Desarrolladora Web y de Aplicaciones**](#desarrolladora-web-y-de-aplicaciones)
     - [🔗 **VER SITIO EN VIVO →**](#-ver-sitio-en-vivo-)
-  - [📌 Pre-entrega 8 — Animaciones y Full Responsive](#-pre-entrega-8--animaciones-y-full-responsive)
-    - [Objetivos alcanzados](#objetivos-alcanzados)
   - [📖 Tabla de Contenidos](#-tabla-de-contenidos)
   - [🔗 Sitio en Producción](#-sitio-en-producción)
   - [🎯 Objetivo del Proyecto](#-objetivo-del-proyecto)
   - [✨ Características Principales](#-características-principales)
   - [🎬 Animaciones e Interactividad](#-animaciones-e-interactividad)
-    - [1. Animación nativa](#1-animación-nativa)
-    - [2. Librería AOS](#2-librería-aos)
-    - [3. Carrusel de proyectos](#3-carrusel-de-proyectos)
+    - [Animación nativa](#animación-nativa)
+    - [Librería AOS](#librería-aos)
+    - [Carrusel de proyectos](#carrusel-de-proyectos)
+  - [🔎 Estrategia SEO](#-estrategia-seo)
+    - [SEO On-Page](#seo-on-page)
+    - [Metadatos](#metadatos)
+    - [Keywords](#keywords)
+    - [Semántica HTML](#semántica-html)
+    - [Nomenclatura SEO de recursos](#nomenclatura-seo-de-recursos)
+    - [SEO técnico y publicación](#seo-técnico-y-publicación)
+  - [♿ Accesibilidad](#-accesibilidad)
   - [🎨 Arquitectura SCSS](#-arquitectura-scss)
     - [Responsabilidad de cada capa](#responsabilidad-de-cada-capa)
   - [🧩 Recursos Avanzados de SCSS](#-recursos-avanzados-de-scss)
@@ -96,7 +77,6 @@ La implementación se realizó sin reemplazar la estructura existente del proyec
     - [Flujo de actualización](#flujo-de-actualización)
   - [🗺️ Mapa del Sitio](#️-mapa-del-sitio)
   - [🧱 Buenas Prácticas](#-buenas-prácticas)
-  - [♿ Accesibilidad](#-accesibilidad)
   - [⚡ Rendimiento](#-rendimiento)
   - [🌍 Compatibilidad](#-compatibilidad)
   - [👩‍💻 Sobre la Autora](#-sobre-la-autora)
@@ -119,74 +99,195 @@ El portafolio se encuentra publicado mediante **GitHub Pages**, permitiendo acce
 
 ## 🎯 Objetivo del Proyecto
 
-El proyecto consiste en un **portafolio profesional de desarrollo web y aplicaciones**, diseñado para presentar de forma clara la identidad profesional, formación, proyectos, servicios y medios de contacto.
+El proyecto consiste en un **portafolio profesional de desarrollo web y aplicaciones**, concebido para comunicar de forma clara la identidad profesional, formación, competencias, proyectos, servicios y canales de contacto.
 
-La Pre-entrega 8 parte de la versión desarrollada en módulos anteriores y profundiza especialmente en tres áreas:
+El desarrollo se construye de manera incremental sobre una base HTML5, CSS/SCSS, Bootstrap y JavaScript, incorporando progresivamente:
 
-1. **Animación e interacción visual.**
-2. **Uso avanzado de SCSS.**
-3. **Responsividad integral mediante una estrategia Mobile First.**
+1. **Arquitectura SCSS modular y mantenible.**
+2. **Diseño responsive bajo metodología Mobile First.**
+3. **Componentes interactivos y micro-interacciones visuales.**
+4. **Animaciones nativas mediante CSS/SCSS y animaciones al desplazarse mediante AOS.**
+5. **Optimización SEO On-Page y fortalecimiento de la semántica HTML5.**
+6. **Mejoras de accesibilidad y nomenclatura descriptiva de recursos.**
+7. **Preparación y consolidación del sitio para publicación mediante GitHub Pages.**
 
-El criterio central de esta etapa es mejorar la experiencia de interacción sin alterar la identidad visual previamente construida.
+Todas las mejoras técnicas se integran sobre la estructura existente, priorizando la **consistencia visual, reutilización, mantenibilidad y experiencia de usuario**, sin alterar innecesariamente la identidad gráfica del proyecto.
 
 ---
 
 ## ✨ Características Principales
 
 - **📱 Diseño Mobile First:** la estructura parte de dispositivos móviles y escala progresivamente hacia tablet y escritorio.
-- **🧭 Navegación responsive:** menú adaptable a distintos tamaños de pantalla.
-- **🎠 Carruseles interactivos:** navegación mediante controles e indicadores, con adaptación responsive.
-- **🎬 Animaciones nativas:** transiciones y transformaciones aplicadas de manera sutil a elementos interactivos.
-- **✨ Animaciones AOS:** incorporación de animaciones al desplazarse por determinadas secciones.
-- **🧩 Arquitectura SCSS modular:** estilos separados por responsabilidad.
-- **🎨 Identidad visual preservada:** se mantienen la paleta cromática, tipografías, componentes y lenguaje visual del proyecto.
-- **♿ Consideraciones de accesibilidad:** atributos descriptivos y estructura semántica.
+- **🧭 Navegación responsive:** menú adaptable a diferentes resoluciones.
+- **🎠 Carruseles interactivos:** navegación mediante controles e indicadores con comportamiento responsive.
+- **🎬 Animaciones nativas:** utilización de `transition`, `transform` y estados interactivos como `:hover`, `:focus` y `:active`.
+- **✨ Animaciones AOS:** incorporación de efectos asociados al desplazamiento de la página.
+- **🧩 Arquitectura SCSS modular:** estilos organizados por responsabilidad mediante partials y un único punto de entrada.
+- **🔎 SEO On-Page:** títulos, metadescripciones, keywords y contenido contextualizado para cada vista.
+- **🏷️ HTML semántico:** utilización de encabezados y elementos estructurales adecuados.
+- **🖼️ Recursos descriptivos:** nombres de archivos normalizados y atributos `alt` contextualizados.
+- **♿ Accesibilidad:** consideración de foco, etiquetas descriptivas, estructura semántica, contraste y atributos ARIA cuando corresponden.
+- **🎨 Identidad visual preservada:** se mantienen paleta cromática, tipografías, componentes y lenguaje visual.
 - **🌐 Publicación online:** despliegue mediante GitHub Pages.
 
 ---
 
 ## 🎬 Animaciones e Interactividad
 
-La Pre-entrega 8 incorpora dos mecanismos de animación, de acuerdo con los requisitos del módulo.
+El proyecto incorpora una capa de interacción visual orientada a mejorar la experiencia de navegación sin interferir con la funcionalidad.
 
-### 1. Animación nativa
+### Animación nativa
 
-Se utilizan recursos propios de CSS/SCSS, principalmente:
+La capa de animación propia del proyecto combina recursos de CSS/SCSS orientados a mejorar la interacción sin alterar la identidad visual:
 
-- `transition`
-- `transform`
-- `:hover`
-- `:focus`
-- `:active`
+- `@keyframes` propio para una entrada suave del sitio;
+- `animation` para ejecutar la animación nativa;
+- `transition`;
+- `transform`;
+- `:hover`;
+- `:focus`;
+- `:active`.
 
-Las transiciones tienen como objetivo acompañar la interacción del usuario sin interferir con la navegación ni generar movimientos innecesarios.
+El `@keyframes entradaSuave` se encuentra integrado en `scss/base/_base.scss` y utiliza únicamente la propiedad `opacity`, por lo que la apariencia final, la distribución, los colores y los componentes existentes permanecen sin modificaciones.
 
-Los `transform` existentes del proyecto se conservan como parte de la identidad interactiva desarrollada anteriormente.
+Las transiciones funcionan como **micro-interacciones**, aportando respuesta visual a botones, enlaces y otros elementos interactivos.
 
-### 2. Librería AOS
+Los `transform` existentes se conservan como parte de la evolución visual del proyecto y se aplican de manera controlada.
 
-Se integra **AOS (Animate On Scroll)** para incorporar animaciones asociadas al desplazamiento de la página.
+Además, se incorpora `prefers-reduced-motion` para desactivar la animación nativa cuando el usuario solicita reducir el movimiento, manteniendo la accesibilidad del sitio.
 
-Los documentos HTML incluyen:
+### Librería AOS
+
+Se integra **AOS (Animate On Scroll)** como recurso complementario para animar determinados elementos al desplazarse por las páginas.
+
+La integración contempla:
 
 - hoja de estilos de AOS;
 - biblioteca JavaScript de AOS;
 - atributos `data-aos` en los elementos seleccionados;
 - inicialización mediante `AOS.init()`.
 
-La animación se utiliza como recurso complementario y no como sustituto de la estructura visual del sitio.
+### Carrusel de proyectos
 
-### 3. Carrusel de proyectos
+El carrusel de `proyectos.html` mantiene sus controles interactivos y cuenta con un ajuste responsive específico para garantizar el **centrado vertical de los controles en diferentes tamaños de pantalla**.
 
-El carrusel de `proyectos.html` conserva sus controles interactivos y cuenta con un ajuste específico para garantizar su **centrado vertical en diferentes tamaños de pantalla**.
+La corrección se integra dentro de la arquitectura SCSS del proyecto, evitando modificar innecesariamente el resto de la composición.
 
-Este ajuste se incorporó dentro del partial correspondiente de componentes, evitando modificar innecesariamente el resto del diseño.
+---
+
+## 🔎 Estrategia SEO
+
+La optimización SEO se incorpora como una capa técnica transversal, orientada a mejorar la **comprensión temática, indexabilidad, accesibilidad y claridad estructural** del sitio, manteniendo intacta su presentación visual.
+
+### SEO On-Page
+
+La optimización se aplica directamente sobre los documentos HTML y contempla:
+
+- títulos de página específicos y descriptivos;
+- metadescripciones diferenciadas según el contenido de cada vista;
+- keywords contextualizadas, evitando prácticas de **keyword stuffing**;
+- jerarquía de encabezados coherente;
+- contenido textual relacionado con la temática de cada página;
+- estructura HTML5 semántica;
+- atributos `alt` descriptivos en los recursos gráficos.
+
+### Metadatos
+
+Cada documento HTML incorpora metadatos acordes con su propósito:
+
+```html
+<title>Título específico de la página</title>
+<meta name="description" content="Descripción contextualizada del contenido de la página.">
+<meta name="keywords" content="keywords relacionadas con la página">
+```
+
+Las descripciones se mantienen diferenciadas entre **Inicio, Sobre mí, Proyectos, Servicios y Contacto**, evitando utilizar una descripción genérica para todo el sitio.
+
+### Keywords
+
+Las palabras clave se seleccionan de acuerdo con la intención y contenido de cada vista, priorizando la **relevancia semántica** frente a la repetición artificial.
+
+Entre los conceptos trabajados se encuentran:
+
+- desarrollo web;
+- desarrollo de aplicaciones;
+- servicios de desarrollo;
+- proyectos web;
+- perfil profesional;
+- competencias técnicas;
+- contacto profesional.
+
+### Semántica HTML
+
+Se mantiene como criterio:
+
+- un único `<h1>` por documento;
+- encabezados `<h2>` y `<h3>` en orden jerárquico;
+- utilización de elementos como `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` y `<footer>` cuando corresponde;
+- reducción de contenedores genéricos innecesarios;
+- contenido estructurado de acuerdo con su función.
+
+### Nomenclatura SEO de recursos
+
+Los recursos gráficos utilizan nombres descriptivos, legibles y consistentes.
+
+La convención adoptada es:
+
+```text
+nombre-descriptivo-del-recurso.ext
+```
+
+Se priorizan:
+
+- minúsculas;
+- palabras separadas mediante guiones medios (`-`);
+- nombres descriptivos;
+- ausencia de nombres genéricos;
+- extensión coherente con el formato real del recurso.
+
+Ejemplos:
+
+```text
+logo-daniela-romero.png
+hero-desarrolladora-web-daniela-romero.png
+foto-profesional-daniela-romero.jpeg
+servicio-arquitectura-backend.png
+sistema-punto-de-venta.png
+```
+
+Esta nomenclatura facilita el mantenimiento del proyecto y aporta mayor claridad semántica a las rutas de recursos.
+
+### SEO técnico y publicación
+
+La estructura del sitio mantiene rutas relativas consistentes, documentos HTML diferenciados y una organización de recursos compatible con un despliegue estático.
+
+La publicación se realiza mediante **GitHub Pages**, utilizando el repositorio como fuente del código y de los recursos del sitio.
+
+---
+
+## ♿ Accesibilidad
+
+La accesibilidad se considera como parte de la optimización técnica y semántica del proyecto.
+
+Se contemplan:
+
+- **atributos `alt` descriptivos** en las imágenes;
+- textos alternativos relacionados con el contenido real de cada recurso;
+- etiquetas y nombres comprensibles para elementos interactivos;
+- atributos `aria-label`, `aria-controls` y `aria-expanded` cuando corresponden;
+- jerarquía de encabezados coherente;
+- configuración adecuada del viewport;
+- estados `:focus` para elementos interactivos;
+- revisión del contraste entre fondos y textos;
+- estructura semántica HTML5 compatible con una interpretación más clara del contenido.
+
+El objetivo es que la optimización técnica contribuya tanto a la indexabilidad como a una experiencia digital más clara, perceptible y navegable.
 
 ---
 
 ## 🎨 Arquitectura SCSS
 
-La hoja de estilos se encuentra completamente organizada mediante **SCSS**, utilizando `scss/main.scss` como único punto de entrada.
+La hoja de estilos se encuentra organizada mediante **SCSS**, utilizando `scss/main.scss` como único punto de entrada.
 
 ```text
 scss/
@@ -221,19 +322,17 @@ scss/
 | `components/` | Botones, tarjetas, carruseles y componentes visuales |
 | `main.scss` | Punto único de entrada y orquestación de los partials |
 
-Esta organización permite mantener el código separado por responsabilidades y facilita futuras modificaciones.
+La arquitectura permite separar responsabilidades, centralizar decisiones visuales y facilitar el mantenimiento y la evolución del proyecto.
 
 ---
 
 ## 🧩 Recursos Avanzados de SCSS
 
-La Pre-entrega 8 profundiza el uso de las funcionalidades del preprocesador.
+El proyecto incorpora funcionalidades de SCSS orientadas a la reutilización y reducción de código repetido.
 
 ### Mixin con parámetros
 
-Se utilizan **mixins parametrizados** para evitar repetir declaraciones y permitir reutilizar estilos con diferentes valores.
-
-Conceptualmente:
+Se utilizan **mixins parametrizados** para reutilizar declaraciones con diferentes valores.
 
 ```scss
 @mixin ejemplo($fondo, $color, $radio) {
@@ -243,15 +342,15 @@ Conceptualmente:
 }
 ```
 
-Los valores se reciben como parámetros y pueden adaptarse según el componente que utilice el mixin.
+Los parámetros permiten adaptar el mismo recurso a diferentes componentes.
 
 ### `@extend`
 
-Se utiliza `@extend` para compartir un conjunto de propiedades entre componentes relacionados, evitando duplicación innecesaria de estilos.
+Se utiliza `@extend` para compartir conjuntos de propiedades entre componentes relacionados, evitando duplicación innecesaria.
 
 ### Operadores SCSS
 
-También se incorporan operaciones con variables, por ejemplo:
+Se incorporan operaciones con variables para construir valores reutilizables:
 
 ```scss
 $spacing-unit: 10px;
@@ -259,11 +358,9 @@ $spacing-unit: 10px;
 padding: $spacing-unit * 2;
 ```
 
-El operador permite construir valores a partir de variables y mantener una lógica de espaciado reutilizable.
-
 ### Nesting y `&`
 
-Se mantiene el uso de nesting y del selector padre `&` para organizar estados y relaciones entre elementos:
+El nesting y el selector padre `&` permiten organizar estados y relaciones entre elementos:
 
 ```scss
 .elemento {
@@ -281,11 +378,11 @@ Se mantiene el uso de nesting y del selector padre `&` para organizar estados y 
 
 ## 📱 Estrategia Responsive
 
-La responsividad de la Pre-entrega 8 sigue estrictamente una metodología **Mobile First**.
+La responsividad sigue una metodología estrictamente **Mobile First**, partiendo de estilos base para pantallas pequeñas y ampliando progresivamente la interfaz.
 
 ### Base — Mobile
 
-Los estilos principales se aplican sin media query y están pensados inicialmente para pantallas pequeñas.
+Los estilos principales se aplican sin media query y están pensados inicialmente para dispositivos móviles.
 
 ### Tablet — `768px`
 
@@ -303,21 +400,21 @@ Los estilos principales se aplican sin media query y están pensados inicialment
 }
 ```
 
-La estrategia evita depender de media queries descendentes y permite ampliar progresivamente la interfaz.
+La estrategia utiliza **breakpoints ascendentes mediante `min-width`**, evitando depender de media queries descendentes.
 
 ### Verificación responsive
 
-Las cinco páginas fueron contempladas para los siguientes escenarios:
+Las cinco vistas fueron contempladas para:
 
 | Vista | Mobile | Tablet | Escritorio |
-|---|---:|---:|---:|
+|---|:---:|:---:|:---:|
 | Inicio | ✅ | ✅ | ✅ |
 | Sobre mí | ✅ | ✅ | ✅ |
 | Proyectos | ✅ | ✅ | ✅ |
 | Servicios | ✅ | ✅ | ✅ |
 | Contacto | ✅ | ✅ | ✅ |
 
-El objetivo de esta etapa es evitar:
+La implementación busca evitar:
 
 - scroll horizontal innecesario;
 - contenido superpuesto;
@@ -345,9 +442,9 @@ Mi-Portafolio/
 │   └── components/
 │
 ├── img/
-│   ├── logo.png
-│   ├── hero_section.png
-│   ├── Perfil.jpeg
+│   ├── logo-daniela-romero.png
+│   ├── hero-desarrolladora-web-daniela-romero.png
+│   ├── foto-profesional-daniela-romero.jpeg
 │   ├── Proyectos/
 │   └── Servicios/
 │
@@ -358,7 +455,7 @@ Mi-Portafolio/
     └── contacto.html
 ```
 
-La separación de recursos facilita la lectura del proyecto, el mantenimiento y la incorporación de futuras funcionalidades.
+La separación de documentos, estilos y recursos facilita la lectura del proyecto, el mantenimiento y la incorporación de futuras funcionalidades.
 
 ---
 
@@ -381,7 +478,7 @@ La separación de recursos facilita la lectura del proyecto, el mantenimiento y 
 | Estructura | HTML5 | Organización semántica del contenido |
 | Estilos | SCSS | Arquitectura modular y generación de CSS |
 | Framework UI | Bootstrap 5.0.2 | Grid y componentes responsive |
-| Animaciones | CSS3 / SCSS | Transiciones y transformaciones nativas |
+| Animaciones | CSS3 / SCSS | Transiciones, transformaciones y estados interactivos |
 | Animaciones externas | AOS | Animaciones al desplazarse |
 | Interactividad | JavaScript / Bootstrap Bundle | Navbar y carruseles |
 | Tipografía | Google Fonts | Identidad tipográfica |
@@ -392,15 +489,15 @@ La separación de recursos facilita la lectura del proyecto, el mantenimiento y 
 
 ## 🎨 Sistema de Diseño
 
-La Pre-entrega 8 mantiene deliberadamente el sistema visual construido durante las etapas anteriores.
+El sistema visual mantiene la identidad construida durante las diferentes etapas del proyecto.
 
 ### Identidad cromática
 
-No se reemplaza la paleta existente. Los colores se mantienen centralizados en las variables SCSS correspondientes para asegurar consistencia entre las distintas vistas.
+La paleta existente se conserva y los colores se mantienen centralizados en las variables SCSS correspondientes, favoreciendo la consistencia entre las distintas vistas.
 
 ### Tipografía
 
-Se mantienen las familias tipográficas utilizadas anteriormente:
+Se mantienen las familias tipográficas utilizadas en el proyecto:
 
 - **Google Sans Flex**
 - **Roboto**
@@ -408,7 +505,7 @@ Se mantienen las familias tipográficas utilizadas anteriormente:
 
 ### Componentes
 
-La interfaz conserva:
+La interfaz conserva y reutiliza:
 
 - tarjetas;
 - botones;
@@ -417,7 +514,7 @@ La interfaz conserva:
 - secciones informativas;
 - pie de página.
 
-Las animaciones agregadas funcionan como **micro-interacciones**, sin modificar la composición visual original.
+Las animaciones funcionan como **micro-interacciones**, complementando la composición visual sin reemplazarla.
 
 ---
 
@@ -449,7 +546,7 @@ npm install
 npm run build
 ```
 
-Esto genera el archivo:
+Esto genera:
 
 ```text
 css/style.css
@@ -465,7 +562,7 @@ npm run watch
 
 Se recomienda utilizar **Live Server** desde Visual Studio Code para ejecutar correctamente las rutas relativas y visualizar los cambios durante el desarrollo.
 
-> `css/style.css` es el archivo CSS generado a partir de `scss/main.scss`. Los cambios de estilos deben realizarse dentro de los partials SCSS y posteriormente compilarse.
+> `css/style.css` es el archivo CSS generado a partir de `scss/main.scss`. Las modificaciones de estilos deben realizarse dentro de los partials SCSS y posteriormente compilarse.
 
 ---
 
@@ -481,7 +578,7 @@ https://desarollo-web-coder-house.github.io/Mi-Portafolio/
 
 ```bash
 git add .
-git commit -m "Actualización Pre-entrega 8"
+git commit -m "Actualización del portafolio"
 git push
 ```
 
@@ -507,23 +604,14 @@ Una vez enviado el commit al repositorio, GitHub Pages actualiza la versión pub
 - **🧩 Separación de responsabilidades:** HTML, SCSS y JavaScript cumplen funciones diferenciadas.
 - **♻️ Reutilización:** variables, mixins, `@extend` y componentes reducen la duplicación.
 - **🏷️ Semántica HTML:** se utilizan elementos estructurales adecuados para cada contenido.
-- **📝 Nomenclatura clara:** las clases mantienen nombres descriptivos.
-- **🔗 Rutas relativas consistentes:** permiten mantener la navegación entre las distintas páginas.
-- **🎯 Animaciones con propósito:** los efectos visuales acompañan la interacción y no reemplazan la funcionalidad.
+- **🔎 SEO contextual:** cada página posee metadatos y contenido alineados con su propósito.
+- **🖼️ Recursos descriptivos:** las imágenes utilizan nombres de archivo claros y atributos `alt` pertinentes.
+- **📝 Nomenclatura consistente:** los recursos utilizan minúsculas y guiones medios como separadores.
+- **🔗 Rutas relativas consistentes:** permiten mantener la navegación y las referencias internas.
+- **♿ Accesibilidad:** se consideran estructura semántica, textos alternativos, foco, ARIA y contraste.
 - **📐 Breakpoints ascendentes:** se utiliza `min-width` para ampliar progresivamente la interfaz.
-
----
-
-## ♿ Accesibilidad
-
-Se mantienen prácticas orientadas a mejorar la accesibilidad:
-
-- textos alternativos en imágenes;
-- etiquetas descriptivas para controles;
-- atributos `aria-label`, `aria-controls` y `aria-expanded` cuando corresponden;
-- jerarquía de encabezados;
-- configuración adecuada del viewport;
-- estados `:focus` para elementos interactivos.
+- **🎯 Animaciones con propósito:** los efectos visuales acompañan la interacción y no reemplazan la funcionalidad.
+- **🎨 Integridad visual:** las optimizaciones técnicas se integran sin alterar innecesariamente el sistema visual.
 
 ---
 
@@ -535,7 +623,8 @@ El proyecto prioriza una estructura liviana y organizada:
 - las animaciones se mantienen sutiles;
 - los estilos se generan desde una arquitectura SCSS modular;
 - se evita duplicar reglas innecesariamente;
-- el sitio mantiene una estructura estática y de fácil despliegue.
+- se mantienen rutas y recursos organizados;
+- el sitio conserva una estructura estática de fácil despliegue.
 
 ---
 
@@ -565,6 +654,9 @@ Este portafolio funciona tanto como presentación profesional como demostración
 - Bootstrap;
 - JavaScript;
 - diseño responsive;
+- animaciones e interacción;
+- optimización SEO;
+- accesibilidad web;
 - organización y mantenimiento de código;
 - control de versiones con Git y GitHub.
 
@@ -575,11 +667,8 @@ Este portafolio funciona tanto como presentación profesional como demostración
 <div align="center">
 
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5493544656873)
-
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:daniela.romero.developer@gmail.com)
-
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/daniela.romero___)
-
 [![Portafolio](https://img.shields.io/badge/Portafolio_Web-1a73e8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://desarollo-web-coder-house.github.io/Mi-Portafolio/)
 
 </div>
@@ -598,6 +687,6 @@ La reproducción total o parcial del proyecto para fines comerciales o como port
 
 © 2026 Daniela Romero — Desarrolladora Web y de Apps
 
-**Pre-entrega 8 · Animaciones · SCSS avanzado · Full Responsive**
+**SCSS · Animaciones · Full Responsive · SEO · Accesibilidad · GitHub Pages**
 
 </div>

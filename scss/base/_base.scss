@@ -1,6 +1,39 @@
 @use "../utilities/variables" as *;
 
 /* ========================================== */
+/* ANIMACIÓN NATIVA DEL HEADER                */
+/* El header aparece progresivamente mediante  */
+/* un cambio suave de opacidad.               */
+/* ========================================== */
+
+@keyframes entradaSuave {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Aplicación de la animación al header */
+.header_principal {
+  animation: entradaSuave 1.5s ease-in-out both;
+}
+
+/* ========================================== */
+/* ACCESIBILIDAD: REDUCCIÓN DE MOVIMIENTO     */
+/* Respeta la preferencia del usuario sin     */
+/* modificar el diseño visual del sitio.      */
+/* ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .header_principal {
+    animation: none;
+  }
+}
+
+/* ========================================== */
 /* ESTILOS GENERALES Y RESETEO                */
 /* Normaliza el comportamiento por defecto     */
 /* del navegador para partir de una base       */
