@@ -687,6 +687,6 @@ La reproducción total o parcial del proyecto para fines comerciales o como port
 
 © 2026 Daniela Romero — Desarrolladora Web y de Apps
 
-**SCSS · Animaciones · Full Responsive · SEO · Accesibilidad · GitHub Pages**
+**SCSS · Animaciones · Full Responsive · SEO · Accesibilidad · GitHub Pages · Bootstrap**
 
 </div>
