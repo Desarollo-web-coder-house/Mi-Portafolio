@@ -523,15 +523,6 @@ body {
 /* scroll horizontal y controlan el quiebre de  */
 /* palabras/texto largo en pantallas chicas.    */
 /* ========================================== */
-html,
-body {
-  overflow-x: hidden;
-}
-
-body {
-  min-width: 320px;
-}
-
 img,
 svg {
   max-width: 100%;
@@ -591,13 +582,7 @@ figcaption {
 /* Base mobile + 768px tablet + 1024px desktop */
 /* ========================================== */
 /* ---------- BASE: MOBILE ---------- */
-html,
 body {
-  overflow-x: hidden;
-}
-
-body {
-  min-width: 320px;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -1005,14 +990,16 @@ figcaption {
   }
 }
 /* ========================================== */
-/* CONTROL FINAL DEL VIEWPORT                 */
-/* Evita barras de desplazamiento adicionales */
-/* sin modificar el diseño del portafolio.    */
+/* CONTROL FINAL DEL SCROLL                  */
+/* El documento mantiene un único scroll       */
+/* vertical en <html>, evitando que <body>     */
+/* genere una segunda barra de desplazamiento. */
 /* ========================================== */
 html {
   width: 100%;
   max-width: 100%;
   overflow-x: clip;
+  overflow-y: auto;
 }
 
 body {
@@ -1021,12 +1008,14 @@ body {
   min-width: 0;
   margin: 0;
   overflow-x: clip;
+  overflow-y: visible;
 }
 
 main {
   width: 100%;
   max-width: 100%;
   overflow-x: clip;
+  overflow-y: visible;
 }
 
 /* ========================================== */
